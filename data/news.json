@@ -1,30 +1,322 @@
 [
- {"d": "2026-10-11", "a": false, "m": [], "ty": "cluster", "src": "cnsc", "top": true,
+ {
+  "d": "2026-10-16",
+  "a": true,
+  "m": [
+   "advacam"
+  ],
+  "ty": "invest",
+  "src": "linkedin",
+  "top": true,
+  "cs": "Advacam představil sesterskou firmu ADVASPACE Radiation Data zaměřenou na vesmírné projekty; technologie Advacam se podle TV reportáže o českém vesmírném průmyslu účastní misí NASA.",
+  "en": "Advacam introduced its sister company ADVASPACE Radiation Data, dedicated to space projects; according to a TV report on the Czech space industry, Advacam technology flies on NASA missions.",
+  "u": "https://www.linkedin.com/company/widepix-s-r-o-/posts/"
+ },
+ {
+  "d": "2026-10-16",
+  "a": true,
+  "m": [
+   "edhouse"
+  ],
+  "ty": "event",
+  "src": "linkedin",
+  "top": false,
+  "cs": "edhouse pořádá 22. 10. ve Zlíně setkání místní IT komunity s odbornými přednáškami.",
+  "en": "edhouse hosts a meetup of the Zlín IT community with technical talks on 22 October.",
+  "u": "https://www.linkedin.com/company/edhouse-s-r-o-/posts/"
+ },
+ {
+  "d": "2026-10-15",
+  "a": true,
+  "m": [
+   "streicher"
+  ],
+  "ty": "launch",
+  "src": "cnsc",
+  "top": true,
+  "cs": "STREICHER představil čisticí systém S-UV: UV světlo odstraňuje uhlovodíkové znečištění z povrchů součástek, podle výrobce až 6× rychleji a s více než 10× nižší spotřebou energie, vhodné i pro teplotně citlivé díly.",
+  "en": "STREICHER introduced the S-UV cleaning system: UV light removes hydrocarbon contamination from component surfaces, per the maker up to 6× faster and with more than 10× lower energy consumption, suitable for temperature-sensitive parts.",
+  "u": "https://www.linkedin.com/company/cz_semi_cluster/posts/"
+ },
+ {
+  "d": "2026-10-15",
+  "a": true,
+  "m": [
+   "icuk"
+  ],
+  "ty": "event",
+  "src": "linkedin",
+  "top": false,
+  "cs": "ICUK zve na startupový festival FESTUP v Ústeckém kraji.",
+  "en": "ICUK invites to the FESTUP start-up festival in the Ústí Region.",
+  "u": "https://www.linkedin.com/company/icuk-inovacni-centrum-usteckeho-kraje/posts/"
+ },
+ {
+  "d": "2026-10-14",
+  "a": true,
+  "m": [
+   "dynanic"
+  ],
+  "ty": "event",
+  "src": "linkedin",
+  "top": true,
+  "cs": "DynaNIC byl v jednom týdnu na pěti akcích na třech kontinentech: KES 2026 v Soulu (český pavilon), Network X ve Vídni (start-up pod), SEMICON West v San Franciscu a workshop P4 Language Consortium v San José.",
+  "en": "DynaNIC attended five events on three continents in one week: KES 2026 in Seoul (Czech pavilion), Network X in Vienna (start-up pod), SEMICON West in San Francisco and the P4 Language Consortium workshop in San Jose.",
+  "u": "https://www.linkedin.com/company/dynanic/posts/"
+ },
+ {
+  "d": "2026-10-14",
+  "a": true,
+  "m": [
+   "unites"
+  ],
+  "ty": "event",
+  "src": "linkedin",
+  "top": true,
+  "cs": "UNITES Systems: CEO Ondřej Beťák přednese keynote o měření Qg u SiC součástek na 12. IMAPS Flash Conference ve Zlíně (22.–23. 10., téma Comprehensive Semiconductor Analysis).",
+  "en": "UNITES Systems: CEO Ondřej Beťák gives a keynote on Qg characterisation of SiC devices at the 12th IMAPS Flash Conference in Zlín (22–23 Oct, theme Comprehensive Semiconductor Analysis).",
+  "u": "https://www.linkedin.com/company/unites-systems-a-s-cz/posts/"
+ },
+ {
+  "d": "2026-10-13",
+  "a": true,
+  "m": [
+   "argotech"
+  ],
+  "ty": "event",
+  "src": "linkedin",
+  "top": false,
+  "cs": "Argotech vystavoval na Photonics Days 2026 v Berlíně (OpTecBB) a jednal o společných projektech v polovodičové fotonice.",
+  "en": "Argotech exhibited at Photonics Days 2026 in Berlin (OpTecBB) and discussed joint projects in semiconductor photonics.",
+  "u": "https://www.linkedin.com/company/argotech-semiconductor-photonics/posts/"
+ },
+ {
+  "d": "2026-10-12",
+  "a": false,
+  "m": [
+   "upt"
+  ],
+  "ty": "event",
+  "src": "linkedin",
+  "top": false,
+  "cs": "ÚPT AV ČR pořádal Podzimní školu elektronové mikroskopie (12.–16. 10., Brno) s praktickými cvičeními v laboratořích ústavu.",
+  "en": "ISI CAS ran the Autumn School of Electron Microscopy (12–16 Oct, Brno) with hands-on sessions in the institute's laboratories.",
+  "u": "https://www.linkedin.com/company/-stav-p-strojov-techniky-av-r-v-v-i-/posts/"
+ },
+ {
+  "d": "2026-10-12",
+  "a": true,
+  "m": [
+   "crytur"
+  ],
+  "ty": "event",
+  "src": "linkedin",
+  "top": false,
+  "cs": "Crytur se představil na veletrhu vzdělávání EDUCA EXPO 2026 v Liberci (15.–17. 10.).",
+  "en": "Crytur presented itself at the EDUCA EXPO 2026 education fair in Liberec (15–17 Oct).",
+  "u": "https://www.linkedin.com/company/crytur-spol-s-r-o-/posts/"
+ },
+ {
+  "d": "2026-10-11",
+  "a": true,
+  "m": [
+   "streicher"
+  ],
+  "ty": "event",
+  "src": "linkedin",
+  "top": false,
+  "cs": "STREICHER hostil ve Štěnovicích třetí General Manager Roundtable.",
+  "en": "STREICHER hosted the third General Manager Roundtable at its Štěnovice site.",
+  "u": "https://www.linkedin.com/company/streicher-spol-s-r-o-plze%C5%88/posts/"
+ },
+ {
+  "d": "2026-10-11",
+  "a": false,
+  "m": [],
+  "ty": "cluster",
+  "src": "cnsc",
+  "top": true,
   "cs": "CNSC spustil týdenní EU Chips Act Pillar I Weekly Radar: stav pilotních linek, design platformy EuroCDP a sítě kompetenčních center na jedné stránce (alfa verze, zpětná vazba do 1. 11. 2026).",
   "en": "CNSC launched the weekly EU Chips Act Pillar I Weekly Radar: the state of the pilot lines, the EuroCDP design platform and the competence-centre network on one page (alpha, feedback until 1 Nov 2026).",
-  "u": "https://smarterinstruments.github.io/Pillar1-Monitor/"},
- {"d": "2026-10-07", "a": false, "m": [], "ty": "cluster", "src": "cnsc", "top": false,
+  "u": "https://smarterinstruments.github.io/Pillar1-Monitor/"
+ },
+ {
+  "d": "2026-10-07",
+  "a": false,
+  "m": [],
+  "ty": "cluster",
+  "src": "cnsc",
+  "top": false,
   "cs": "CNSC vystoupil na MSV Brno s prezentací o českém polovodičovém ekosystému a IPCEI AST.",
   "en": "CNSC presented the Czech semiconductor ecosystem and IPCEI AST at the MSV Brno international engineering fair.",
-  "u": "https://www.bvv.cz/msv/"},
- {"d": "2026-09-14", "a": false, "m": [], "ty": "cluster", "src": "cnsc", "top": false,
-  "cs": "ISIG Power Prague (14.–16. 9.): prezidentu CNSC patřil blok o česko-sasko-bavorské regionální spolupráci v polovodičích a o IPCEI AST.",
-  "en": "ISIG Power Prague (14–16 Sep): the CNSC president spoke on Czech–Saxon–Bavarian regional semiconductor cooperation and IPCEI AST.",
-  "u": ""},
- {"d": "2026-09-01", "a": true, "m": ["cvut", "zcu"], "ty": "people", "src": "cnsc", "top": false,
+  "u": "https://www.bvv.cz/msv/"
+ },
+ {
+  "d": "2026-10-04",
+  "a": true,
+  "m": [
+   "ujp-praha"
+  ],
+  "ty": "event",
+  "src": "linkedin",
+  "top": false,
+  "cs": "UJP PRAHA vystavovala na konferenci RADECS 2026 o radiačních účincích na součástky a systémy.",
+  "en": "UJP PRAHA exhibited at RADECS 2026, the conference on radiation effects on components and systems.",
+  "u": "https://www.linkedin.com/company/ujp/posts/"
+ },
+ {
+  "d": "2026-09-30",
+  "a": true,
+  "m": [
+   "vut-brno"
+  ],
+  "ty": "event",
+  "src": "linkedin",
+  "top": false,
+  "cs": "VUT v září uspořádalo akci „V4 for Innovation: Knowledge Transfer Cooperation of the V4 Countries“ o transferu technologií a spolupráci akademie s průmyslem.",
+  "en": "In September BUT hosted “V4 for Innovation: Knowledge Transfer Cooperation of the V4 Countries” on technology transfer and academia–industry collaboration.",
+  "u": "https://www.linkedin.com/school/vysokeucenitechnickevbrne/posts/"
+ },
+ {
+  "d": "2026-09-27",
+  "a": true,
+  "m": [
+   "analog-bits"
+  ],
+  "ty": "award",
+  "src": "linkedin",
+  "top": true,
+  "cs": "Analog Bits převzal cenu 2026 Analog IP Partner of the Year na fóru TSMC Open Innovation Platform (NA OIP Ecosystem Forum).",
+  "en": "Analog Bits received the 2026 Analog IP Partner of the Year award at the TSMC Open Innovation Platform NA Ecosystem Forum.",
+  "u": "https://www.linkedin.com/company/analog-bits/posts/"
+ },
+ {
+  "d": "2026-09-27",
+  "a": true,
+  "m": [
+   "ufe"
+  ],
+  "ty": "award",
+  "src": "linkedin",
+  "top": false,
+  "cs": "ÚFE AV ČR: Andrei Borodkin získal 2. místo v soutěži a biosenzor ústavu byl zařazen mezi 15 vybraných projektů.",
+  "en": "IPE CAS: Andrei Borodkin took 2nd place in a competition and the institute's biosensor was selected among 15 chosen projects.",
+  "u": "https://www.linkedin.com/company/ufe-avcr/posts/"
+ },
+ {
+  "d": "2026-09-24",
+  "a": false,
+  "m": [
+   "thermo-fisher"
+  ],
+  "ty": "cluster",
+  "src": "cnsc",
+  "top": true,
+  "cs": "Valná hromada CNSC 2026 (24. 9., Brno): sešlo se 50+ členských organizací; odpoledne patřilo prohlídce výroby Thermo Fisher Scientific v Brně.",
+  "en": "CNSC General Assembly 2026 (24 Sep, Brno): 50+ member organisations met; the afternoon was spent inside Thermo Fisher Scientific's Brno production.",
+  "u": "https://www.linkedin.com/company/cz_semi_cluster/posts/"
+ },
+ {
+  "d": "2026-09-18",
+  "a": true,
+  "m": [
+   "mycroftmind"
+  ],
+  "ty": "project",
+  "src": "linkedin",
+  "top": true,
+  "cs": "Mycroft Mind uzavřel výzkumnou fázi projektu SLAID (IPCEI ME/CT) s hodnocením „vynikající“ v závěrečném oponentním řízení a připravuje fázi First Industrial Deployment.",
+  "en": "Mycroft Mind completed the R&D phase of its SLAID project (IPCEI ME/CT) with an “excellent” rating at the final review and is preparing the First Industrial Deployment phase.",
+  "u": "https://www.linkedin.com/company/mycroftmind/posts/"
+ },
+ {
+  "d": "2026-09-18",
+  "a": true,
+  "m": [
+   "stroza"
+  ],
+  "ty": "partner",
+  "src": "linkedin",
+  "top": false,
+  "cs": "STROZA se hlásí k účasti v Czech Semiconductor Centre: dodává chemické stoly, zařízení pro mokré procesy a robotizované chemické procesy.",
+  "en": "STROZA announced its part in the Czech Semiconductor Centre, contributing chemical benches, wet-process equipment and robotised chemical processes.",
+  "u": "https://www.linkedin.com/company/stroza/posts/"
+ },
+ {
+  "d": "2026-09-14",
+  "a": false,
+  "m": [],
+  "ty": "cluster",
+  "src": "cnsc",
+  "top": false,
+  "cs": "ISIG Power Prague (14.–16. 9., Černínský palác): prezentace klastru o česko-sasko-bavorské regionální spolupráci v polovodičích a o IPCEI AST.",
+  "en": "ISIG Power Prague (14–16 Sep, Czernin Palace): the cluster presented Czech–Saxon–Bavarian regional semiconductor cooperation and IPCEI AST.",
+  "u": ""
+ },
+ {
+  "d": "2026-09-10",
+  "a": false,
+  "m": [],
+  "ty": "award",
+  "src": "cnsc",
+  "top": true,
+  "cs": "CNSC převzal cenu AFI za dlouhodobý přínos investičnímu prostředí ČR (nominace CzechInvest) na 7. výroční konferenci AFI v Kongresovém centru ČNB.",
+  "en": "CNSC received the AFI award for long-term contribution to the Czech investment environment (nominated by CzechInvest) at the 7th AFI Annual Conference at the ČNB Congress Centre.",
+  "u": "https://www.linkedin.com/company/cz_semi_cluster/posts/"
+ },
+ {
+  "d": "2026-09-01",
+  "a": true,
+  "m": [
+   "cvut",
+   "zcu"
+  ],
+  "ty": "people",
+  "src": "cnsc",
+  "top": false,
   "cs": "Představenstvo CNSC posílili dva viceprezidenti: Jiří Jakovenko (ČVUT) pro akademický výzkum a vývoj a prof. Zdeněk Peroutka (ZČU / RICE) pro výkonovou elektroniku.",
   "en": "Two vice-presidents joined the CNSC board: Jiří Jakovenko (CTU Prague) for academic R&D and Prof. Zdeněk Peroutka (UWB / RICE) for power electronics.",
-  "u": ""},
- {"d": "2026-05-31", "a": true, "m": ["onsemi", "codasip"], "ty": "invest", "src": "press", "top": false,
+  "u": ""
+ },
+ {
+  "d": "2026-05-31",
+  "a": true,
+  "m": [
+   "onsemi",
+   "codasip"
+  ],
+  "ty": "invest",
+  "src": "press",
+  "top": false,
   "cs": "onsemi převzalo část brněnských aktivit týmu Codasip (uzavřeno v květnu 2026); obě firmy jsou členy klastru a spolupracují v Czech Semiconductor Centre.",
   "en": "onsemi took over part of Codasip's Brno team activities (closed May 2026); both companies are cluster members and partners in the Czech Semiconductor Centre.",
-  "u": ""},
- {"d": "2026-01-01", "a": true, "m": ["vut-brno", "cvut"], "ty": "project", "src": "member", "top": false,
+  "u": ""
+ },
+ {
+  "d": "2026-01-01",
+  "a": true,
+  "m": [
+   "vut-brno",
+   "cvut"
+  ],
+  "ty": "project",
+  "src": "member",
+  "top": false,
   "cs": "Semiconductors4All: centrum aplikovaného výzkumu TA ČR SIGMA DC5 (2026–2031), koordinátor VUT, 19 partnerů; CNSC má zastoupení v radě projektu.",
   "en": "Semiconductors4All: TA ČR SIGMA DC5 applied-research centre (2026–2031), coordinated by Brno University of Technology with 19 partners; CNSC sits on the project board.",
-  "u": "https://www.tacr.cz/"},
- {"d": "2026-01-01", "a": true, "m": ["cvut"], "ty": "project", "src": "member", "top": false,
+  "u": "https://www.tacr.cz/"
+ },
+ {
+  "d": "2026-01-01",
+  "a": true,
+  "m": [
+   "cvut"
+  ],
+  "ty": "project",
+  "src": "member",
+  "top": false,
   "cs": "ČVUT zahájilo projekt Horizon Europe „GaN for European ECS Resilience“ (2026–2028) a projekt Cybersecurity Innovation Hub II (Digital Europe, 2026–2028).",
   "en": "CTU Prague started the Horizon Europe project “GaN for European ECS Resilience” (2026–2028) and Cybersecurity Innovation Hub II (Digital Europe, 2026–2028).",
-  "u": ""}
+  "u": ""
+ }
 ]

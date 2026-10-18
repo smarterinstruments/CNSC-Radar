@@ -367,7 +367,7 @@ function renderAbout() {
 
 function renderRadar() {
   const t = T();
-  const W = 1040, H = 690, C = W / 2, CY = 345, R = [0, 92, 170, 240, 304];
+  const W = 1040, H = 690, C = W / 2, CY = 345, R = [0, 118, 190, 250, 304];
   const segs = D.segments;
   const counts = Object.fromEntries(segs.map(s => [s.id, D.members.filter(m => m.s === s.id).length]));
   const tot = segs.reduce((a, s) => a + Math.max(2, counts[s.id]), 0);
@@ -393,8 +393,12 @@ function renderRadar() {
       arr.forEach((m, i) => {
         const k = arr.length, a = a0 + (a1 - a0) * (i + 1) / (k + 1);
         // stagger radius inside the ring so dense rings do not overlap
-        const r0 = R[ring - 1], r1 = R[ring], frac = k > 4 ? 0.3 + 0.5 * ((i % 3) / 2) : 0.5;
-        const r = r0 + (r1 - r0) * frac + (ring == 1 ? 8 : 0);
+        const r0 = R[ring - 1], r1 = R[ring];
+        let frac = 0.55;
+        if (ring == 1) frac = k > 1 ? (i % 2 ? 0.9 : 0.58) : 0.72;
+        else if (k > 4) frac = 0.3 + 0.5 * ((i % 3) / 2);
+        else if (k > 1) frac = i % 2 ? 0.72 : 0.4;
+        const r = r0 + (r1 - r0) * frac;
         dots.push({m, ring: +ring, x: C + r * Math.cos(a), y: CY + r * Math.sin(a), s});
       });
     });
