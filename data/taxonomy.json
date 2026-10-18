@@ -1,0 +1,35 @@
+{
+ "segments": [
+  {"id": "design",    "code": "01", "cs": "Návrh čipů & IP",            "en": "Chip design & IP",            "c": {"l": "#0066B5", "d": "#3B8FD9"}},
+  {"id": "materials", "code": "02", "cs": "Materiály & krystaly",       "en": "Materials & crystals",        "c": {"l": "#D97706", "d": "#D97706"}},
+  {"id": "fab",       "code": "03", "cs": "Výroba & pouzdření",         "en": "Fabrication & packaging",     "c": {"l": "#0D9488", "d": "#0D9488"}},
+  {"id": "equipment", "code": "04", "cs": "Zařízení & infrastruktura",  "en": "Equipment & infrastructure",  "c": {"l": "#7C3AED", "d": "#8B5CF6"}},
+  {"id": "test",      "code": "05", "cs": "Testování & analýza",        "en": "Test & analysis",             "c": {"l": "#DB2777", "d": "#EC4899"}},
+  {"id": "apps",      "code": "06", "cs": "Aplikace & systémy",         "en": "Applications & systems",      "c": {"l": "#65A30D", "d": "#65A30D"}},
+  {"id": "research",  "code": "07", "cs": "Výzkum & vzdělávání",        "en": "Research & education",        "c": {"l": "#B91C1C", "d": "#C2410C"}},
+  {"id": "eco",       "code": "08", "cs": "Ekosystém & podpora",        "en": "Ecosystem & support",         "c": {"l": "#16A34A", "d": "#16A34A"}}
+ ],
+ "rings": [
+  {"n": 1, "days": 7,   "cs": "Tento týden",              "en": "This week",            "desc_cs": "veřejná aktivita za posledních 7 dní",            "desc_en": "public activity in the last 7 days"},
+  {"n": 2, "days": 31,  "cs": "Tento měsíc",              "en": "This month",           "desc_cs": "poslední aktivita před 8–31 dny",                  "desc_en": "last activity 8–31 days ago"},
+  {"n": 3, "days": 92,  "cs": "Toto čtvrtletí",           "en": "This quarter",         "desc_cs": "poslední aktivita před 32–92 dny",                 "desc_en": "last activity 32–92 days ago"},
+  {"n": 4, "days": null,"cs": "Bez sledované aktivity",   "en": "No tracked activity",  "desc_cs": "déle než čtvrtletí nic, nebo sledování teprve začíná", "desc_en": "nothing for more than a quarter, or tracking has just begun"}
+ ],
+ "types": [
+  {"id": "launch",  "cs": "Produkt / technologie", "en": "Product / technology"},
+  {"id": "invest",  "cs": "Investice a expanze",   "en": "Investment & expansion"},
+  {"id": "project", "cs": "Projekt / grant",        "en": "Project / grant"},
+  {"id": "event",   "cs": "Akce a vystoupení",      "en": "Event / talk"},
+  {"id": "partner", "cs": "Partnerství / MoU",      "en": "Partnership / MoU"},
+  {"id": "award",   "cs": "Ocenění",                "en": "Award"},
+  {"id": "people",  "cs": "Lidé a vedení",          "en": "People & leadership"},
+  {"id": "cluster", "cs": "Klastr",                 "en": "Cluster"}
+ ],
+ "sourcesKinds": [
+  {"id": "linkedin", "cs": "LinkedIn stránka člena", "en": "Member's LinkedIn page"},
+  {"id": "web",      "cs": "Web člena",              "en": "Member's website"},
+  {"id": "press",    "cs": "Tisk / média",           "en": "Press / media"},
+  {"id": "member",   "cs": "Zasláno členem",         "en": "Sent by the member"},
+  {"id": "cnsc",     "cs": "Kanály CNSC",            "en": "CNSC channels"}
+ ]
+}

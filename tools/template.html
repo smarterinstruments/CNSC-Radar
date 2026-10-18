@@ -1,0 +1,434 @@
+<title>CNSC Member Activity Radar</title>
+<meta name="description" content="Weekly radar of what the members of the Czech National Semiconductor Cluster publish: products, investments, projects, events, partnerships and awards.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+/* CNSC brand: cleanroom light, brand blue #0066B5 (from the member catalogue); dark theme is its own set of steps */
+:root{
+  --bg:#EEF1F4; --panel:#FFFFFF; --panel2:#F6F8FA; --ink:#10161D; --muted:#5A6672; --faint:#8A96A3; --line:#D6DCE2; --line2:#E6EAEE;
+  --blue:#0066B5; --blue-deep:#004C86; --blue-soft:#E3EEF8; --chip:#101820; --chip-ink:#E8EDF2; --chip-line:rgba(255,255,255,.16);
+  --ring1:#0066B5; --ring2:#4A86C5; --ring3:#9DB7D3; --ring4:#C9D1D9; --warn:#B45309; --warn-bg:#FFF4E0;
+  --seg-design:#0066B5; --seg-materials:#D97706; --seg-fab:#0D9488; --seg-equipment:#7C3AED; --seg-test:#DB2777; --seg-apps:#65A30D; --seg-research:#B91C1C; --seg-eco:#16A34A;
+  --shadow:0 12px 30px -18px rgba(20,80,143,.35);
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0E131A; --panel:#161D27; --panel2:#1B2330; --ink:#E8EDF2; --muted:#A5AFBC; --faint:#6F7A89; --line:#2A3441; --line2:#222B37;
+  --blue:#3B8FD9; --blue-deep:#6FAEE8; --blue-soft:#1A2A3D; --chip:#0B1017; --chip-ink:#E8EDF2; --chip-line:rgba(255,255,255,.14);
+  --ring1:#3B8FD9; --ring2:#2F6AA3; --ring3:#2A4866; --ring4:#273140; --warn:#F2B35A; --warn-bg:#2A2110;
+  --seg-design:#3B8FD9; --seg-materials:#D97706; --seg-fab:#0D9488; --seg-equipment:#8B5CF6; --seg-test:#EC4899; --seg-apps:#65A30D; --seg-research:#C2410C; --seg-eco:#16A34A;
+  --shadow:0 12px 30px -18px rgba(0,0,0,.6); color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0E131A; --panel:#161D27; --panel2:#1B2330; --ink:#E8EDF2; --muted:#A5AFBC; --faint:#6F7A89; --line:#2A3441; --line2:#222B37;
+  --blue:#3B8FD9; --blue-deep:#6FAEE8; --blue-soft:#1A2A3D; --chip:#0B1017; --chip-ink:#E8EDF2; --chip-line:rgba(255,255,255,.14);
+  --ring1:#3B8FD9; --ring2:#2F6AA3; --ring3:#2A4866; --ring4:#273140; --warn:#F2B35A; --warn-bg:#2A2110;
+  --seg-design:#3B8FD9; --seg-materials:#D97706; --seg-fab:#0D9488; --seg-equipment:#8B5CF6; --seg-test:#EC4899; --seg-apps:#65A30D; --seg-research:#C2410C; --seg-eco:#16A34A;
+  --shadow:0 12px 30px -18px rgba(0,0,0,.6); color-scheme:dark}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;background:var(--bg);color:var(--ink);line-height:1.55;-webkit-font-smoothing:antialiased;font-size:15px}
+.mono{font-family:"IBM Plex Mono",ui-monospace,Menlo,monospace}
+.wrap{max-width:1180px;margin:0 auto;padding-inline:20px}
+a{color:var(--blue)}
+h1,h2,h3,h4{font-family:"Space Grotesk",Inter,sans-serif;text-wrap:balance;letter-spacing:-.01em}
+.strip{display:flex;flex-wrap:wrap;gap:6px 18px;padding:14px 0 10px;font-family:"IBM Plex Mono",monospace;font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);border-bottom:1px solid var(--line);align-items:center}
+.strip b{color:var(--ink);font-weight:600}
+.strip .sp{flex:1}
+.lang{display:inline-flex;border:1px solid var(--line);border-radius:999px;overflow:hidden;background:var(--panel)}
+.lang button{font-family:"IBM Plex Mono",monospace;font-size:11.5px;font-weight:600;letter-spacing:.08em;padding:5px 11px;border:0;background:transparent;color:var(--muted);cursor:pointer}
+.lang button.on{background:var(--blue);color:#fff}
+.hero{padding:34px 0 10px;display:grid;grid-template-columns:1fr auto;gap:18px 32px;align-items:end}
+.eyebrow{font-family:"IBM Plex Mono",monospace;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--blue);display:flex;align-items:center;gap:10px;margin-bottom:14px}
+.eyebrow::before{content:"";width:30px;height:2px;background:var(--blue)}
+h1{font-weight:700;font-size:clamp(30px,4.6vw,48px);line-height:1.04;max-width:22ch}
+h1 .alpha{display:inline-block;vertical-align:middle;font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--warn);border:1px solid var(--warn);border-radius:6px;padding:3px 8px;margin-left:12px;font-weight:600}
+.lede{max-width:66ch;margin-top:14px;font-size:16px;color:var(--muted)}
+.logo{height:64px;width:auto;display:block;justify-self:end}
+.banner{margin:18px 0 6px;background:var(--warn-bg);border:1px solid color-mix(in srgb,var(--warn) 45%,transparent);border-radius:10px;padding:10px 14px;font-size:13.5px;color:var(--ink)}
+.tabs{display:flex;gap:4px;flex-wrap:wrap;margin:22px 0 0;border-bottom:1px solid var(--line)}
+.tabs button{font:inherit;font-weight:600;font-size:14px;padding:10px 14px;border:0;border-bottom:2px solid transparent;background:transparent;color:var(--muted);cursor:pointer;margin-bottom:-1px}
+.tabs button[aria-selected="true"]{color:var(--blue);border-bottom-color:var(--blue)}
+.panel{display:none;padding:26px 0 40px}
+.panel.on{display:block}
+h2{font-size:22px;font-weight:600;margin:0 0 6px}
+.sub{color:var(--muted);max-width:76ch;margin-bottom:18px}
+.fine{font-size:12.5px;color:var(--muted);max-width:80ch}
+/* stats */
+.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:4px 0 24px}
+.st{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px 16px 13px;min-width:0}
+.st .v{font-family:"Space Grotesk",sans-serif;font-weight:700;font-size:34px;line-height:1;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+.st .l{margin-top:6px;font-weight:600;font-size:14px;line-height:1.3}
+.st .s{margin-top:4px;font-family:"IBM Plex Mono",monospace;font-size:11.5px;color:var(--muted);line-height:1.4}
+/* radar */
+.radarwrap{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(260px,.8fr);gap:22px;align-items:start}
+.radar{background:var(--chip);border-radius:16px;padding:12px;position:relative;box-shadow:0 24px 60px -28px rgba(12,24,38,.45)}
+.radar svg{display:block;width:100%;height:auto}
+.key{display:flex;flex-direction:column;gap:10px}
+.rk{border-left:3px solid var(--c);padding:6px 0 6px 12px;background:var(--panel);border-radius:0 8px 8px 0}
+.rk .n{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.rk .t{font-weight:600;font-size:15px}
+.rk .w{font-size:12.5px;color:var(--muted);margin-top:2px}
+.seglist{display:flex;flex-wrap:wrap;gap:6px 14px;font-family:"IBM Plex Mono",monospace;font-size:11.5px;color:var(--muted);margin-top:4px}
+.seglist i{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:5px;vertical-align:-1px;background:var(--c)}
+.tip{position:absolute;pointer-events:none;background:var(--panel);color:var(--ink);border:1px solid var(--line);border-radius:8px;padding:8px 10px;font-size:12.5px;line-height:1.35;box-shadow:var(--shadow);max-width:260px;display:none;z-index:5}
+.tip b{display:block;font-family:"Space Grotesk",sans-serif;font-size:14px}
+.tip .m{font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--muted)}
+/* top list */
+.top{margin-top:26px}
+.item{display:grid;grid-template-columns:92px 1fr;gap:4px 16px;padding:12px 0;border-bottom:1px solid var(--line2)}
+.item .d{font-family:"IBM Plex Mono",monospace;font-size:12px;color:var(--muted);padding-top:3px;font-variant-numeric:tabular-nums}
+.item .t{font-size:14.5px}
+.item .meta{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px;align-items:center}
+.chip{display:inline-flex;align-items:center;gap:6px;font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.03em;padding:2px 8px;border-radius:999px;border:1px solid var(--line);color:var(--ink);background:var(--panel);text-decoration:none}
+.chip i{width:8px;height:8px;border-radius:50%;background:var(--c);display:inline-block}
+.chip.ty{background:var(--blue-soft);border-color:transparent;color:var(--ink)}
+.chip.src{color:var(--muted)}
+.item .t a{color:var(--blue)}
+/* filters */
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 14px;align-items:center}
+.filters button{font:inherit;font-size:12.5px;padding:5px 11px;border-radius:999px;border:1px solid var(--line);background:var(--panel);color:var(--ink);cursor:pointer}
+.filters button[aria-pressed="true"]{background:var(--blue);border-color:var(--blue);color:#fff}
+.filters .sep{width:1px;height:20px;background:var(--line);margin:0 4px}
+.empty{padding:26px 0;color:var(--muted)}
+/* members */
+.stage{margin:26px 0 6px}
+.stage-head{display:flex;align-items:baseline;gap:12px;border-bottom:2px solid var(--ink);padding-bottom:8px;margin-bottom:14px}
+.stage-head .code{font-family:"IBM Plex Mono",monospace;font-size:12px;font-weight:600;letter-spacing:.1em;color:var(--c)}
+.stage-head h3{font-size:19px;font-weight:600}
+.stage-head .sc{margin-left:auto;font-family:"IBM Plex Mono",monospace;font-size:11.5px;color:var(--muted)}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:14px 15px 13px;display:flex;flex-direction:column;gap:8px;min-width:0;border-top:3px solid var(--c)}
+.card .hd{display:flex;justify-content:space-between;gap:8px;align-items:flex-start}
+.card h4{font-size:15.5px;font-weight:600;line-height:1.25}
+.card .city{font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.05em;color:var(--muted);white-space:nowrap;padding-top:3px}
+.card p{font-size:13px;color:var(--muted);flex:1}
+.card .last{font-family:"IBM Plex Mono",monospace;font-size:11.5px;color:var(--muted);display:flex;align-items:center;gap:7px}
+.card .last i{width:9px;height:9px;border-radius:50%;background:var(--rc);display:inline-block;flex:none}
+.card .links{display:flex;gap:12px;flex-wrap:wrap;font-family:"IBM Plex Mono",monospace;font-size:11.5px}
+.card .links a{text-decoration:none;border-bottom:1px solid transparent}
+.card .links a:hover{border-bottom-color:var(--blue)}
+.card .note{font-size:11.5px;color:var(--warn)}
+/* events */
+.ev{display:grid;grid-template-columns:130px 1fr;gap:4px 16px;padding:12px 0;border-bottom:1px solid var(--line2)}
+.ev .w{font-family:"IBM Plex Mono",monospace;font-size:12.5px;color:var(--ink);font-weight:600}
+/* about */
+.about{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.about h3{font-size:16px;margin:0 0 6px}
+.about p,.about li{font-size:14px;color:var(--muted)}
+.about ul{padding-left:18px;margin:4px 0 14px}
+.about .box{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin-bottom:14px}
+.about code{font-family:"IBM Plex Mono",monospace;font-size:12.5px;background:var(--panel2);padding:1px 5px;border-radius:4px}
+footer{border-top:1px solid var(--line);padding:18px 0 40px;font-family:"IBM Plex Mono",monospace;font-size:11.5px;color:var(--muted);display:flex;flex-wrap:wrap;gap:8px 22px}
+@media(max-width:900px){.stats{grid-template-columns:repeat(2,minmax(0,1fr))}.radarwrap{grid-template-columns:1fr}.about{grid-template-columns:1fr}.hero{grid-template-columns:1fr}.logo{justify-self:start;height:52px}}
+@media(max-width:560px){.item,.ev{grid-template-columns:1fr}.st .v{font-size:28px}}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto}}
+</style>
+
+<div class="wrap">
+  <div class="strip" id="strip"></div>
+  <div class="hero">
+    <div>
+      <div class="eyebrow" id="eyebrow"></div>
+      <h1><span id="h1t"></span><span class="alpha" id="alphaTag"></span></h1>
+      <p class="lede" id="lede"></p>
+    </div>
+    <img class="logo" alt="Czech National Semiconductor Cluster" src="https://www.semicz.cz/wp-content/uploads/2024/12/Cropped_Czech-National-Main-Logo-800x600-1.png" onerror="this.style.display='none'">
+  </div>
+  <div class="banner" id="banner"></div>
+
+  <nav class="tabs" role="tablist" id="tabs"></nav>
+
+  <section class="panel on" id="p-overview" role="tabpanel">
+    <div class="stats" id="stats"></div>
+    <h2 id="radarH"></h2>
+    <p class="sub" id="radarSub"></p>
+    <div class="radarwrap">
+      <div class="radar"><div id="radarSvg"></div><div class="tip" id="tip"></div></div>
+      <div>
+        <div class="key" id="key"></div>
+        <div class="seglist" id="seglist"></div>
+      </div>
+    </div>
+    <div class="top">
+      <h2 id="topH"></h2>
+      <p class="sub" id="topSub"></p>
+      <div id="topList"></div>
+    </div>
+  </section>
+
+  <section class="panel" id="p-news" role="tabpanel">
+    <h2 id="newsH"></h2>
+    <p class="sub" id="newsSub"></p>
+    <div class="filters" id="filters"></div>
+    <div id="newsList"></div>
+  </section>
+
+  <section class="panel" id="p-members" role="tabpanel">
+    <h2 id="memH"></h2>
+    <p class="sub" id="memSub"></p>
+    <div id="memberList"></div>
+  </section>
+
+  <section class="panel" id="p-events" role="tabpanel">
+    <h2 id="evH"></h2>
+    <p class="sub" id="evSub"></p>
+    <div id="evList"></div>
+  </section>
+
+  <section class="panel" id="p-about" role="tabpanel">
+    <h2 id="abH"></h2>
+    <div class="about" id="about"></div>
+  </section>
+
+  <footer id="foot"></footer>
+</div>
+
+<script type="application/json" id="radar-data">
+/*__DATA__*/
+</script>
+<script>
+const D = JSON.parse(document.getElementById('radar-data').textContent.replace(/<\\\//g, '</'));
+const $ = id => document.getElementById(id);
+const esc = s => String(s ?? '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+let LANG = 'cs';
+try { LANG = localStorage.getItem('cnsc-radar-lang') === 'en' ? 'en' : 'cs'; } catch (e) {}
+if (location.hash === '#en') LANG = 'en';
+const UI = {
+  cs: {radar:'Radar aktivit členů', edition:'Edice', updated:'aktualizováno', prepared:'sestavuje', alpha:'nultá edice',
+       tabs:['Přehled','Novinky','Členové','Akce','O radaru'],
+       s_members:'členů klastru', s_members_s:'v 8 segmentech hodnotového řetězce',
+       s_week:'členů s aktivitou tento týden', s_week_s:'veřejný příspěvek nebo zpráva za posledních 7 dní',
+       s_month:'členů s aktivitou tento měsíc', s_month_s:'posledních 31 dní',
+       s_items:'položek v edici', s_items_s:'novinky zařazené v tomto týdnu',
+       radarH:'Kdo byl naposledy slyšet: radar čerstvosti', radarSub:'Výseče jsou segmenty hodnotového řetězce, každý bod je jeden člen. Čím blíž středu, tím čerstvější poslední veřejná aktivita. Najetím myší zobrazíte poslední položku.',
+       level:'Stupeň', none:'zatím žádný člen', topH:'Hlavní položky edice', topSub:'Nejdůležitější novinky týdne napříč segmenty; úplný log je v záložce Novinky.',
+       newsH:'Log novinek', newsSub:'Všechny zařazené položky, nejnovější nahoře. Filtrujte podle typu nebo segmentu.', all:'Vše', noitems:'V tomto výběru zatím nic není.',
+       memH:'Členové podle segmentů', memSub:'Kmenová data z katalogu klastru a semicz.cz. Poslední aktivita se počítá z logu novinek.', web:'web', li:'LinkedIn', last:'poslední aktivita', nolast:'zatím bez sledované aktivity', acad:'akademický návrh čipů',
+       evH:'Nadcházející akce a termíny', evSub:'Akce členů a ekosystému, které stojí za zápis do kalendáře.', noev:'Žádná nadcházející akce.',
+       abH:'O radaru', cluster:'CNSC', approx:'≈', source:'zdroj',
+       about:[
+        ['Co radar sleduje','Veřejné aktivity členů Czech National Semiconductor Cluster: nové produkty a technologie, investice a expanze, získané projekty a granty, akce a vystoupení, partnerství a MoU, ocenění a změny ve vedení. Každá položka nese datum, členy, typ, zdroj a jednu větu.'],
+        ['Odkud data pocházejí','Firemní stránky členů na LinkedIn (nikdy osobní profily), weby a tiskové zprávy členů, kanály CNSC a položky, které členové pošlou na info@semicz.cz s předmětem „Radar“. Data o členech vycházejí z katalogu klastru a ze seznamu členů na semicz.cz. U nadnárodních členů se sledují jen zprávy o jejich českých pracovištích.'],
+        ['Jak číst radar','Čtyři stupně čerstvosti: tento týden (do 7 dnů), tento měsíc (8–31 dnů), toto čtvrtletí (32–92 dnů), bez sledované aktivity. Stupeň říká jen to, kdy jsme naposledy zaznamenali veřejnou aktivitu; není to hodnocení člena. Data označená ≈ jsou odvozená z relativního stáří příspěvku.'],
+        ['Jak často a kdo','Nová edice každou neděli dopoledne; položky se přidávají, starší zůstávají v logu. Sestavuje Czech National Semiconductor Cluster, z.s.; opravy, doplnění a přihlášení k odběru: info@semicz.cz.'],
+        ['Co tu není','Interní informace klastru, obchodně citlivé údaje členů, projektové záměry a členská data mimo veřejný katalog. Radar pracuje jen s tím, co členové sami zveřejnili.']
+       ]},
+  en: {radar:'Member Activity Radar', edition:'Edition', updated:'updated', prepared:'compiled by', alpha:'edition zero',
+       tabs:['Overview','News','Members','Events','About'],
+       s_members:'cluster members', s_members_s:'in 8 value-chain segments',
+       s_week:'members active this week', s_week_s:'a public post or news item in the last 7 days',
+       s_month:'members active this month', s_month_s:'last 31 days',
+       s_items:'items in this edition', s_items_s:'news added this week',
+       radarH:'Who was heard from last: the freshness radar', radarSub:'Sectors are value-chain segments, each dot is one member. The closer to the centre, the more recent the last public activity. Hover for the latest item.',
+       level:'Level', none:'no member yet', topH:'Headline items of this edition', topSub:'The most important news of the week across segments; the full log is under News.',
+       newsH:'News log', newsSub:'All items recorded, newest first. Filter by type or segment.', all:'All', noitems:'Nothing in this selection yet.',
+       memH:'Members by segment', memSub:'Master data from the cluster catalogue and semicz.cz. Last activity is computed from the news log.', web:'website', li:'LinkedIn', last:'last activity', nolast:'no tracked activity yet', acad:'academic chip design',
+       evH:'Upcoming events and deadlines', evSub:'Member and ecosystem events worth a calendar entry.', noev:'No upcoming event.',
+       abH:'About the radar', cluster:'CNSC', approx:'≈', source:'source',
+       about:[
+        ['What the radar tracks','Public activities of the members of the Czech National Semiconductor Cluster: new products and technologies, investments and expansion, projects and grants won, events and talks, partnerships and MoUs, awards and leadership changes. Each item carries a date, the members, a type, a source and one sentence.'],
+        ['Where the data comes from','The members’ LinkedIn company pages (never personal profiles), the members’ websites and press releases, CNSC channels, and items members send to info@semicz.cz with the subject “Radar”. Member master data comes from the cluster catalogue and the member list on semicz.cz. For multinational members only news about their Czech sites is tracked.'],
+        ['How to read the radar','Four freshness levels: this week (up to 7 days), this month (8–31 days), this quarter (32–92 days), no tracked activity. The level only says when we last recorded a public activity; it is not a rating of the member. Dates marked ≈ are derived from the relative age of a post.'],
+        ['How often and by whom','A new edition every Sunday morning; items are added, older ones stay in the log. Compiled by Czech National Semiconductor Cluster, z.s.; corrections, additions and subscription: info@semicz.cz.'],
+        ['What is not here','Internal cluster information, commercially sensitive member data, project pipelines and member data outside the public catalogue. The radar only works with what members have published themselves.']
+       ]}
+};
+const T = () => UI[LANG];
+const L = o => (o && typeof o === 'object') ? (o[LANG] || o.cs || o.en || '') : (o || '');
+const MON = {cs:['led','úno','bře','dub','kvě','čvn','čvc','srp','zář','říj','lis','pro'], en:['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec']};
+const fmt = (iso, approx) => { const [y,m,d] = iso.split('-').map(Number); return (approx ? '≈ ' : '') + (LANG === 'cs' ? `${d}. ${m}. ${y}` : `${d} ${MON.en[m-1]} ${y}`); };
+const today = D.meta.updated;
+const dayDiff = iso => Math.round((new Date(today) - new Date(iso)) / 86400000);
+const segById = Object.fromEntries(D.segments.map(s => [s.id, s]));
+const memById = Object.fromEntries(D.members.map(m => [m.id, m]));
+const typeById = Object.fromEntries(D.types.map(t => [t.id, t]));
+const srcById = Object.fromEntries((D.sourcesKinds || []).map(t => [t.id, t]));
+const segColor = id => `var(--seg-${id})`;
+// last activity per member from the news log
+const last = {};
+D.news.forEach(n => (n.m || []).forEach(id => { if (!last[id] || n.d > last[id].d) last[id] = n; }));
+const ringOf = id => { const n = last[id]; if (!n) return 4; const dd = dayDiff(n.d); return dd <= 7 ? 1 : dd <= 31 ? 2 : dd <= 92 ? 3 : 4; };
+const ringColor = n => `var(--ring${n})`;
+
+function renderStatic() {
+  document.documentElement.lang = LANG;
+  const t = T();
+  $('strip').innerHTML = `<span><b>${esc(D.meta.org)}</b></span><span>${esc(t.radar)}</span><span>${esc(t.edition)} ${esc(D.meta.edition)} · ${esc(fmt(today))}</span><span class="sp"></span>
+    <span class="lang" role="group" aria-label="Language"><button id="b-cs" class="${LANG==='cs'?'on':''}">CZ</button><button id="b-en" class="${LANG==='en'?'on':''}">EN</button></span>`;
+  $('b-cs').onclick = () => setLang('cs'); $('b-en').onclick = () => setLang('en');
+  $('eyebrow').textContent = LANG === 'cs' ? 'Czech National Semiconductor Cluster · týdenní radar' : 'Czech National Semiconductor Cluster · weekly radar';
+  $('h1t').textContent = L(D.meta.title);
+  $('alphaTag').textContent = D.meta.status === 'zero' ? t.alpha : 'alpha';
+  $('lede').textContent = L(D.meta.lede);
+  const b = L(D.meta.banner); $('banner').textContent = b; $('banner').style.display = b ? '' : 'none';
+  $('tabs').innerHTML = ['overview','news','members','events','about'].map((id, i) => `<button role="tab" data-tab="${id}" aria-selected="${i===0}">${esc(t.tabs[i])}</button>`).join('');
+  $('tabs').querySelectorAll('button').forEach(btn => btn.onclick = () => showTab(btn.dataset.tab));
+  $('radarH').textContent = t.radarH; $('radarSub').textContent = t.radarSub;
+  $('topH').textContent = t.topH; $('topSub').textContent = t.topSub;
+  $('newsH').textContent = t.newsH; $('newsSub').textContent = t.newsSub;
+  $('memH').textContent = t.memH; $('memSub').textContent = t.memSub;
+  $('evH').textContent = t.evH; $('evSub').textContent = t.evSub;
+  $('abH').textContent = t.abH;
+  $('foot').innerHTML = `<span>${esc(L(D.meta.title))} · ${esc(t.edition)} ${esc(D.meta.edition)} · ${esc(t.updated)} ${esc(fmt(today))}</span><span>${esc(D.meta.org)}</span><span><a href="mailto:${esc(D.meta.contact)}">${esc(D.meta.contact)}</a></span>`;
+}
+function showTab(id) {
+  document.querySelectorAll('.panel').forEach(p => p.classList.toggle('on', p.id === 'p-' + id));
+  $('tabs').querySelectorAll('button').forEach(b => b.setAttribute('aria-selected', b.dataset.tab === id));
+  if (id === 'overview') requestAnimationFrame(renderRadar);
+}
+function setLang(l) { LANG = l; try { localStorage.setItem('cnsc-radar-lang', l); } catch (e) {} renderAll(); }
+
+function renderStats() {
+  const t = T();
+  const week = D.members.filter(m => ringOf(m.id) === 1).length;
+  const month = D.members.filter(m => ringOf(m.id) <= 2).length;
+  const items = D.news.filter(n => dayDiff(n.d) <= 7).length;
+  const tiles = [
+    [D.members.length, t.s_members, t.s_members_s],
+    [week, t.s_week, t.s_week_s],
+    [month, t.s_month, t.s_month_s],
+    [items, t.s_items, t.s_items_s],
+  ];
+  $('stats').innerHTML = tiles.map(([v,l,s]) => `<div class="st"><div class="v">${v}</div><div class="l">${esc(l)}</div><div class="s">${esc(s)}</div></div>`).join('');
+}
+
+function chipsFor(n) {
+  const t = T();
+  const ms = (n.m || []).map(id => memById[id]).filter(Boolean);
+  let h = ms.map(m => `<a class="chip" href="#member-${m.id}" data-go="${m.id}" style="--c:${segColor(m.s)}"><i></i>${esc(m.short)}</a>`).join('');
+  if (!ms.length) h += `<span class="chip" style="--c:var(--blue)"><i></i>${esc(t.cluster)}</span>`;
+  if (typeById[n.ty]) h += `<span class="chip ty">${esc(L(typeById[n.ty]))}</span>`;
+  if (n.src && srcById[n.src]) h += `<span class="chip src">${esc(L(srcById[n.src]))}</span>`;
+  return h;
+}
+function itemHTML(n) {
+  const txt = L({cs: n.cs, en: n.en});
+  const body = n.u ? `${esc(txt)} <a href="${esc(n.u)}" target="_blank" rel="noopener">↗</a>` : esc(txt);
+  return `<div class="item"><div class="d">${esc(fmt(n.d, n.a))}</div><div><div class="t">${body}</div><div class="meta">${chipsFor(n)}</div></div></div>`;
+}
+function bindGo(root) { root.querySelectorAll('[data-go]').forEach(a => a.onclick = e => { e.preventDefault(); showTab('members'); const el = document.getElementById('member-' + a.dataset.go); if (el) el.scrollIntoView({behavior:'smooth', block:'center'}); }); }
+
+function renderTop() {
+  const t = T();
+  let top = D.news.filter(n => n.top && dayDiff(n.d) <= 14);
+  if (!top.length) top = [...D.news].sort((a,b) => b.d.localeCompare(a.d)).slice(0, 5);
+  $('topList').innerHTML = top.length ? top.map(itemHTML).join('') : `<p class="empty">${esc(t.noitems)}</p>`;
+  bindGo($('topList'));
+}
+
+let F = {ty: null, seg: null};
+function renderNews() {
+  const t = T();
+  const fl = $('filters');
+  fl.innerHTML = `<button data-k="ty" data-v="" aria-pressed="${!F.ty}">${esc(t.all)}</button>` +
+    D.types.map(x => `<button data-k="ty" data-v="${x.id}" aria-pressed="${F.ty===x.id}">${esc(L(x))}</button>`).join('') +
+    `<span class="sep"></span>` +
+    D.segments.map(s => `<button data-k="seg" data-v="${s.id}" aria-pressed="${F.seg===s.id}" style="${F.seg===s.id?`background:${segColor(s.id)};border-color:${segColor(s.id)}`:''}">${esc(s.code)} ${esc(L(s))}</button>`).join('');
+  fl.querySelectorAll('button').forEach(b => b.onclick = () => { const k = b.dataset.k, v = b.dataset.v || null; F[k] = (F[k] === v) ? null : v; if (k === 'ty' && !v) F.ty = null; renderNews(); });
+  const list = [...D.news].sort((a,b) => b.d.localeCompare(a.d)).filter(n => (!F.ty || n.ty === F.ty) && (!F.seg || (n.m || []).some(id => memById[id] && memById[id].s === F.seg)));
+  $('newsList').innerHTML = list.length ? list.map(itemHTML).join('') : `<p class="empty">${esc(t.noitems)}</p>`;
+  bindGo($('newsList'));
+}
+
+function renderMembers() {
+  const t = T();
+  $('memberList').innerHTML = D.segments.map(s => {
+    const ms = D.members.filter(m => m.s === s.id);
+    if (!ms.length) return '';
+    return `<div class="stage" style="--c:${segColor(s.id)}"><div class="stage-head"><span class="code">${esc(s.code)}</span><h3>${esc(L(s))}</h3><span class="sc">${ms.length}</span></div><div class="cards">` +
+      ms.map(m => {
+        const r = ringOf(m.id), n = last[m.id];
+        const lastTxt = n ? `${esc(t.last)}: ${esc(fmt(n.d, n.a))}` : esc(t.nolast);
+        const links = [m.url ? `<a href="${esc(m.url)}" target="_blank" rel="noopener">${esc(t.web)} ↗</a>` : '', m.li ? `<a href="https://www.linkedin.com/${esc(m.li)}/" target="_blank" rel="noopener">${esc(t.li)} ↗</a>` : ''].filter(Boolean).join('');
+        return `<div class="card" id="member-${m.id}" style="--c:${segColor(s.id)};--rc:${ringColor(r)}"><div class="hd"><h4>${esc(m.n)}</h4><span class="city">${esc(m.city)}</span></div>` +
+          (m.acadChip ? `<div class="fine">🎓 ${esc(t.acad)}</div>` : '') +
+          `<p>${esc(L({cs:m.cs,en:m.en}))}</p><div class="last"><i></i>${lastTxt}</div><div class="links">${links}</div>` +
+          (m.note ? `<div class="note">${esc(m.note)}</div>` : '') + `</div>`;
+      }).join('') + `</div></div>`;
+  }).join('');
+}
+
+function renderEvents() {
+  const t = T();
+  const ev = [...D.events].filter(e => dayDiff(e.d) <= 0 || (e.end && dayDiff(e.end) <= 0)).sort((a,b) => a.d.localeCompare(b.d));
+  $('evList').innerHTML = ev.length ? ev.map(e => {
+    const txt = L({cs:e.cs, en:e.en});
+    const ms = (e.m || []).map(id => memById[id]).filter(Boolean).map(m => `<a class="chip" href="#member-${m.id}" data-go="${m.id}" style="--c:${segColor(m.s)}"><i></i>${esc(m.short)}</a>`).join('');
+    return `<div class="ev"><div class="w">${esc(L(e.when))}</div><div><div class="t">${esc(txt)}${e.u ? ` <a href="${esc(e.u)}" target="_blank" rel="noopener">↗</a>` : ''}</div>${ms ? `<div class="meta" style="margin-top:6px;display:flex;gap:6px;flex-wrap:wrap">${ms}</div>` : ''}</div></div>`;
+  }).join('') : `<p class="empty">${esc(t.noev)}</p>`;
+  bindGo($('evList'));
+}
+
+function renderAbout() {
+  const t = T();
+  const srcs = (D.sources || []).map(([n,u]) => `<li>${u ? `<a href="${esc(u)}" target="_blank" rel="noopener">${esc(n)}</a>` : esc(n)}</li>`).join('');
+  $('about').innerHTML = `<div>${t.about.slice(0,3).map(([h,p]) => `<div class="box"><h3>${esc(h)}</h3><p>${esc(p)}</p></div>`).join('')}</div>` +
+    `<div>${t.about.slice(3).map(([h,p]) => `<div class="box"><h3>${esc(h)}</h3><p>${esc(p)}</p></div>`).join('')}<div class="box"><h3>${LANG==='cs'?'Zdroje':'Sources'}</h3><ul>${srcs}</ul></div></div>`;
+}
+
+function renderRadar() {
+  const t = T();
+  const W = 1040, H = 690, C = W / 2, CY = 345, R = [0, 92, 170, 240, 304];
+  const segs = D.segments;
+  const counts = Object.fromEntries(segs.map(s => [s.id, D.members.filter(m => m.s === s.id).length]));
+  const tot = segs.reduce((a, s) => a + Math.max(2, counts[s.id]), 0);
+  let ang = -Math.PI / 2; const span = {};
+  segs.forEach(s => { const w = Math.max(2, counts[s.id]) / tot * 2 * Math.PI; span[s.id] = [ang, ang + w]; ang += w; });
+  let h = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(t.radarH)}">`;
+  for (let i = 4; i >= 1; i--) h += `<circle cx="${C}" cy="${CY}" r="${R[i]}" fill="${i % 2 ? '#141a24' : '#0f141d'}" stroke="#2a3344" stroke-width="1.5"/>`;
+  segs.forEach(s => {
+    const [a0, a1] = span[s.id];
+    h += `<line x1="${C}" y1="${CY}" x2="${(C + R[4] * Math.cos(a0)).toFixed(1)}" y2="${(CY + R[4] * Math.sin(a0)).toFixed(1)}" stroke="#2a3344" stroke-width="1.5"/>`;
+    const m = (a0 + a1) / 2, lr = R[4] + 16, x = C + lr * Math.cos(m), y = CY + lr * Math.sin(m);
+    const anc = Math.abs(Math.cos(m)) < .25 ? 'middle' : (Math.cos(m) > 0 ? 'start' : 'end'); const yoff = Math.abs(Math.cos(m)) < .25 ? (Math.sin(m) < 0 ? -6 : 14) : 4;
+    h += `<text x="${x.toFixed(1)}" y="${(y + yoff).toFixed(1)}" text-anchor="${anc}" font-size="13" font-weight="700" fill="${segColor(s.id)}" font-family="Space Grotesk,Inter,sans-serif">${esc(s.code)} ${esc(L(s))}</text>`;
+  });
+  for (let i = 1; i <= 4; i++) h += `<text x="${C + 6}" y="${CY - R[i] + 14}" font-size="11" fill="#5d6677" font-family="IBM Plex Mono,monospace">${i}</text>`;
+  const dots = [];
+  segs.forEach(s => {
+    const ms = D.members.filter(m => m.s === s.id);
+    const byRing = {1:[],2:[],3:[],4:[]};
+    ms.forEach(m => byRing[ringOf(m.id)].push(m));
+    const [a0, a1] = span[s.id];
+    Object.entries(byRing).forEach(([ring, arr]) => {
+      arr.forEach((m, i) => {
+        const k = arr.length, a = a0 + (a1 - a0) * (i + 1) / (k + 1);
+        // stagger radius inside the ring so dense rings do not overlap
+        const r0 = R[ring - 1], r1 = R[ring], frac = k > 4 ? 0.3 + 0.5 * ((i % 3) / 2) : 0.5;
+        const r = r0 + (r1 - r0) * frac + (ring == 1 ? 8 : 0);
+        dots.push({m, ring: +ring, x: C + r * Math.cos(a), y: CY + r * Math.sin(a), s});
+      });
+    });
+  });
+  dots.forEach(d => {
+    const quiet = d.ring === 4;
+    h += `<g class="dot" data-id="${d.m.id}" style="cursor:pointer"><circle cx="${d.x.toFixed(1)}" cy="${d.y.toFixed(1)}" r="${quiet ? 5 : 7}" fill="${segColor(d.s.id)}" fill-opacity="${quiet ? .55 : 1}" stroke="#0d121a" stroke-width="2"/>`;
+    if (d.ring <= 2) { const right = Math.cos(Math.atan2(d.y - CY, d.x - C)) >= 0; h += `<text x="${(d.x + (right ? 11 : -11)).toFixed(1)}" y="${(d.y + 4).toFixed(1)}" text-anchor="${right ? 'start' : 'end'}" font-size="12" font-weight="600" fill="#eef1f6" font-family="Inter,sans-serif">${esc(d.m.short)}</text>`; }
+    h += `</g>`;
+  });
+  h += '</svg>';
+  $('radarSvg').innerHTML = h;
+  const tip = $('tip'), box = $('radarSvg');
+  box.querySelectorAll('.dot').forEach(g => {
+    const m = memById[g.dataset.id], n = last[m.id];
+    g.addEventListener('mousemove', e => {
+      const r = box.getBoundingClientRect();
+      tip.style.display = 'block'; tip.style.left = Math.min(e.clientX - r.left + 14, r.width - 270) + 'px'; tip.style.top = (e.clientY - r.top + 14) + 'px';
+      tip.innerHTML = `<b>${esc(m.n)}</b><span class="m">${esc(L(segById[m.s]))} · ${esc(m.city)}</span><div style="margin-top:4px">${n ? esc(fmt(n.d, n.a)) + ' · ' + esc(L({cs:n.cs,en:n.en})) : esc(T().nolast)}</div>`;
+    });
+    g.addEventListener('mouseleave', () => tip.style.display = 'none');
+    g.addEventListener('click', () => { showTab('members'); const el = document.getElementById('member-' + m.id); if (el) el.scrollIntoView({behavior:'smooth', block:'center'}); });
+  });
+  $('key').innerHTML = D.rings.map(r => {
+    const who = D.members.filter(m => ringOf(m.id) === r.n).map(m => m.short);
+    const w = who.length ? (who.length > 12 ? who.slice(0, 12).join(', ') + ` +${who.length - 12}` : who.join(', ')) : `<span style="color:var(--faint)">${esc(t.none)}</span>`;
+    return `<div class="rk" style="--c:${ringColor(r.n)}"><div class="n">${esc(t.level)} ${r.n} · ${esc(L({cs:r.desc_cs,en:r.desc_en}))}</div><div class="t">${esc(L(r))}</div><div class="w">${w}</div></div>`;
+  }).join('');
+  $('seglist').innerHTML = segs.map(s => `<span style="--c:${segColor(s.id)}"><i></i>${esc(s.code)} ${esc(L(s))} (${counts[s.id]})</span>`).join('');
+}
+
+function renderAll() { renderStatic(); renderStats(); renderRadar(); renderTop(); renderNews(); renderMembers(); renderEvents(); renderAbout(); }
+renderAll();
+const hash = (location.hash || '').replace('#', '');
+if (['news','members','events','about'].includes(hash)) showTab(hash);
+if (hash.startsWith('member-')) { showTab('members'); const el = document.getElementById(hash); if (el) el.scrollIntoView({block:'center'}); }
+</script>

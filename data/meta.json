@@ -1,0 +1,18 @@
+{
+ "edition": "W42/2026",
+ "updated": "2026-10-18",
+ "status": "zero",
+ "org": "Czech National Semiconductor Cluster, z.s.",
+ "contact": "info@semicz.cz",
+ "web": "https://www.semicz.cz",
+ "linkedin": "https://www.linkedin.com/company/cz_semi_cluster/",
+ "title": {"cs": "Radar aktivit členů CNSC", "en": "CNSC Member Activity Radar"},
+ "lede": {
+  "cs": "Co členové Czech National Semiconductor Cluster každý týden zveřejní: nové produkty a technologie, investice, získané projekty, akce, partnerství a ocenění. Sestaveno z veřejných firemních kanálů členů, jednou týdně.",
+  "en": "What the members of the Czech National Semiconductor Cluster publish each week: new products and technologies, investments, projects won, events, partnerships and awards. Compiled from the members' public company channels, once a week."
+ },
+ "banner": {
+  "cs": "Nultá edice: kmenová data členů jsou založena, sledování aktivit začíná prvním týdenním během. Opravy a doplnění: info@semicz.cz, předmět „Radar“.",
+  "en": "Edition zero: the member master data is in place; activity tracking starts with the first weekly run. Corrections and additions: info@semicz.cz, subject “Radar”."
+ }
+}
