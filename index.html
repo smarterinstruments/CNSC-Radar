@@ -87,7 +87,13 @@ h2{font-size:22px;font-weight:600;margin:0 0 6px}
 .filters{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 14px;align-items:center}
 .filters button{font:inherit;font-size:12.5px;padding:5px 11px;border-radius:999px;border:1px solid var(--line);background:var(--panel);color:var(--ink);cursor:pointer}
 .filters button[aria-pressed="true"]{background:var(--blue);border-color:var(--blue);color:#fff}
+.filters button:disabled{opacity:.45;cursor:not-allowed}
+.filters button .n{font-size:11px;opacity:.75;margin-left:3px;font-variant-numeric:tabular-nums}
+.filters .lb{font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin:0 2px 0 4px}
 .filters .sep{width:1px;height:20px;background:var(--line);margin:0 4px}
+.count{font-size:13px;color:var(--muted);margin:-4px 0 12px}
+.count b{color:var(--ink);font-weight:600}
+.count a{color:var(--blue)}
 .empty{padding:26px 0;color:var(--muted)}
 /* members */
 .stage{margin:26px 0 6px}
@@ -159,6 +165,7 @@ footer{border-top:1px solid var(--line);padding:18px 0 40px;font-family:"IBM Ple
     <h2 id="newsH"></h2>
     <p class="sub" id="newsSub"></p>
     <div class="filters" id="filters"></div>
+    <p class="count" id="newsCount"></p>
     <div id="newsList"></div>
   </section>
 
@@ -333,7 +340,8 @@ const UI = {
        s_items:'položek v edici', s_items_s:'novinky zařazené v tomto týdnu',
        radarH:'Kdo byl naposledy slyšet: radar čerstvosti', radarSub:'Výseče jsou segmenty hodnotového řetězce, každý bod je jeden člen. Čím blíž středu, tím čerstvější poslední veřejná aktivita. Najetím myší zobrazíte poslední položku.',
        level:'Stupeň', none:'zatím žádný člen', topH:'Hlavní položky edice', topSub:'Nejdůležitější novinky týdne napříč segmenty; úplný log je v záložce Novinky.',
-       newsH:'Log novinek', newsSub:'Všechny zařazené položky, nejnovější nahoře. Filtrujte podle typu nebo segmentu.', all:'Vše', noitems:'V tomto výběru zatím nic není.',
+       newsH:'Log novinek', newsSub:'Všechny zařazené položky, nejnovější nahoře. Filtr typu a segmentu se kombinují; číslo u tlačítka říká, kolik položek by zůstalo.', all:'Vše', noitems:'V tomto výběru zatím nic není.',
+       fType:'Typ', fSeg:'Segment', items1:'položka', items2:'položky', items:'položek', filter:'filtr', clear:'zrušit filtr',
        memH:'Členové podle segmentů', memSub:'Kmenová data z katalogu klastru a semicz.cz. Poslední aktivita se počítá z logu novinek.', web:'web', li:'LinkedIn', last:'poslední aktivita', nolast:'zatím bez sledované aktivity', acad:'akademický návrh čipů',
        evH:'Nadcházející akce a termíny', evSub:'Akce členů a ekosystému, které stojí za zápis do kalendáře.', noev:'Žádná nadcházející akce.',
        abH:'O radaru', cluster:'CNSC', approx:'≈', source:'zdroj',
@@ -352,7 +360,8 @@ const UI = {
        s_items:'items in this edition', s_items_s:'news added this week',
        radarH:'Who was heard from last: the freshness radar', radarSub:'Sectors are value-chain segments, each dot is one member. The closer to the centre, the more recent the last public activity. Hover for the latest item.',
        level:'Level', none:'no member yet', topH:'Headline items of this edition', topSub:'The most important news of the week across segments; the full log is under News.',
-       newsH:'News log', newsSub:'All items recorded, newest first. Filter by type or segment.', all:'All', noitems:'Nothing in this selection yet.',
+       newsH:'News log', newsSub:'All items recorded, newest first. Type and segment filters combine; the number on a button says how many items would remain.', all:'All', noitems:'Nothing in this selection yet.',
+       fType:'Type', fSeg:'Segment', items1:'item', items2:'items', items:'items', filter:'filter', clear:'clear filter',
        memH:'Members by segment', memSub:'Master data from the cluster catalogue and semicz.cz. Last activity is computed from the news log.', web:'website', li:'LinkedIn', last:'last activity', nolast:'no tracked activity yet', acad:'academic chip design',
        evH:'Upcoming events and deadlines', evSub:'Member and ecosystem events worth a calendar entry.', noev:'No upcoming event.',
        abH:'About the radar', cluster:'CNSC', approx:'≈', source:'source',
@@ -451,12 +460,30 @@ let F = {ty: null, seg: null};
 function renderNews() {
   const t = T();
   const fl = $('filters');
-  fl.innerHTML = `<button data-k="ty" data-v="" aria-pressed="${!F.ty}">${esc(t.all)}</button>` +
-    D.types.map(x => `<button data-k="ty" data-v="${x.id}" aria-pressed="${F.ty===x.id}">${esc(L(x))}</button>`).join('') +
-    `<span class="sep"></span>` +
-    D.segments.map(s => `<button data-k="seg" data-v="${s.id}" aria-pressed="${F.seg===s.id}" style="${F.seg===s.id?`background:${segColor(s.id)};border-color:${segColor(s.id)}`:''}">${esc(s.code)} ${esc(L(s))}</button>`).join('');
-  fl.querySelectorAll('button').forEach(b => b.onclick = () => { const k = b.dataset.k, v = b.dataset.v || null; F[k] = (F[k] === v) ? null : v; if (k === 'ty' && !v) F.ty = null; renderNews(); });
-  const list = [...D.news].sort((a,b) => b.d.localeCompare(a.d)).filter(n => (!F.ty || n.ty === F.ty) && (!F.seg || (n.m || []).some(id => memById[id] && memById[id].s === F.seg)));
+  // Type and segment filters combine (AND). Every button shows how many items the click would
+  // leave given the other filter, so an empty combination is visible before it is chosen.
+  const sorted = [...D.news].sort((a,b) => b.d.localeCompare(a.d));
+  const inSeg = (n, seg) => !seg || (n.m || []).some(id => memById[id] && memById[id].s === seg);
+  const inTy = (n, ty) => !ty || n.ty === ty;
+  const cntTy = ty => sorted.filter(n => inTy(n, ty) && inSeg(n, F.seg)).length;
+  const cntSeg = seg => sorted.filter(n => inTy(n, F.ty) && inSeg(n, seg)).length;
+  const btn = (k, v, on, label, cnt, style) =>
+    `<button data-k="${k}" data-v="${v}" aria-pressed="${on}"${cnt === 0 && !on ? ' disabled' : ''} style="${on && style ? style : ''}">${label} <span class="n">${cnt}</span></button>`;
+  fl.innerHTML = btn('all', '', !F.ty && !F.seg, esc(t.all), sorted.length) +
+    `<span class="lb">${esc(t.fType)}</span>` +
+    D.types.map(x => btn('ty', x.id, F.ty === x.id, esc(L(x)), cntTy(x.id))).join('') +
+    `<span class="sep"></span><span class="lb">${esc(t.fSeg)}</span>` +
+    D.segments.map(s => btn('seg', s.id, F.seg === s.id, `${esc(s.code)} ${esc(L(s))}`, cntSeg(s.id), `background:${segColor(s.id)};border-color:${segColor(s.id)}`)).join('');
+  fl.querySelectorAll('button').forEach(b => b.onclick = () => {
+    const k = b.dataset.k, v = b.dataset.v;
+    if (k === 'all') F = {ty: null, seg: null}; else F[k] = (F[k] === v) ? null : v;
+    renderNews();
+  });
+  const list = sorted.filter(n => inTy(n, F.ty) && inSeg(n, F.seg));
+  const active = [F.ty && L(D.types.find(x => x.id === F.ty)), F.seg && L(D.segments.find(s => s.id === F.seg))].filter(Boolean);
+  const nw = list.length === 1 ? t.items1 : (list.length >= 2 && list.length <= 4 ? t.items2 : t.items);
+  $('newsCount').innerHTML = `${list.length} ${esc(nw)}` + (active.length ? ` · ${esc(t.filter)}: <b>${active.map(esc).join(' × ')}</b> · <a href="#" data-clear>${esc(t.clear)}</a>` : '');
+  const cl = $('newsCount').querySelector('[data-clear]'); if (cl) cl.onclick = e => { e.preventDefault(); F = {ty: null, seg: null}; renderNews(); };
   $('newsList').innerHTML = list.length ? list.map(itemHTML).join('') : `<p class="empty">${esc(t.noitems)}</p>`;
   bindGo($('newsList'));
 }
