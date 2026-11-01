@@ -1,5 +1,17 @@
 [
  {
+  "d": "2026-10-31",
+  "a": false,
+  "m": [],
+  "ty": "cluster",
+  "src": "cnsc",
+  "top": true,
+  "pin": true,
+  "cs": "České projekty do IPCEI AST jsou podány: čeští přímí účastníci odevzdali projektová portfolia k prenotifikaci Evropské komisi; šest z devíti technologických polí IPCEI AST má českou stopu – výkonová elektronika a úspory energie (SiC/GaN, polovodičové jističe, napájení AI datacenter od sítě po čip), výrobní a testovací zařízení, materiály a wafery, pokročilý návrh, senzory, čiplety a pokročilé pouzdření. Dál následují dotazy DG COMP, finální chapeau, notifikace a rozhodnutí; realizace 2027–2032.",
+  "en": "Czech projects for IPCEI AST have been submitted: the Czech direct participants handed in their project portfolios for pre-notification to the European Commission; six of the nine IPCEI AST technology fields have a Czech footprint – power electronics and energy saving (SiC/GaN, solid-state breakers, grid-to-chip power for AI data centres), manufacturing and test equipment, materials and wafers, advanced design, sensors, chiplets and advanced packaging. Next come DG COMP questions, the final chapeau, notification and decisions; implementation 2027–2032.",
+  "u": "https://www.linkedin.com/feed/update/urn:li:activity:7522272005811826689/"
+ },
+ {
   "d": "2026-10-16",
   "a": true,
   "m": [
@@ -136,10 +148,9 @@
   "ty": "cluster",
   "src": "cnsc",
   "top": true,
-  "pin": true,
-  "cs": "CNSC vydal první edici EU Chips Act Pillar I Weekly Radar také jako článek na LinkedIn (W41, 11. 10.): NanoIC získal prvního průmyslového uživatele (AlixLabs), tři nové otevřené PDK pro interposery, Chips Venture Forum vybralo 62 start-upů a výzvy Chips JU za 80 mil. € na AI čipy měly uzávěrku 27. 10. Webová edice: smarterinstruments.github.io/Pillar1-Monitor, nová edice každou neděli.",
-  "en": "CNSC published the first edition of the EU Chips Act Pillar I Weekly Radar also as a LinkedIn article (W41, 11 Oct): NanoIC's first industrial user (AlixLabs), three new open interposer PDKs, 62 start-ups selected for the Chips Venture Forum and €80M of Chips JU AI-chip calls closing on 27 Oct. Web edition at smarterinstruments.github.io/Pillar1-Monitor, a new edition every Sunday.",
-  "u": "https://www.linkedin.com/pulse/europes-chipact-pilar-i-week-41-nanoics-first-industrial-cerny-5qvgf/"
+  "cs": "CNSC spustil týdenní EU Chips Act Pillar I Weekly Radar: stav pilotních linek, design platformy EuroCDP a sítě kompetenčních center na jedné stránce (alfa verze; první edice vyšla 11. 10. také jako článek na LinkedIn).",
+  "en": "CNSC launched the weekly EU Chips Act Pillar I Weekly Radar: the state of the pilot lines, the EuroCDP design platform and the competence-centre network on one page (alpha; the first edition also appeared as a LinkedIn article on 11 Oct).",
+  "u": "https://smarterinstruments.github.io/Pillar1-Monitor/"
  },
  {
   "d": "2026-10-07",
