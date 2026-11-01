@@ -11,8 +11,8 @@
    "vut-brno"
   ],
   "leadNote": {
-   "cs": "koordinátor VUT; konsorcium 6 partnerů včetně CNSC",
-   "en": "coordinated by BUT; six-partner consortium including CNSC"
+   "cs": "koordinátor VUT; konsorcium 6 partnerů včetně CNSC; Řídicímu výboru CSC předsedá CNSC (Stanislav Černý, prezident CNSC)",
+   "en": "coordinated by BUT; six-partner consortium including CNSC; the CSC Steering Committee is chaired by CNSC (Stanislav Černý, CNSC President)"
   },
   "url": "https://czechsemiconductorcentre.cz/",
   "li": "company/czech-semiconductor-centre",
@@ -51,7 +51,11 @@
    },
    {
     "n": "Czech National Semiconductor Cluster",
-    "url": "https://www.semicz.cz"
+    "url": "https://www.semicz.cz",
+    "role": {
+     "cs": "předseda Řídicího výboru",
+     "en": "chair of the Steering Committee"
+    }
    }
   ],
   "src": [
@@ -77,8 +81,8 @@
    "vut-brno"
   ],
   "leadNote": {
-   "cs": "koordinátor VUT (Ústav mikroelektroniky FEKT); konsorcium 19 organizací; v řídicím výboru projektu je zastoupen i CNSC; na přípravě se významně podílel CNSC",
-   "en": "coordinated by BUT (Department of Microelectronics FEEC); consortium of 19 organisations; CNSC is represented on the project board and played a significant role in preparing the project"
+   "cs": "koordinátor VUT (Ústav mikroelektroniky FEKT); konsorcium 19 organizací; v řídicím výboru projektu zastupuje CNSC jeho prezident Stanislav Černý (externí člen); na přípravě projektu se CNSC významně podílel",
+   "en": "coordinated by BUT (Department of Microelectronics FEEC); consortium of 19 organisations; CNSC is represented on the project board by its President Stanislav Černý (external member); CNSC played a significant role in preparing the project"
   },
   "url": "https://semiconductors4all.cz/",
   "li": "",
