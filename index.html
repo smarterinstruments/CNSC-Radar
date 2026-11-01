@@ -51,6 +51,8 @@ h1 .fb:hover{background:var(--blue);color:#fff}
 .tabs{display:flex;gap:4px;flex-wrap:wrap;margin:14px 0 0;border-bottom:1px solid var(--line)}
 .tabs button{font:inherit;font-weight:600;font-size:14px;padding:10px 14px;border:0;border-bottom:2px solid transparent;background:transparent;color:var(--muted);cursor:pointer;margin-bottom:-1px}
 .tabs button[aria-selected="true"]{color:var(--blue);border-bottom-color:var(--blue)}
+.tabs a.ext{font:inherit;font-weight:600;font-size:14px;padding:10px 14px;border-bottom:2px solid transparent;color:var(--muted);text-decoration:none;margin-bottom:-1px;margin-left:auto}
+.tabs a.ext:hover{color:var(--blue)}
 .panel{display:none;padding:16px 0 28px}
 .panel.on{display:block}
 h2{font-size:22px;font-weight:600;margin:0 0 6px}
@@ -571,7 +573,8 @@ function renderStatic() {
   $('alphaTag').textContent = 'alpha';
   $('fbBtn').textContent = LANG === 'cs' ? 'Zpětná vazba' : 'Feedback';
   $('lede').textContent = L(D.meta.lede);
-  $('tabs').innerHTML = ['overview','news','members','centres','events','about'].map((id, i) => `<button role="tab" data-tab="${id}" aria-selected="${i===0}">${esc(t.tabs[i])}</button>`).join('');
+  $('tabs').innerHTML = ['overview','news','members','centres','events','about'].map((id, i) => `<button role="tab" data-tab="${id}" aria-selected="${i===0}">${esc(t.tabs[i])}</button>`).join('') +
+    `<a class="ext" href="https://theodorkrejci.github.io/CNSC---Funding-calls/" target="_blank" rel="noopener">${LANG === 'cs' ? 'Aktuální výzvy' : 'Open funding calls'} ↗</a>`;
   $('tabs').querySelectorAll('button').forEach(btn => btn.onclick = () => showTab(btn.dataset.tab));
   $('radarH').textContent = t.radarH; $('radarSub').textContent = t.radarSub;
   $('topH').textContent = t.topH; $('topSub').textContent = t.topSub;
