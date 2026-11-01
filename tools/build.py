@@ -6,7 +6,7 @@ Usage:
 Data source, in order of preference:
   --from <html>  the embedded <script type="application/json" id="radar-data"> block of an existing page
                  (for example the editorial artifact), so the weekly run can carry the data forward
-  data/*.json    meta.json, taxonomy.json, members.json, news.json, events.json, sources.json
+  data/*.json    meta.json, taxonomy.json, members.json, centres.json, news.json, events.json, sources.json
 
 Output: a single self-contained HTML page (default radar.html in the repo root). GitHub Pages serves
 index.html, so publish with: python3 tools/build.py index.html (only after the owner's go-ahead).
@@ -32,6 +32,7 @@ if src_html:
 else:
     tax = load('taxonomy.json')
     d = {"meta": load('meta.json'), **tax, "members": load('members.json'),
+         "centres": load('centres.json') if os.path.exists(os.path.join(ROOT, 'data', 'centres.json')) else [],
          "news": load('news.json'), "events": load('events.json'), "sources": load('sources.json')}
 
 # sanity checks the weekly run relies on
@@ -41,6 +42,15 @@ for n in d['news']:
         assert mid in ids, f"news item {n['d']} names unknown member {mid}"
     assert n['ty'] in {t['id'] for t in d['types']}, f"unknown type {n['ty']}"
     assert re.match(r'^\d{4}-\d{2}-\d{2}$', n['d']), f"bad date {n['d']}"
+cids = {c['id'] for c in d.get('centres', [])}
+for c in d.get('centres', []):
+    for x in c.get('members', []):
+        assert not x.get('m') or x['m'] in ids, f"centre {c['id']} names unknown member {x.get('m')}"
+    for mid in c.get('lead', []):
+        assert mid in ids, f"centre {c['id']} has unknown lead {mid}"
+for n in d['news']:
+    for cid in n.get('c', []):
+        assert cid in cids, f"news item {n['d']} names unknown centre {cid}"
 segs = {s['id'] for s in d['segments']}
 for m in d['members']:
     assert m['s'] in segs, f"member {m['id']} has unknown segment {m['s']}"

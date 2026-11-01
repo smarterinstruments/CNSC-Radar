@@ -656,7 +656,10 @@
   "top": false,
   "cs": "VUT přivezlo na MSV 2026 přes 20 exponátů: spin-off BeamShape poprvé na světě ukázal 3D tiskárnu kovů ElectronForge (tavení elektronovým svazkem ve vakuu, i měď a wolfram), FEKT 5G brány pro kritickou infrastrukturu a Czech Semiconductor Centre cestu od křemíku k čipu.",
   "en": "BUT brought 20+ exhibits to MSV 2026: spin-off BeamShape unveiled the ElectronForge electron-beam metal 3D printer (vacuum melting, incl. copper and tungsten) for the first time worldwide, FEEC showed 5G gateways for critical infrastructure and the Czech Semiconductor Centre the path from silicon to chip.",
-  "u": "https://www.linkedin.com/school/vysokeucenitechnickevbrne/posts/"
+  "u": "https://www.linkedin.com/school/vysokeucenitechnickevbrne/posts/",
+  "c": [
+   "csc"
+  ]
  },
  {
   "d": "2026-10-06",
@@ -897,7 +900,10 @@
   "top": false,
   "cs": "STROZA se hlásí k účasti v Czech Semiconductor Centre: dodává chemické stoly, zařízení pro mokré procesy a robotizované chemické procesy.",
   "en": "STROZA announced its part in the Czech Semiconductor Centre, contributing chemical benches, wet-process equipment and robotised chemical processes.",
-  "u": "https://www.linkedin.com/company/stroza/posts/"
+  "u": "https://www.linkedin.com/company/stroza/posts/",
+  "c": [
+   "csc"
+  ]
  },
  {
   "d": "2026-09-14",
@@ -947,7 +953,10 @@
   "top": false,
   "cs": "onsemi převzalo část brněnských aktivit týmu Codasip (uzavřeno v květnu 2026); obě firmy jsou členy klastru a spolupracují v Czech Semiconductor Centre.",
   "en": "onsemi took over part of Codasip's Brno team activities (closed May 2026); both companies are cluster members and partners in the Czech Semiconductor Centre.",
-  "u": ""
+  "u": "",
+  "c": [
+   "csc"
+  ]
  },
  {
   "d": "2026-01-01",
@@ -961,7 +970,10 @@
   "top": false,
   "cs": "Semiconductors4All: centrum aplikovaného výzkumu TA ČR SIGMA DC5 (2026–2031), koordinátor VUT, 19 partnerů; CNSC má zastoupení v radě projektu.",
   "en": "Semiconductors4All: TA ČR SIGMA DC5 applied-research centre (2026–2031), coordinated by Brno University of Technology with 19 partners; CNSC sits on the project board.",
-  "u": "https://www.tacr.cz/"
+  "u": "https://www.tacr.cz/",
+  "c": [
+   "s4a"
+  ]
  },
  {
   "d": "2026-01-01",

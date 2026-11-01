@@ -68,6 +68,26 @@ h2{font-size:22px;font-weight:600;margin:0 0 6px}
 .rk .t{font-weight:600;font-size:15px}
 .rk .w{font-size:12.5px;color:var(--muted);margin-top:2px}
 .seglist{display:flex;flex-wrap:wrap;gap:6px 14px;font-family:"IBM Plex Mono",monospace;font-size:11.5px;color:var(--muted);margin-top:4px}
+.centre{background:var(--panel);border:1px solid var(--line);border-top:3px solid var(--blue);border-radius:10px;padding:16px 18px 14px;margin-bottom:14px}
+.centre .ch{display:flex;justify-content:space-between;gap:12px 20px;align-items:flex-start;flex-wrap:wrap}
+.centre h3{font-family:"Space Grotesk",sans-serif;font-size:19px;font-weight:700;margin:0;letter-spacing:-.01em}
+.centre .kind{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--blue);margin-top:3px}
+.centre .links{display:flex;gap:14px;flex-wrap:wrap;font-family:"IBM Plex Mono",monospace;font-size:12px}
+.centre .lead{font-size:13.5px;margin-top:10px}
+.centre .lead .ln{color:var(--muted)}
+.centre p{font-size:14px;color:var(--ink);margin:8px 0 0;max-width:78ch}
+.centre .facts{font-family:"IBM Plex Mono",monospace;font-size:11.5px;color:var(--muted);margin-top:8px;line-height:1.5}
+.centre h4{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin:14px 0 6px;display:flex;gap:10px;align-items:baseline}
+.centre h4 .cnt{font-weight:400;letter-spacing:0;text-transform:none;color:var(--faint)}
+.centre .parts{display:flex;flex-wrap:wrap;gap:6px 8px}
+.centre .cp{display:inline-flex;align-items:center;gap:6px;font-size:12.5px;padding:4px 10px;border:1px solid var(--line);border-radius:999px;color:var(--ink);text-decoration:none;background:var(--bg)}
+.centre .cp i{width:8px;height:8px;border-radius:50%;border:1.5px solid var(--muted);background:transparent;flex:0 0 auto}
+.centre .cp.m{border-color:var(--c);color:var(--ink)}
+.centre .cp.m i{background:var(--c);border-color:var(--c)}
+.centre .cp em{font-style:normal;color:var(--muted);font-size:11.5px}
+.centre .item{padding-top:6px}
+.centre .csrc{font-family:"IBM Plex Mono",monospace;font-size:10.5px;color:var(--faint);margin-top:10px;line-height:1.5}
+.centre .csrc a{color:var(--muted)}
 .rk.legend{border-left-style:dashed}
 .rk.legend .li{font-size:12.5px;color:var(--muted);margin-top:5px;line-height:1.4}
 .rk.legend .li b{color:var(--ink);font-weight:600}
@@ -195,6 +215,12 @@ footer{border-top:1px solid var(--line);padding:18px 0 40px;font-family:"IBM Ple
     <div id="memberList"></div>
   </section>
 
+  <section class="panel" id="p-centres" role="tabpanel">
+    <h2 id="cenH"></h2>
+    <p class="sub" id="cenSub"></p>
+    <div id="centreList"></div>
+  </section>
+
   <section class="panel" id="p-events" role="tabpanel">
     <h2 id="evH"></h2>
     <p class="sub" id="evSub"></p>
@@ -221,7 +247,7 @@ try { LANG = localStorage.getItem('cnsc-radar-lang') === 'en' ? 'en' : 'cs'; } c
 if (location.hash === '#en') LANG = 'en';
 const UI = {
   cs: {radar:'Radar aktivit členů', edition:'Edice', updated:'aktualizováno', prepared:'sestavuje', alpha:'nultá edice',
-       tabs:['Přehled','Novinky','Členové','Akce','O radaru'],
+       tabs:['Přehled','Novinky','Členové','Centra','Akce','O radaru'],
        s_members:'členů klastru', s_members_s:'v 8 segmentech hodnotového řetězce',
        s_week:'členů s aktivitou tento týden', s_week_s:'veřejný příspěvek nebo zpráva za posledních 7 dní',
        s_month:'členů s aktivitou tento měsíc', s_month_s:'posledních 31 dní',
@@ -233,6 +259,7 @@ const UI = {
        memH:'Členové podle segmentů', memSub:'Kmenová data z katalogu klastru a semicz.cz. Poslední aktivita se počítá z logu novinek. Rozbalením „Nabídka“ zobrazíte produkty, služby, expertizu a školení, které člen veřejně nabízí.', web:'web', li:'LinkedIn', last:'poslední aktivita', nolast:'zatím bez sledované aktivity', acad:'akademický návrh čipů',
        offer:'Nabídka: produkty, služby, expertiza', oTech:'Technologické domény', oSrv:'Nabízené služby', oWhat:'Produkty a služby', oTrain:'Školení a kurzy', trainChip:'školení', srcTsm:'Zdroj: CNSC Technology & Service Mapping (8/2026), popisy v původním znění', srcWeb:'Zdroj: veřejný web člena, tiskové zprávy a veřejné profily', oNone:'Podrobnější nabídka zatím není zpracována.',
        evH:'Nadcházející akce a termíny', evSub:'Akce členů a ekosystému, které stojí za zápis do kalendáře.', noev:'Žádná nadcházející akce.',
+       cenH:'Centra vedená členy klastru', cenSub:'Výzkumná a kompetenční centra, která koordinují nebo provozují členové CNSC: kdo je vede, kdo je v konsorciu a co nabízejí. Partneři, kteří jsou členy klastru, odkazují na svou kartu (plný bod); ostatní partneři mají prázdný bod.', cenLead:'Vede', cenPartners:'Partneři a členové konsorcia', cenLatest:'Poslední položka v logu', cenNone:'zatím žádná položka v logu novinek', cenSrc:'Zdroje', cenNl:'newsletter', cenMembers:'členů CNSC',
        abH:'O radaru', cluster:'CNSC', approx:'≈', source:'zdroj',
        about:[
         ['Co radar sleduje','Veřejné aktivity členů Czech National Semiconductor Cluster: nové produkty a technologie, investice a expanze, získané projekty a granty, akce a vystoupení, partnerství a MoU, ocenění a změny ve vedení. Každá položka nese datum, členy, typ, zdroj a jednu větu.'],
@@ -242,7 +269,7 @@ const UI = {
         ['Co tu není','Interní informace klastru, obchodně citlivé údaje členů, projektové záměry a členská data mimo veřejný katalog. Radar pracuje jen s tím, co členové sami zveřejnili.']
        ]},
   en: {radar:'Member Activity Radar', edition:'Edition', updated:'updated', prepared:'compiled by', alpha:'edition zero',
-       tabs:['Overview','News','Members','Events','About'],
+       tabs:['Overview','News','Members','Centres','Events','About'],
        s_members:'cluster members', s_members_s:'in 8 value-chain segments',
        s_week:'members active this week', s_week_s:'a public post or news item in the last 7 days',
        s_month:'members active this month', s_month_s:'last 31 days',
@@ -254,6 +281,7 @@ const UI = {
        memH:'Members by segment', memSub:'Master data from the cluster catalogue and semicz.cz. Last activity is computed from the news log. Expand “Offer” for the products, services, expertise and training a member publicly offers.', web:'website', li:'LinkedIn', last:'last activity', nolast:'no tracked activity yet', acad:'academic chip design',
        offer:'Offer: products, services, expertise', oTech:'Technology domains', oSrv:'Services offered', oWhat:'Products and services', oTrain:'Training and courses', trainChip:'training', srcTsm:'Source: CNSC Technology & Service Mapping (Aug 2026), descriptions as provided', srcWeb:'Source: member’s public website, press releases and public profiles', oNone:'A detailed offer has not been compiled yet.',
        evH:'Upcoming events and deadlines', evSub:'Member and ecosystem events worth a calendar entry.', noev:'No upcoming event.',
+       cenH:'Centres led by cluster members', cenSub:'Research and competence centres coordinated or run by CNSC members: who leads them, who is in the consortium and what they offer. Partners that are cluster members link to their card (filled dot); other partners have a hollow dot.', cenLead:'Led by', cenPartners:'Partners and consortium members', cenLatest:'Latest item in the log', cenNone:'no item in the news log yet', cenSrc:'Sources', cenNl:'newsletter', cenMembers:'CNSC members',
        abH:'About the radar', cluster:'CNSC', approx:'≈', source:'source',
        about:[
         ['What the radar tracks','Public activities of the members of the Czech National Semiconductor Cluster: new products and technologies, investments and expansion, projects and grants won, events and talks, partnerships and MoUs, awards and leadership changes. Each item carries a date, the members, a type, a source and one sentence.'],
@@ -291,13 +319,13 @@ function renderStatic() {
   $('alphaTag').textContent = D.meta.status === 'zero' ? t.alpha : 'alpha';
   $('lede').textContent = L(D.meta.lede);
   const b = L(D.meta.banner); $('banner').textContent = b; $('banner').style.display = b ? '' : 'none';
-  $('tabs').innerHTML = ['overview','news','members','events','about'].map((id, i) => `<button role="tab" data-tab="${id}" aria-selected="${i===0}">${esc(t.tabs[i])}</button>`).join('');
+  $('tabs').innerHTML = ['overview','news','members','centres','events','about'].map((id, i) => `<button role="tab" data-tab="${id}" aria-selected="${i===0}">${esc(t.tabs[i])}</button>`).join('');
   $('tabs').querySelectorAll('button').forEach(btn => btn.onclick = () => showTab(btn.dataset.tab));
   $('radarH').textContent = t.radarH; $('radarSub').textContent = t.radarSub;
   $('topH').textContent = t.topH; $('topSub').textContent = t.topSub;
   $('newsH').textContent = t.newsH; $('newsSub').textContent = t.newsSub;
   $('memH').textContent = t.memH; $('memSub').textContent = t.memSub;
-  $('evH').textContent = t.evH; $('evSub').textContent = t.evSub;
+  $('evH').textContent = t.evH; $('evSub').textContent = t.evSub; $('cenH').textContent = t.cenH; $('cenSub').textContent = t.cenSub;
   $('abH').textContent = t.abH;
   $('foot').innerHTML = `<span>${esc(L(D.meta.title))} · ${esc(t.edition)} ${esc(D.meta.edition)} · ${esc(t.updated)} ${esc(fmt(today))}</span><span>${esc(D.meta.org)}</span><span><a href="mailto:${esc(D.meta.contact)}">${esc(D.meta.contact)}</a></span>`;
 }
@@ -326,7 +354,9 @@ function chipsFor(n) {
   const t = T();
   const ms = (n.m || []).map(id => memById[id]).filter(Boolean);
   let h = ms.map(m => `<a class="chip" href="#member-${m.id}" data-go="${m.id}" style="--c:${segColor(m.s)}"><i></i>${esc(m.short)}</a>`).join('');
-  if (!ms.length) h += `<span class="chip" style="--c:var(--blue)"><i></i>${esc(t.cluster)}</span>`;
+  const cs = (n.c || []).map(id => (D.centres || []).find(c => c.id === id)).filter(Boolean);
+  if (!ms.length && !cs.length) h += `<span class="chip" style="--c:var(--blue)"><i></i>${esc(t.cluster)}</span>`;
+  h += cs.map(c => `<a class="chip" href="#centres" data-cen="${c.id}" style="--c:var(--blue)"><i></i>${esc(c.short)}</a>`).join('');
   if (typeById[n.ty]) h += `<span class="chip ty">${esc(L(typeById[n.ty]))}</span>`;
   if (n.src && srcById[n.src]) h += `<span class="chip src">${esc(L(srcById[n.src]))}</span>`;
   return h;
@@ -336,7 +366,10 @@ function itemHTML(n) {
   const body = n.u ? `${esc(txt)} <a href="${esc(n.u)}" target="_blank" rel="noopener">↗</a>` : esc(txt);
   return `<div class="item"><div class="d">${esc(fmt(n.d, n.a))}</div><div><div class="t">${body}</div><div class="meta">${chipsFor(n)}</div></div></div>`;
 }
-function bindGo(root) { root.querySelectorAll('[data-go]').forEach(a => a.onclick = e => { e.preventDefault(); showTab('members'); const el = document.getElementById('member-' + a.dataset.go); if (el) el.scrollIntoView({behavior:'smooth', block:'center'}); }); }
+function bindGo(root) {
+  root.querySelectorAll('[data-go]').forEach(a => a.onclick = e => { e.preventDefault(); showTab('members'); const el = document.getElementById('member-' + a.dataset.go); if (el) el.scrollIntoView({behavior:'smooth', block:'center'}); });
+  root.querySelectorAll('[data-cen]').forEach(a => a.onclick = e => { e.preventDefault(); showTab('centres'); const el = document.getElementById('centre-' + a.dataset.cen); if (el) el.scrollIntoView({behavior:'smooth', block:'start'}); });
+}
 
 function renderTop() {
   const t = T();
@@ -522,9 +555,38 @@ function renderRadar() {
   $('seglist').innerHTML = '';
 }
 
-function renderAll() { renderStatic(); renderStats(); renderRadar(); renderTop(); renderNews(); renderMembers(); renderEvents(); renderAbout(); }
+function renderCentres() {
+  const t = T(), list = D.centres || [];
+  $('centreList').innerHTML = list.map(c => {
+    const leads = (c.lead || []).map(id => memById[id]).filter(Boolean);
+    const leadH = leads.map(m => `<a href="#member-${m.id}" data-go="${m.id}">${esc(m.n)}</a>`).join(', ') + (c.leadNote ? ` <span class="ln">– ${esc(L(c.leadNote))}</span>` : '');
+    const links = [c.url ? `<a href="${esc(c.url)}" target="_blank" rel="noopener">${esc(t.web)} ↗</a>` : '', c.li ? `<a href="https://www.linkedin.com/${esc(c.li)}/" target="_blank" rel="noopener">${esc(t.li)} ↗</a>` : '', c.newsletter ? `<a href="${esc(c.newsletter)}" target="_blank" rel="noopener">${esc(t.cenNl)} ↗</a>` : ''].filter(Boolean).join('');
+    const nMem = (c.members || []).filter(x => x.m && memById[x.m]).length;
+    const parts = (c.members || []).map(x => {
+      const role = x.role ? ` <em>(${esc(L(x.role))})</em>` : '';
+      if (x.m && memById[x.m]) { const m = memById[x.m]; return `<a class="cp m" href="#member-${m.id}" data-go="${m.id}" style="--c:${segColor(m.s)}"><i></i>${esc(x.n)}${role}</a>`; }
+      return x.url ? `<a class="cp" href="${esc(x.url)}" target="_blank" rel="noopener"><i></i>${esc(x.n)}${role}</a>` : `<span class="cp"><i></i>${esc(x.n)}${role}</span>`;
+    }).join('');
+    const items = D.news.filter(n => (n.c || []).includes(c.id)).sort((a, b) => b.d.localeCompare(a.d));
+    const latest = items.length ? itemHTML(items[0]) : `<p class="empty">${esc(t.cenNone)}</p>`;
+    const srcs = (c.src || []).map(([n, u]) => `<a href="${esc(u)}" target="_blank" rel="noopener">${esc(n)}</a>`).join(' · ');
+    return `<article class="centre" id="centre-${c.id}">
+      <div class="ch"><div><h3>${esc(c.n)}</h3><div class="kind">${esc(L(c.kind))}${c.period ? ` · ${esc(c.period)}` : ''}</div></div><div class="links">${links}</div></div>
+      <div class="lead"><b>${esc(t.cenLead)}:</b> ${leadH}</div>
+      <p>${esc(L({cs: c.cs, en: c.en}))}</p>
+      ${c.facts ? `<div class="facts">${esc(L(c.facts))}</div>` : ''}
+      <h4>${esc(t.cenPartners)} <span class="cnt">${(c.members || []).length} · ${nMem} ${esc(t.cenMembers)}</span></h4>
+      <div class="parts">${parts}</div>
+      <h4>${esc(t.cenLatest)}</h4>${latest}
+      ${srcs ? `<div class="csrc">${esc(t.cenSrc)}: ${srcs}</div>` : ''}
+    </article>`;
+  }).join('');
+  bindGo($('centreList'));
+}
+
+function renderAll() { renderStatic(); renderStats(); renderRadar(); renderTop(); renderNews(); renderMembers(); renderCentres(); renderEvents(); renderAbout(); }
 renderAll();
 const hash = (location.hash || '').replace('#', '');
-if (['news','members','events','about'].includes(hash)) showTab(hash);
+if (['news','members','centres','events','about'].includes(hash)) showTab(hash);
 if (hash.startsWith('member-')) { showTab('members'); const el = document.getElementById(hash); if (el) el.scrollIntoView({block:'center'}); }
 </script>
