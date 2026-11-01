@@ -136,9 +136,10 @@
   "ty": "cluster",
   "src": "cnsc",
   "top": true,
-  "cs": "CNSC spustil týdenní EU Chips Act Pillar I Weekly Radar: stav pilotních linek, design platformy EuroCDP a sítě kompetenčních center na jedné stránce (alfa verze, zpětná vazba do 1. 11. 2026).",
-  "en": "CNSC launched the weekly EU Chips Act Pillar I Weekly Radar: the state of the pilot lines, the EuroCDP design platform and the competence-centre network on one page (alpha, feedback until 1 Nov 2026).",
-  "u": "https://smarterinstruments.github.io/Pillar1-Monitor/"
+  "pin": true,
+  "cs": "CNSC vydal první edici EU Chips Act Pillar I Weekly Radar také jako článek na LinkedIn (W41, 11. 10.): NanoIC získal prvního průmyslového uživatele (AlixLabs), tři nové otevřené PDK pro interposery, Chips Venture Forum vybralo 62 start-upů a výzvy Chips JU za 80 mil. € na AI čipy měly uzávěrku 27. 10. Webová edice: smarterinstruments.github.io/Pillar1-Monitor, nová edice každou neděli.",
+  "en": "CNSC published the first edition of the EU Chips Act Pillar I Weekly Radar also as a LinkedIn article (W41, 11 Oct): NanoIC's first industrial user (AlixLabs), three new open interposer PDKs, 62 start-ups selected for the Chips Venture Forum and €80M of Chips JU AI-chip calls closing on 27 Oct. Web edition at smarterinstruments.github.io/Pillar1-Monitor, a new edition every Sunday.",
+  "u": "https://www.linkedin.com/pulse/europes-chipact-pilar-i-week-41-nanoics-first-industrial-cerny-5qvgf/"
  },
  {
   "d": "2026-10-07",

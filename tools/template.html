@@ -318,7 +318,7 @@ function bindGo(root) { root.querySelectorAll('[data-go]').forEach(a => a.onclic
 
 function renderTop() {
   const t = T();
-  let top = D.news.filter(n => n.top && dayDiff(n.d) <= 14);
+  let top = D.news.filter(n => n.top && (n.pin || dayDiff(n.d) <= 14));  // pin: stays in the headline list regardless of age
   if (!top.length) top = [...D.news].sort((a,b) => b.d.localeCompare(a.d)).slice(0, 5);
   $('topList').innerHTML = top.length ? top.map(itemHTML).join('') : `<p class="empty">${esc(t.noitems)}</p>`;
   bindGo($('topList'));
