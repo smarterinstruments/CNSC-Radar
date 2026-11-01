@@ -14,7 +14,29 @@
   "li": "company/codasip",
   "note": "",
   "liScope": "page",
-  "liFilter": ""
+  "liFilter": "",
+  "offer": {
+   "en": [
+    "RISC-V processor IP: embedded L110/L150/L31/L730, application A70/A730/X730, automotive L735/L739/L31AS",
+    "Codasip Studio: processor design automation platform with the CodAL language for custom cores",
+    "CHERI memory-safety technology plus functional-safety and security solutions for RISC-V cores",
+    "Services: processor customisation, architectural exploration, architecture licences, custom silicon"
+   ],
+   "cs": [
+    "Procesorová IP RISC-V: embedded L110/L150/L31/L730, aplikační A70/A730/X730, automotive L735/L739/L31AS",
+    "Codasip Studio: platforma pro automatizovaný návrh procesorů s jazykem CodAL pro zákaznická jádra",
+    "Technologie CHERI pro paměťovou bezpečnost a řešení funkční bezpečnosti pro jádra RISC-V",
+    "Služby: přizpůsobení procesorů, průzkum architektur, architektonické licence, zákaznický křemík"
+   ],
+   "train": {
+    "cs": "Codasip University Program: cloudové Codasip Studio pro studenty a vyučující, plánovaných 16 online kurzů (úvod do RISC-V, CodAL, RISC-V jádra na FPGA) s certifikáty, učební osnovy, sponzoring PhD a hackathony.",
+    "en": "Codasip University Program: cloud Codasip Studio for students and faculty, a planned set of 16 online courses (Intro to RISC-V, CodAL, FPGA RISC-V cores) with certificates, curricula, PhD sponsorship and hackathons."
+   },
+   "src": [
+    "https://codasip.com/llms.txt",
+    "https://codasip.com/university-program"
+   ]
+  }
  },
  {
   "id": "asicentrum",
@@ -31,7 +53,21 @@
   "li": "company/asicentrum",
   "note": "",
   "liScope": "page",
-  "liFilter": ""
+  "liFilter": "",
+  "offer": {
+   "en": [
+    "Prague IC development centre (est. 1992) of EM Microelectronic, Swatch Group's semiconductor company",
+    "Design blocks listed: memories, microprocessor cores, AD/DA converters, optical sensors, electronic modules"
+   ],
+   "cs": [
+    "Pražské vývojové centrum IC (zal. 1992) firmy EM Microelectronic, polovodičové divize Swatch Group",
+    "Uváděné návrhové bloky: paměti, jádra mikroprocesorů, AD/DA převodníky, optické senzory, elektronické moduly"
+   ],
+   "src": [
+    "https://craft.co/asicentrum",
+    "https://www.swatchgroup.com/en/job/30064"
+   ]
+  }
  },
  {
   "id": "analog-bits",
@@ -48,7 +84,22 @@
   "li": "company/analog-bits",
   "note": "",
   "liScope": "page",
-  "liFilter": ""
+  "liFilter": "",
+  "offer": {
+   "en": [
+    "Analog and mixed-signal IP developer (PLLs, SerDes, sensors, I/O) with a design centre in Prague",
+    "Prague team develops mixed-signal IP for 2 nm-class processes; planned capacity up to 24 engineers",
+    "Prague remit includes R&D on extending analog design as transistor scaling nears physical limits"
+   ],
+   "cs": [
+    "Vývojář analogové a smíšené IP (PLL, SerDes, senzory, I/O) s návrhovým centrem v Praze",
+    "Pražský tým vyvíjí smíšenou IP pro procesy třídy 2 nm; plánovaná kapacita až 24 inženýrů",
+    "Součástí pražské náplně je výzkum rozšíření analogového návrhu na hranici škálování tranzistorů"
+   ],
+   "src": [
+    "https://www.eenewseurope.com/en/analog-bits-opens-czech-design-centre-in-2nm-move/"
+   ]
+  }
  },
  {
   "id": "allegro",
@@ -65,7 +116,22 @@
   "li": "company/allegro-microsystems",
   "note": "",
   "liScope": "global",
-  "liFilter": "Prague|Praha|Czech"
+  "liFilter": "Prague|Praha|Czech",
+  "offer": {
+   "en": [
+    "Prague R&D centre (since 2018): design of sensor ICs for electrified vehicles, green energy, industrial motors",
+    "Team of IC design, systems and software engineers (~2 dozen at opening, planned growth of 20-30)",
+    "Czech scope: design centre only, part of Allegro's automotive/industrial sensor and power IC business"
+   ],
+   "cs": [
+    "Pražské R&D centrum (od 2018): návrh senzorových IO pro elektromobily, zelenou energetiku a průmyslové motory",
+    "Tým návrhářů IO, systémových a softwarových inženýrů (~2 desítky při otevření, plánovaný růst o 20-30)",
+    "Rozsah v ČR: pouze návrhové centrum v rámci senzorového a výkonového byznysu Allegro pro auto/průmysl"
+   ],
+   "src": [
+    "https://www.allegromicro.com/en/about-allegro/news-room/2018/prague-announcement"
+   ]
+  }
  },
  {
   "id": "tropic-square",
@@ -82,7 +148,26 @@
   "li": "company/tropic-square",
   "note": "",
   "liScope": "page",
-  "liFilter": ""
+  "liFilter": "",
+  "offer": {
+   "en": [
+    "TROPIC01 open, auditable secure element chip in full production; sold via distributors (e.g. DigiKey)",
+    "Dev kits for Raspberry Pi, Arduino and MIKROE plus a USB-C board; samples orderable online",
+    "Open documentation, SDKs, DevZone, GitHub repos and a coordinated vulnerability disclosure programme",
+    "Target uses: hardware wallets, digital identity/authenticators, IoT, industrial and edge-AI devices",
+    "Partner programme plus technical and sales support"
+   ],
+   "cs": [
+    "TROPIC01: otevřený, auditovatelný secure element v plné výrobě; prodej přes distributory (např. DigiKey)",
+    "Vývojové kity pro Raspberry Pi, Arduino a MIKROE plus deska USB-C; vzorky lze objednat online",
+    "Otevřená dokumentace, SDK, DevZone, repozitáře na GitHubu a program koordinovaného hlášení zranitelností",
+    "Cílové použití: hardwarové peněženky, digitální identita/autentizátory, IoT, průmysl a edge AI",
+    "Partnerský program a technická i obchodní podpora"
+   ],
+   "src": [
+    "https://tropicsquare.com/news-and-events/tropic01-the-future-proof-secure-element-now-in-full-production-and-available-worldwide"
+   ]
+  }
  },
  {
   "id": "dynanic",
@@ -99,7 +184,23 @@
   "li": "company/dynanic",
   "note": "",
   "liScope": "page",
-  "liFilter": ""
+  "liFilter": "",
+  "offer": {
+   "en": [
+    "FPGA-accelerated high-speed network packet processing up to 400G for data centres (dyna-nic.com)",
+    "Simplifies FPGA programming so customers use programmable chips without in-house FPGA expertise",
+    "Listed in Intel/Altera partner showcase: FPGA-accelerated DPDK SmartNIC; formerly BrnoLogic"
+   ],
+   "cs": [
+    "FPGA akcelerované vysokorychlostní zpracování síťových paketů až 400G pro datová centra (dyna-nic.com)",
+    "Zjednodušuje programování FPGA, aby zákazníci využili programovatelné čipy bez vlastních FPGA expertů",
+    "V partnerském katalogu Intel/Altera: FPGA akcelerovaný DPDK SmartNIC; dříve BrnoLogic"
+   ],
+   "src": [
+    "https://en.ain.ua/2024/11/29/dynanic-secures-eur550000-pre-seed-by-tensor-ventures",
+    "https://intel.com/content/www/us/en/partner/showcase/offering/a5b3b0000004fTUAAY/dynanic-fpga-accelerated-dpdk-smartnic.html"
+   ]
+  }
  },
  {
   "id": "renesas",
@@ -116,7 +217,24 @@
   "li": "company/renesas",
   "note": "",
   "liScope": "global",
-  "liFilter": "Prague|Praha|Czech"
+  "liFilter": "Prague|Praha|Czech",
+  "offer": {
+   "en": [
+    "Prague: IC design mainly for IoT and power management on 180 nm to 16 nm FinFET nodes (2022 interview)",
+    "Prague handles foundry production/delivery arrangements and embedded firmware for its chips",
+    "Prague is the main software hub for SmartServer IoT edge server (MQTT core; BACnet, Modbus, LonWorks)",
+    "40+ staff in Prague in 2022 with planned software hiring of about 25"
+   ],
+   "cs": [
+    "Praha: návrh IO zejména pro IoT a power management na uzlech 180 nm až 16 nm FinFET (rozhovor 2022)",
+    "Praha zajišťuje výrobní a dodavatelské vazby na foundry a vestavěný firmware ke svým čipům",
+    "Praha je hlavní softwarové centrum pro IoT edge server SmartServer (jádro MQTT; BACnet, Modbus, LonWorks)",
+    "V roce 2022 přes 40 lidí v Praze a plánovaný nábor cca 25 softwarových pozic"
+   ],
+   "src": [
+    "https://www.lupa.cz/clanky/ivo-horsky-renesas-v-cesku-po-navrhu-cipu-rozjizdime-vyvoj-chytreho-serveru/"
+   ]
+  }
  },
  {
   "id": "st",
@@ -133,7 +251,28 @@
   "li": "company/stmicroelectronics",
   "note": "",
   "liScope": "global",
-  "liFilter": "Prague|Praha|Czech"
+  "liFilter": "Prague|Praha|Czech",
+  "offer": {
+   "en": [
+    "Prague design centre: analog and digital IC design, chip documentation and test-procedure development",
+    "Technical application support for customers: demo boards, software and direct engineering contact",
+    "Just under 200 staff (2022), growing 10-15 %/yr; automotive, industrial, building/home, healthcare",
+    "Hiring profiles: analog/digital designers, automotive, industrial MCU support, RF (NFC, LoRa, Bluetooth)"
+   ],
+   "cs": [
+    "Pražské návrhové centrum: návrh analogových i digitálních IO, dokumentace čipů a vývoj testovacích postupů",
+    "Technická aplikační podpora zákazníků: demo desky, software a přímý kontakt s inženýry",
+    "Necelých 200 zaměstnanců (2022), růst 10-15 % ročně; automotive, průmysl, budovy/domácnost, zdravotnictví",
+    "Nabírané profily: analogoví/digitální návrháři, automotive, podpora průmyslových MCU, RF (NFC, LoRa, BT)"
+   ],
+   "train": {
+    "cs": "Veřejné kurzy nenabízí; úzká spolupráce s FEL ČVUT, studenti se brzy zapojují do vývoje a píší u ST Praha závěrečné práce; společné EU projekty AMBEATion a GaN4AP.",
+    "en": "No public courses; close cooperation with CTU FEE, where students join development early and write theses at ST Prague; joint EU projects AMBEATion and GaN4AP with CTU."
+   },
+   "src": [
+    "https://www.lupa.cz/clanky/tomas-pokorny-stmicroelectro-nics-v-praze-rozsirime-vyvoj-cipu-v-evrope-chceme-posilovat/"
+   ]
+  }
  },
  {
   "id": "nxp",
@@ -150,7 +289,28 @@
   "li": "company/nxp-semiconductors",
   "note": "",
   "liScope": "global",
-  "liFilter": "Rožnov|Roznov|Czech"
+  "liFilter": "Rožnov|Roznov|Czech",
+  "offer": {
+   "en": [
+    "Rožnov p. R. (since 1995): one of NXP's largest R&D centres in EMEA across a broad technology spectrum",
+    "Application areas: automotive, industrial, mobile, smart city and smart home",
+    "Brno research centre (2009): software platforms and tools, embedded software (security, ROM, AI teams)",
+    "Internships and student jobs (e.g. Embedded SW Developer Intern - Security), thesis topics with BUT FIT"
+   ],
+   "cs": [
+    "Rožnov p. R. (od 1995): jedno z největších R&D center NXP v regionu EMEA se širokým technologickým záběrem",
+    "Aplikační oblasti: automotive, průmysl, mobilní zařízení, smart city a chytrá domácnost",
+    "Brněnské výzkumné centrum (2009): softwarové platformy a nástroje, vestavěný software (security, ROM, AI)",
+    "Stáže a studentské pozice (např. Embedded SW Developer Intern - Security), témata prací s FIT VUT"
+   ],
+   "train": {
+    "cs": "Studentské stáže, vedení bakalářských a diplomových prací a sponzoring univerzitních akcí (Excel@FIT, workshopy ŽijemeIT, letní škola pro dívky); doporučené předměty FIT o vestavěných systémech.",
+    "en": "Student internships, supervised bachelor/master theses and sponsored university events (FIT BUT Excel@FIT, ŽijemeIT workshops, girls' summer school); recommended FIT courses on embedded systems."
+   },
+   "src": [
+    "https://fit.vut.cz/cooperation/partner-detail/1831"
+   ]
+  }
  },
  {
   "id": "edhouse",
@@ -167,7 +327,22 @@
   "li": "company/edhouse-s-r-o-",
   "note": "",
   "liScope": "page",
-  "liFilter": ""
+  "liFilter": "",
+  "offer": {
+   "en": [
+    "Custom software and hardware development, UI/UX design, prototyping, system implementation, consultancy",
+    "Industries: semiconductor manufacturing, energy management systems, electron microscopy",
+    "100+ specialists, Zlín HQ with further Czech branches; ISO 9001 and ISO 27001"
+   ],
+   "cs": [
+    "Zakázkový vývoj softwaru a hardwaru, UI/UX design, prototypování, implementace systémů, poradenství",
+    "Obory: výroba polovodičů, systémy pro řízení energií, elektronová mikroskopie",
+    "Přes 100 specialistů, sídlo Zlín a další pobočky v ČR; ISO 9001 a ISO 27001"
+   ],
+   "src": [
+    "https://startup-house.com/directory/edhouse"
+   ]
+  }
  },
  {
   "id": "crytur",
@@ -184,7 +359,23 @@
   "li": "company/crytur-spol-s-r-o-",
   "note": "",
   "liScope": "page",
-  "liFilter": ""
+  "liFilter": "",
+  "offer": {
+   "en": [
+    "Synthetic crystal growth and processing, precision machining and integrated crystal-based solutions",
+    "Scintillation detectors for electron microscopy; crystals for radiation detection and opto-electronics",
+    "Client-specific development projects and long-term R&D cooperation with academia; 11,200 m2 plant"
+   ],
+   "cs": [
+    "Růst a zpracování syntetických krystalů, přesné obrábění a integrovaná řešení na bázi krystalů",
+    "Scintilační detektory pro elektronovou mikroskopii; krystaly pro detekci záření a optoelektroniku",
+    "Zákaznické vývojové projekty a dlouhodobá spolupráce s akademickou sférou; závod 11 200 m2"
+   ],
+   "src": [
+    "https://crytur.cz/about-us",
+    "https://crytur.cz/solutions/ionizing-radiation-detection"
+   ]
+  }
  },
  {
   "id": "ujp-praha",
@@ -201,7 +392,22 @@
   "li": "company/ujp",
   "note": "",
   "liScope": "page",
-  "liFilter": ""
+  "liFilter": "",
+  "offer": {
+   "en": [
+    "Successor (1996) of the Nuclear Fuel Institute; special metallic materials and coatings; 51-200 staff",
+    "Industry partner of the SAFMAT analytical centre (FZU) and of the Semiconductors4all project"
+   ],
+   "cs": [
+    "Nástupce (1996) Ústavu jaderných paliv; speciální kovové materiály a povlaky; 51-200 zaměstnanců",
+    "Průmyslový partner analytického centra SAFMAT (FZÚ) a projektu Semiconductors4all"
+   ],
+   "src": [
+    "https://www.developmentaid.org/organizations/view/20297/ujp-praha-as",
+    "https://www.fzu.cz/en/centre-for-analysis-of-functional-materials-safmat",
+    "https://www.businessinfo.cz/clanky/vut-ceske-univerzity-vyzkumne-organizace-a-prumysl-spojily-sily-pro-budoucnost-polovodicu-v-projektu-semiconductors4all/"
+   ]
+  }
  },
  {
   "id": "onsemi",
@@ -218,7 +424,29 @@
   "li": "company/onsemi",
   "note": "",
   "liScope": "global",
-  "liFilter": "Rožnov|Roznov|Brno|Czech"
+  "liFilter": "Rožnov|Roznov|Brno|Czech",
+  "offer": {
+   "en": [
+    "Rožnov p. R.: silicon polished and epitaxial wafers and die; SiC polished and SiC epi wafers since 2019",
+    "~USD 2 bn expansion (2024) toward an integrated SiC power-chip chain in Rožnov; up to 1,000 new jobs",
+    "Brno design laboratory (~200 engineers); ~2,300 employees in Czechia; ~10 million chips per day"
+   ],
+   "cs": [
+    "Rožnov p. R.: leštěné a epitaxní křemíkové desky a čipy; od 2019 také leštěné a epitaxní desky SiC",
+    "Expanze ~2 mld. USD (2024) směrem k integrovanému řetězci výkonových čipů SiC v Rožnově; až 1 000 míst",
+    "Brněnská návrhová laboratoř (~200 inženýrů); ~2 300 zaměstnanců v ČR; ~10 milionů čipů denně"
+   ],
+   "train": {
+    "cs": "Spolupracuje s českými univerzitami a technickými školami: přednášky a stáže pro program návrhu čipů na FEKT VUT, nový polovodičový obor s UTB Zlín (Bc od 2026); veřejný katalog kurzů nenalezen.",
+    "en": "Cooperates with Czech universities and technical schools: lectures and internships for the BUT FEEC chip-design programme, a new semiconductor field with UTB Zlín (Bc from 2026); no public course catalogue found."
+   },
+   "src": [
+    "https://investor.onsemi.com/news-releases/news-release-details/onsemi-expands-its-silicon-carbide-fab-czech-republic",
+    "https://czechinvest.gov.cz/en/Homepage/News/June-2024/American-chip-manufacturer-onsemi-has-announced-an-investment-of-more-than-CZK-40-billion-in-the-exp",
+    "https://www.fekt.vut.cz/en/faculty/news_new/302655",
+    "https://www.lupa.cz/aktuality/zlinsky-kraj-se-po-jizni-morave-dostal-mezi-nejvyspelejsi-cipove-regiony-v-evrope/"
+   ]
+  }
  },
  {
   "id": "argotech",
@@ -235,7 +463,22 @@
   "li": "company/argotech-semiconductor-photonics",
   "note": "",
   "liScope": "page",
-  "liFilter": ""
+  "liFilter": "",
+  "offer": {
+   "en": [
+    "Microelectronic assembly and optoelectronic packaging specialist (Trutnov site; registered office Nachod)",
+    "Cleanrooms class 10k and 100k built in 2010; ISO 9001 since 2011; founded 2006",
+    "Draws on regional optics, electronics and precision-mechanics know-how"
+   ],
+   "cs": [
+    "Specialista na mikroelektronickou montáž a optoelektronické pouzdření (provoz Trutnov; sídlo Náchod)",
+    "Čisté prostory tříd 10k a 100k z roku 2010; ISO 9001 od 2011; založeno 2006",
+    "Staví na regionálním know-how v optice, elektronice a přesné mechanice"
+   ],
+   "src": [
+    "https://www.gophotonics.com/companies-amp/2664/argotech-a-s-"
+   ]
+  }
  },
  {
   "id": "svcs",
@@ -252,7 +495,26 @@
   "li": "company/svcs-process-innovation",
   "note": "",
   "liScope": "page",
-  "liFilter": ""
+  "liFilter": "",
+  "offer": {
+   "en": [
+    "Batch horizontal and vertical diffusion furnaces; LPCVD and PECVD furnaces",
+    "Gas source systems: gas cabinets, valve manifold boxes and custom equipment gas manifolds",
+    "In-house designed control systems; refurbishment of third-party furnaces with SVCS controls",
+    "Markets: semiconductor and photovoltaic manufacturers and research institutes; EU research projects",
+    "HQ Brno; offices and distributors across Asia, Europe and MENA"
+   ],
+   "cs": [
+    "Dávkové horizontální a vertikální difuzní pece; pece LPCVD a PECVD",
+    "Systémy rozvodu plynů: plynové skříně, ventilové boxy (VMB) a zákaznické plynové rozvody k zařízením",
+    "Vlastní řídicí systémy; repase pecí třetích stran s řízením SVCS",
+    "Trhy: výrobci polovodičů a fotovoltaiky a výzkumné ústavy; účast v EU výzkumných projektech",
+    "Sídlo Brno; kanceláře a distributoři v Asii, Evropě a regionu MENA"
+   ],
+   "src": [
+    "https://www.semi.org/en/resources/member-directory/svcs-process-innovation-sro"
+   ]
+  }
  },
  {
   "id": "edwards",
@@ -269,7 +531,23 @@
   "li": "company/edwards",
   "note": "",
   "liScope": "global",
-  "liFilter": "Lutín|Lutin|Czech"
+  "liFilter": "Lutín|Lutin|Czech",
+  "offer": {
+   "en": [
+    "Lutin: volume manufacturing of vacuum pumps, Edwards' first manufacturing site in mainland Europe",
+    "Focus on modern, higher-value vacuum pumps incl. scientific/research use; ~400 staff (2015)",
+    "Customers incl. solar-panel, chemical, food, automotive, nuclear and steel industries (2016 report)"
+   ],
+   "cs": [
+    "Lutín: sériová výroba vakuových vývěv, první výrobní závod Edwards v kontinentální Evropě",
+    "Důraz na moderní vývěvy s vyšší přidanou hodnotou vč. vědeckých aplikací; ~400 zaměstnanců (2015)",
+    "Zákazníci mj. výrobci solárních panelů, chemie, potravinářství, automotive, jaderná energetika, ocel (2016)"
+   ],
+   "src": [
+    "https://www.finance.cz/clanky/471307-lutinska-tovarna-edwards-na-cerpadla-mela-loni-rekordni-trzby",
+    "https://www.worldpumps.com/content/news/edwards-opens-vacuum-pump-plant-in-czech-republic"
+   ]
+  }
  },
  {
   "id": "swagelok",
@@ -286,7 +564,26 @@
   "li": "company/swagelok-czsk",
   "note": "",
   "liScope": "page",
-  "liFilter": ""
+  "liFilter": "",
+  "offer": {
+   "en": [
+    "Fittings, valves, regulators, hoses, filters, tubing, welding systems and analytical instrumentation",
+    "Services: custom solutions, on-site services, field engineering, construction services, grab sampling",
+    "Office and warehouse in Praha-Zlicin from 1 Jan 2026 (moved from Plzen); covers CZ, SK, PL, Balkans, BG"
+   ],
+   "cs": [
+    "Šroubení, ventily, regulátory, hadice, filtry, trubky, svařovací systémy a analytická instrumentace",
+    "Služby: zákaznická řešení, servis na místě, field engineering, construction services, odběr vzorků",
+    "Kancelář a sklad v Praze-Zličíně od 1. 1. 2026 (přesun z Plzně); pokrývá ČR, SK, PL, Balkán, BG"
+   ],
+   "train": {
+    "cs": "Technická školení vedená zkušenými inženýry Swagelok (fluidní systémy, trubkové spoje); konkrétní názvy kurzů český web neuvádí.",
+    "en": "Technical trainings led by experienced Swagelok engineers (fluid-system and tube-fitting topics); no specific course names listed on the Czech site."
+   },
+   "src": [
+    "https://czech.swagelok.com/en"
+   ]
+  }
  },
  {
   "id": "ep-roznov",
@@ -303,7 +600,24 @@
   "li": "company/ep-roznov-a-s",
   "note": "",
   "liScope": "page",
-  "liFilter": ""
+  "liFilter": "",
+  "offer": {
+   "en": [
+    "Turnkey design and construction of cleanrooms, incl. renovation without interrupting production",
+    "Full BIM (3D) project documentation; in-house manufacture and assembly of cleanroom components",
+    "Sectors: chips/electronics (ref. onsemi Roznov), automotive, optics, pharma, medical, healthcare, research",
+    "150+ employees, about one third project engineers (2021); part of CEZ ESCO group"
+   ],
+   "cs": [
+    "Návrh a výstavba čistých prostor na klíč, vč. rekonstrukcí bez přerušení výroby zákazníka",
+    "Kompletní projektová dokumentace v BIM (3D); vlastní výroba a montáž komponent čistých prostor",
+    "Obory: čipy/elektronika (ref. onsemi Rožnov), automotive, optika, farmacie, zdravotnictví, výzkum",
+    "Přes 150 zaměstnanců, zhruba třetina projektantů (2021); součást skupiny ČEZ ESCO"
+   ],
+   "src": [
+    "https://www.cez.cz/cs/pro-media/tiskove-zpravy/cez-esco-ziskala-firmu-ep-roznov-specialistu-na-ciste-prostory.-akvizice-otevre-dvere-narocnym-zakazkam-v-mnoha-oborech-147108"
+   ]
+  }
  },
  {
   "id": "activair",
@@ -320,7 +634,22 @@
   "li": "company/activaircz",
   "note": "",
   "liScope": "page",
-  "liFilter": ""
+  "liFilter": "",
+  "offer": {
+   "en": [
+    "Services and solutions for vacuum, compressed air and industrial filtration (company listing)",
+    "Ventilation equipment sales and installation; branches in Opava, Brno and Prague",
+    "EU-funded projects: vacuum wastewater system unit, vacuum components, deposition sample holder"
+   ],
+   "cs": [
+    "Komplexní služby a řešení pro vakuum, stlačený vzduch a průmyslovou filtraci (firemní zápis)",
+    "Prodej a montáž vzduchotechniky; pobočky Opava, Brno a Praha",
+    "EU projekty: centrální jednotka podtlakové kanalizace, vakuové komponenty, držák vzorků pro depozici"
+   ],
+   "src": [
+    "https://www.zivefirmy.cz/activair_f1268196?loc=1"
+   ]
+  }
  },
  {
   "id": "stroza",
@@ -337,7 +666,22 @@
   "li": "company/stroza",
   "note": "",
   "liScope": "page",
-  "liFilter": ""
+  "liFilter": "",
+  "offer": {
+   "en": [
+    "Engineering and system integration: custom single-purpose machines and automated production lines",
+    "Automation and robotisation of technological processes; electrical cabinets",
+    "Commissioning, start-up and machine service; industries served: semiconductor and medical"
+   ],
+   "cs": [
+    "Inženýring a systémová integrace: jednoúčelové stroje na míru a automatizované výrobní linky",
+    "Automatizace a robotizace technologických procesů; elektrické rozvaděče",
+    "Uvádění do provozu a servis strojů; obory: polovodiče a zdravotnická technika"
+   ],
+   "src": [
+    "https://automa.net/company/stroza-sro"
+   ]
+  }
  },
  {
   "id": "streicher",
@@ -354,7 +698,22 @@
   "li": "company/streicher-spol-s-r-o-plze%C5%88",
   "note": "",
   "liScope": "page",
-  "liFilter": ""
+  "liFilter": "",
+  "offer": {
+   "en": [
+    "Vacuum chambers for R&D, modular S-CUBE, thermal-vacuum (TVAC), RGA/bake-out and UV-cleaning chambers",
+    "Vacuum melting, coating, heat-treatment and drying plants; short-path and thin-film evaporators",
+    "Tailor-made systems from concept to commissioning; vacuum engineering, automation, cleanroom assembly"
+   ],
+   "cs": [
+    "Vakuové komory pro výzkum, modulární S-CUBE, termovakuové (TVAC), RGA/vypalovací a UV čisticí komory",
+    "Vakuové tavicí, povlakovací, tepelně-zpracovací a sušicí zařízení; tenkovrstvé odparky",
+    "Zařízení na míru od konceptu po uvedení do provozu; vakuová technika, automatizace, montáž čistých prostor"
+   ],
+   "src": [
+    "https://exporters.czechtrade.gov.cz/streicher"
+   ]
+  }
  },
  {
   "id": "leadec",
@@ -371,7 +730,22 @@
   "li": "company/leadec",
   "note": "",
   "liScope": "global",
-  "liFilter": "Czech|Praha|Prague"
+  "liFilter": "Czech|Praha|Prague",
+  "offer": {
+   "en": [
+    "Czech unit (HQ Mlada Boleslav): electrical installation and wiring of production facilities",
+    "Automation: from hardware planning to maintenance of installed solutions",
+    "Integrated facility management with tailored technical and administrative maintenance concepts"
+   ],
+   "cs": [
+    "Česká pobočka (sídlo Mladá Boleslav): elektroinstalace a zapojování výrobních zařízení",
+    "Automatizace: od plánování hardwaru po údržbu nasazených řešení",
+    "Integrovaný facility management s údržbovými koncepty na míru (technická i administrativní část)"
+   ],
+   "src": [
+    "https://czech-republic.leadec-services.com/"
+   ]
+  }
  },
  {
   "id": "tescan",
@@ -388,7 +762,29 @@
   "li": "company/tescan-group",
   "note": "",
   "liScope": "page",
-  "liFilter": ""
+  "liFilter": "",
+  "offer": {
+   "en": [
+    "Plasma (Xe) FIB-SEM AMBER X 2 / SOLARIS X 2 for large-area milling, delayering and cross-sectioning",
+    "Ga FIB-SEM SOLARIS 2 for sub-10 nm work and automated TEM lamella preparation",
+    "TENSOR 4D-STEM for phase/orientation mapping; UniTOM micro-CT for non-destructive package inspection",
+    "Semiconductor workflows: failure analysis with CAD navigation, cross-sections of BGA, TSV, MEMS, OLED"
+   ],
+   "cs": [
+    "Plazmový (Xe) FIB-SEM AMBER X 2 / SOLARIS X 2 pro velkoplošné odprašování, delayering a řezy",
+    "Galliový FIB-SEM SOLARIS 2 pro práci pod 10 nm a automatizovanou přípravu TEM lamel",
+    "TENSOR 4D-STEM pro mapování fází/orientací; UniTOM mikro-CT pro nedestruktivní kontrolu pouzder",
+    "Polovodičové workflow: analýza poruch s CAD navigací, řezy BGA, TSV, MEMS, OLED"
+   ],
+   "train": {
+    "cs": "Pravidelné webináře a akce k polovodičovým workflow FIB-SEM (např. příprava TEM lamel) a aplikační dema; formální veřejnou školicí akademii polovodičové stránky nepopisují.",
+    "en": "Regular webinars and events on FIB-SEM semiconductor workflows (e.g. TEM lamella preparation) and application demos; no formal public training academy is described on the semiconductor pages."
+   },
+   "src": [
+    "https://tescan.com/applications/semiconductors",
+    "https://www.tescan.com/events"
+   ]
+  }
  },
  {
   "id": "thermo-fisher",
@@ -405,7 +801,29 @@
   "li": "company/thermo-fisher-scientific",
   "note": "",
   "liScope": "global",
-  "liFilter": "Brno|Czech"
+  "liFilter": "Brno|Czech",
+  "offer": {
+   "en": [
+    "Brno technology centre: development and manufacturing of SEM, small dual-beam (FIB-SEM) and TEM microscopes",
+    "Also spectrometers for surface and bulk elemental analysis (XRF, OES, XRD) made in Brno",
+    "1,500+ employees incl. 200+ software developers; hundreds of instruments built per year",
+    "Contributes to teaching in BUT FEEC chip-design programme (per FEEC/CEITEC reporting)"
+   ],
+   "cs": [
+    "Brněnské technologické centrum: vývoj a výroba SEM, malých dual-beam (FIB-SEM) a TEM mikroskopů",
+    "V Brně také spektrometry pro povrchovou a objemovou prvkovou analýzu (XRF, OES, XRD)",
+    "Přes 1 500 zaměstnanců vč. 200+ softwarových vývojářů; stovky přístrojů ročně",
+    "Podílí se na výuce programu návrhu čipů na FEKT VUT (dle zpráv FEKT/CEITEC)"
+   ],
+   "train": {
+    "cs": "Přispívá přednáškami a stážemi do programu FEKT VUT Návrh čipů a moderní polovodičové technologie; na českém kariérním webu je sekce pro studenty (detail nenačten).",
+    "en": "Contributes lectures and internships to the BUT FEEC programme Chip Design and Modern Semiconductor Technologies; a Students section exists on its Czech career site (details not fetched)."
+   },
+   "src": [
+    "https://thermofisher.jobs.cz/en",
+    "https://www.ceitec.eu/vut-cz-research-on-semiconductors-and-chips-at-but-connecting-faculties-research-and-industry/t11532"
+   ]
+  }
  },
  {
   "id": "unites",
@@ -422,7 +840,20 @@
   "li": "company/unites-systems-a-s-",
   "note": "",
   "liScope": "page",
-  "liFilter": ""
+  "liFilter": "",
+  "offer": {
+   "en": [
+    "Comprehensive test & measurement services; markets automotive, aerospace, defence, medical, consumer",
+    "Sales in Europe, USA, China, Japan and Southeast Asia; based in Valasske Mezirici"
+   ],
+   "cs": [
+    "Komplexní služby v testování a měření; trhy automotive, letectví, obrana, zdravotnictví, spotřební elektronika",
+    "Prodej v Evropě, USA, Číně, Japonsku a jihovýchodní Asii; sídlo Valašské Meziříčí"
+   ],
+   "src": [
+    "https://www.semi.org/en/resources/member-directory/unites-systems"
+   ]
+  }
  },
  {
   "id": "htest",
@@ -439,7 +870,20 @@
   "li": "company/h-test",
   "note": "",
   "liScope": "page",
-  "liFilter": ""
+  "liFilter": "",
+  "offer": {
+   "en": [
+    "Represents leading test & measurement instrument manufacturers in CZ, SK, HU and RO (also active in AT)",
+    "Instruments and systems for electrical and non-electrical quantities; telecom/datacom network test"
+   ],
+   "cs": [
+    "Zastupuje přední výrobce měřicí a testovací techniky v ČR, SK, HU a RO (působí i v Rakousku)",
+    "Přístroje a systémy pro měření elektrických i neelektrických veličin; testování telekom/datakom sítí"
+   ],
+   "src": [
+    "https://aetechron.com/wp-content/uploads/2024/11/SP-HTEST.html"
+   ]
+  }
  },
  {
   "id": "advacam",
@@ -456,7 +900,24 @@
   "li": "company/widepix-s-r-o-",
   "note": "na semicz.cz/memberlist 18. 10. 2026, v katalogu 8/2026 chybí – doplněno",
   "liScope": "page",
-  "liFilter": ""
+  "liFilter": "",
+  "offer": {
+   "en": [
+    "Radiation imaging and photon-counting cameras; X-ray, gamma, electron and ion detectors (Timepix family)",
+    "Product lines MiniPIX (miniature, low power), WidePIX (large-area NDT), AdvaPIX (fast sparse readout)",
+    "Services: calibration, technical support, R&D, custom and OEM product development, integration",
+    "Applications: material analysis, NDT, colour radiography, radiation safety, aerospace, medical, research"
+   ],
+   "cs": [
+    "Kamery pro zobrazování záření a počítání fotonů; detektory RTG, gama, elektronů a iontů (rodina Timepix)",
+    "Produktové řady MiniPIX (miniaturní, nízký příkon), WidePIX (velkoplošné NDT), AdvaPIX (rychlé čtení)",
+    "Služby: kalibrace, technická podpora, R&D, zákaznický a OEM vývoj, integrace",
+    "Aplikace: materiálová analýza, NDT, barevná radiografie, radiační bezpečnost, letectví, medicína, výzkum"
+   ],
+   "src": [
+    "https://automa.net/company/advacam"
+   ]
+  }
  },
  {
   "id": "hitachi-energy",
@@ -473,7 +934,22 @@
   "li": "company/hitachienergy",
   "note": "",
   "liScope": "global",
-  "liFilter": "Czech|Praha|Prague|Brno"
+  "liFilter": "Czech|Praha|Prague|Brno",
+  "offer": {
+   "en": [
+    "Prague: manufacture of high-power semiconductors - IGBT/diode modules, press-packs, IGCTs, thyristors, GTOs",
+    "Also IGBT/diode dies, RoadPak SiC e-mobility module and test systems for high-power semiconductors",
+    "Applications: welding diodes, HVDC thyristors, marine/wind IGCTs, rail GTOs; heritage CKD - ABB - Hitachi"
+   ],
+   "cs": [
+    "Praha: výroba výkonových polovodičů - IGBT/diodové moduly, press-pack, IGCT, tyristory, GTO",
+    "Dále IGBT/diodové čipy, modul RoadPak SiC pro e-mobilitu a testovací systémy výkonových polovodičů",
+    "Aplikace: svařovací diody, HVDC tyristory, IGCT pro lodě/větrníky, GTO pro železnici; historie ČKD-ABB-Hitachi"
+   ],
+   "src": [
+    "https://www.hitachienergy.com/company/company-profile/country-and-regional-information/czech-republic/polovodi-e"
+   ]
+  }
  },
  {
   "id": "esc-aerospace",
@@ -490,7 +966,24 @@
   "li": "company/esc-aerospace",
   "note": "",
   "liScope": "page",
-  "liFilter": ""
+  "liFilter": "",
+  "offer": {
+   "en": [
+    "On-board computers and GNC avionics for space (space-qualified) and UAS/RPAS autopilot avionics",
+    "ASIC-based radiation-hardened detectors; SATCOM ground station and optical datalink products",
+    "Services: payload/satellite design consultancy, flight software, EGSE/SCOE, QA and project management",
+    "AI for recognition/classification; CBRN services; C-UAS drone detection; ISO 9001"
+   ],
+   "cs": [
+    "Palubní počítače a avionika GNC pro vesmír (kvalifikované pro kosmos) a autopilotní avionika UAS/RPAS",
+    "Radiačně odolné detektory na bázi ASIC; pozemní stanice SATCOM a optický datalink",
+    "Služby: konzultace návrhu payloadů/satelitů, letový software, EGSE/SCOE, QA a projektové řízení",
+    "AI pro rozpoznávání/klasifikaci; služby CBRN; detekce dronů C-UAS; ISO 9001"
+   ],
+   "src": [
+    "https://www.optickyklastr.cz/en/esc-aerospace-s-r-o-2/"
+   ]
+  }
  },
  {
   "id": "mycroftmind",
@@ -507,7 +1000,22 @@
   "li": "company/mycroftmind",
   "note": "",
   "liScope": "page",
-  "liFilter": ""
+  "liFilter": "",
+  "offer": {
+   "en": [
+    "Embedded AI/ML modules for energy forecasting and analytics running in-device without cloud",
+    "Delivered as HW+SW or SW-only for smart meters, EV chargers, batteries, PV inverters and EMS",
+    "Use cases: PV production forecasting, substation loss/flexibility analytics, industrial prosumers"
+   ],
+   "cs": [
+    "Vestavěné AI/ML moduly pro predikci a analytiku v energetice běžící přímo v zařízení bez cloudu",
+    "Dodávané jako HW+SW nebo jen SW pro chytré elektroměry, nabíječky EV, baterie, FV střídače a EMS",
+    "Užití: predikce výroby FVE, analýza ztrát a flexibility na trafostanicích, průmysloví prosumeři"
+   ],
+   "src": [
+    "https://exporters.czechtrade.gov.cz/mycroft-mind-a-s"
+   ]
+  }
  },
  {
   "id": "inference-technologies",
@@ -524,7 +1032,15 @@
   "li": "company/inference-technologies",
   "note": "",
   "liScope": "page",
-  "liFilter": ""
+  "liFilter": "",
+  "offer": {
+   "en": [
+    "Prague-based member of the cluster's applications segment"
+   ],
+   "cs": [
+    "Pražský člen aplikačního segmentu klastru"
+   ]
+  }
  },
  {
   "id": "techsoft",
@@ -541,7 +1057,27 @@
   "li": "company/techsoft-engineering-s.r.o",
   "note": "",
   "liScope": "page",
-  "liFilter": ""
+  "liFilter": "",
+  "offer": {
+   "en": [
+    "Ansys channel partner: licences, implementation, technical support, consulting, simulation services",
+    "Simulation expertise: structural, CFD, thermal, electromagnetics, chips, optics, electronics, embedded SW",
+    "Also functional safety, digital twins, multiphysics; defence/security tools (EMC, radar, drones)"
+   ],
+   "cs": [
+    "Partner Ansys: licence, implementace, technická podpora, konzultace, expertní simulační služby",
+    "Simulační expertiza: pevnost, CFD, teplo, elektromagnetismus, čipy, optika, elektronika, vestavěný SW",
+    "Dále funkční bezpečnost, digitální dvojčata, multifyzika; nástroje pro obranu (EMC, radar, drony)"
+   ],
+   "train": {
+    "cs": "Nabízí odborné vzdělávání, školení a semináře k Ansys a podporuje spolupráci průmyslu s akademickou sférou.",
+    "en": "Offers professional education, Ansys training courses and seminars, and supports industry-academia cooperation."
+   },
+   "src": [
+    "https://aobp.cz/en/companies/278/techsoft-engineering-spol-s-ro/",
+    "https://ansys.com/partner-ecosystem/channel-partners/techsoft-engineering"
+   ]
+  }
  },
  {
   "id": "smarter-instruments",
@@ -558,7 +1094,18 @@
   "li": "company/smarterinstruments",
   "note": "",
   "liScope": "page",
-  "liFilter": ""
+  "liFilter": "",
+  "offer": {
+   "en": [
+    "Contract R&D project with BUT FIT (2021, computer graphics/vision group of P. Zemcik)"
+   ],
+   "cs": [
+    "Smluvní výzkumný projekt s FIT VUT (2021, skupina počítačové grafiky/vidění P. Zemčíka)"
+   ],
+   "src": [
+    "https://fit.vut.cz/research/project/1523"
+   ]
+  }
  },
  {
   "id": "vut-brno",
@@ -578,7 +1125,30 @@
   "li": "school/vysokeucenitechnickevbrne",
   "note": "",
   "liScope": "page",
-  "liFilter": ""
+  "liFilter": "",
+  "offer": {
+   "en": [
+    "New Bc+MSc programme Chip Design and Modern Semiconductor Technologies (FEEC, from 2025/26; 119 enrolled)",
+    "CEITEC Nano cleanrooms (CzechNanoLab) open to academic and industrial users; student chip prototyping",
+    "Industry in teaching: onsemi, Codasip, Thermo Fisher, Tescan; labs with Cadence and Siemens EDA tools",
+    "FIT groups: evolvable HW, dependable digital systems, accelerated networking; ACDRC partner"
+   ],
+   "cs": [
+    "Nový Bc+Ing. program Návrh čipů a moderní polovodičové technologie (FEKT, od 2025/26; 119 zapsaných)",
+    "Čisté prostory CEITEC Nano (CzechNanoLab) otevřené akademii i průmyslu; studentské prototypy čipů",
+    "Průmysl ve výuce: onsemi, Codasip, Thermo Fisher, Tescan; laboratoře s nástroji Cadence a Siemens",
+    "Skupiny FIT: evoluční HW, spolehlivé číslicové systémy, akcelerované sítě; partner ACDRC"
+   ],
+   "train": {
+    "cs": "Bakalářský a navazující program návrhu čipů a polovodičových technologií na FEKT (projektová výuka, přístup do čistých prostor CEITEC, přednášky a stáže z průmyslu); polovodičové předměty ve Fyzikálním inženýrství a nanotechnologiích na FSI.",
+    "en": "Bachelor's and master's programme in chip design and semiconductor technologies at FEEC (project-based, CEITEC cleanroom access, industry lectures and internships); semiconductor courses within Physical Engineering and Nanotechnology at FME."
+   },
+   "src": [
+    "https://www.fekt.vut.cz/en/faculty/news_new/302655",
+    "https://www.ceitec.eu/vut-cz-research-on-semiconductors-and-chips-at-but-connecting-faculties-research-and-industry/t11532",
+    "https://www.lupa.cz/clanky/zalozili-si-obor-a-prihlasili-se-jim-tam-lidi-v-brne-startuje-moderni-vyuka-cipu-zajem-predcil-ocekavani/"
+   ]
+  }
  },
  {
   "id": "muni",
@@ -598,7 +1168,27 @@
   "li": "school/masaryk-university",
   "note": "",
   "liScope": "page",
-  "liFilter": ""
+  "liFilter": "",
+  "offer": {
+   "en": [
+    "FI MUNI: two new courses on validation and verification of silicon chip designs (ACDRC project 2025-27)",
+    "Courses co-developed with Renesas; FPGA dev kits and chip design/simulation licences being procured",
+    "Partner in the Taiwan-funded ACDRC chip design research centre in Brno (with BUT and CTU)"
+   ],
+   "cs": [
+    "FI MU: dva nové předměty k validaci a verifikaci návrhů křemíkových čipů (projekt ACDRC 2025-27)",
+    "Předměty vznikají ve spolupráci s Renesas; pořizují se FPGA kity a licence návrhových/simulačních nástrojů",
+    "Partner tchajwanského centra návrhu čipů ACDRC v Brně (s VUT a ČVUT)"
+   ],
+   "train": {
+    "cs": "Nové každoroční předměty FI MU k validaci a verifikaci křemíkových čipů s praktickými cvičeními a workshopy (odborný vstup Renesas), realizované v letech 2025-2027.",
+    "en": "New annual FI MUNI courses on silicon chip validation and verification with practical exercises and workshops (industry input from Renesas), delivered within 2025-2027."
+   },
+   "src": [
+    "https://www.muni.cz/en/research/projects/74472",
+    "https://www.lupa.cz/clanky/zalozili-si-obor-a-prihlasili-se-jim-tam-lidi-v-brne-startuje-moderni-vyuka-cipu-zajem-predcil-ocekavani/"
+   ]
+  }
  },
  {
   "id": "cvut",
@@ -617,7 +1207,30 @@
   "li": "school/cvutpraha",
   "note": "",
   "liScope": "page",
-  "liFilter": ""
+  "liFilter": "",
+  "offer": {
+   "en": [
+    "FEE: from 2026/27 new master's Electronics and Integrated Systems covering chip design to system deployment",
+    "About 30 chip graduates/yr today, target to double; double-degree options with NTUST Taiwan and EURECOM",
+    "Dept. of Microelectronics AETL labs and a new ~CZK 40 m nanoelectronics lab (Nanolab) used in theses",
+    "Hosts a Taiwan-funded semiconductor centre and a joint centre with TSRI; cooperates with ACDRC Brno"
+   ],
+   "cs": [
+    "FEL: od 2026/27 nový magisterský program Elektronika a integrované systémy od návrhu čipů po nasazení",
+    "Dnes cca 30 absolventů čipařů ročně, cíl zdvojnásobit; double degree s NTUST (Tchaj-wan) a EURECOM",
+    "Laboratoře AETL katedry mikroelektroniky a nová laboratoř nanoelektroniky (Nanolab, ~40 mil. Kč)",
+    "Hostí tchajwanské polovodičové centrum a společné centrum s TSRI; spolupracuje s ACDRC Brno"
+   ],
+   "train": {
+    "cs": "Nové magisterské programy EIS a KIT od 2026/27 a stávající bakalář elektroniky; pravidelné odborné workshopy s tchajwanskými univerzitami; plánuje se smluvní výuka a specializované kurzy pro firmy.",
+    "en": "New master's programmes EIS and KIT from 2026/27 plus an existing bachelor's in electronics; regular expert workshops with Taiwanese universities; contract education and specialised company courses are planned."
+   },
+   "src": [
+    "https://www.lupa.cz/aktuality/cvut-spusti-moderni-vyuku-cipu-a-elektroniky-titul-bude-mozne-ziskat-i-z-tchaj-wanu/",
+    "https://micro.fel.cvut.cz/cs/laboratore-pokrocilych-elektronickych-technologii-aetl-2",
+    "https://www.novinky.cz/clanek/veda-skoly-na-cvut-predstavili-laborator-za-40-milionu-pro-vyzkum-nanoelektrickych-technologii-40384616"
+   ]
+  }
  },
  {
   "id": "uk",
@@ -636,7 +1249,27 @@
   "li": "school/univerzita-karlova",
   "note": "",
   "liScope": "page",
-  "liFilter": ""
+  "liFilter": "",
+  "offer": {
+   "en": [
+    "Institute of Physics of CU (MFF): solid-state physics focused on semiconductor detectors; optoelectronics",
+    "Divisions: Optoelectronics and Magneto-Optics, Biophysics, Theory; instruments for semiconductor studies",
+    "Supply Chain Resilience Center with National Chengchi University (Taiwan) on chip supply chains"
+   ],
+   "cs": [
+    "Fyzikální ústav UK (MFF): fyzika pevných látek se zaměřením na polovodičové detektory; optoelektronika",
+    "Oddělení: optoelektronika a magnetooptika, biofyzika, teorie; přístroje pro studium polovodičů",
+    "Centrum odolnosti dodavatelských řetězců s National Chengchi University (Tchaj-wan) k čipům"
+   ],
+   "train": {
+    "cs": "Magisterský program Optika a optoelektronika a doktorský program Kvantová optika a optoelektronika na MFF UK.",
+    "en": "Master's in Optics and Optoelectronics and PhD in Quantum Optics and Optoelectronics at MFF UK."
+   },
+   "src": [
+    "https://mff.cuni.cz/en/fuuk",
+    "https://ukforum.cz/en/main-categories/news/supply-chain-the-focus-of-czech-taiwanese-university-centre"
+   ]
+  }
  },
  {
   "id": "vscht",
@@ -653,7 +1286,25 @@
   "li": "school/vschtpraha",
   "note": "",
   "liScope": "page",
-  "liFilter": ""
+  "liFilter": "",
+  "offer": {
+   "en": [
+    "Dept. of Solid State Engineering and an inorganic chemistry group researching nanomaterials and semiconductors",
+    "Bachelor's, master's and doctoral theses offered in solid-state and semiconductor materials topics"
+   ],
+   "cs": [
+    "Ústav inženýrství pevných látek a skupina anorganické chemie zkoumající nanomateriály a polovodiče",
+    "Nabídka bakalářských, diplomových a disertačních prací v tématech pevných látek a polovodičových materiálů"
+   ],
+   "train": {
+    "cs": "Bakalářské, magisterské a doktorské studium s tématy prací v inženýrství pevných látek a nanomateriálech; konkrétní polovodičové předměty nepotvrzeny.",
+    "en": "Bachelor, master and PhD study with thesis topics in solid-state engineering and nanomaterials; specific semiconductor courses not confirmed."
+   },
+   "src": [
+    "https://ipl.vscht.cz/about",
+    "https://uach.vscht.cz/research/nanomaterials-and-semiconductors/42115"
+   ]
+  }
  },
  {
   "id": "zcu",
@@ -670,7 +1321,29 @@
   "li": "school/z%C3%A1pado%C4%8Desk%C3%A1-univerzita-v-plzni-z%C4%8Du-",
   "note": "",
   "liScope": "page",
-  "liFilter": ""
+  "liFilter": "",
+  "offer": {
+   "en": [
+    "RICE centre: power electronics and drives testing (motors up to 4 MW), high-voltage test facility",
+    "Printed electronics (Aerosol Jet Printing); contract research and licensing for industry",
+    "Memorandum with CTU and BUT: ZCU covers power-electronics applications in joint chip education platform",
+    "Joint development with industry (e.g. REMCS control system); CIDAM power-electronics project"
+   ],
+   "cs": [
+    "Centrum RICE: zkušebnictví výkonové elektroniky a pohonů (motory do 4 MW), vysokonapěťová zkušebna",
+    "Tištěná elektronika (Aerosol Jet Printing); smluvní výzkum a licencování pro průmysl",
+    "Memorandum s ČVUT a VUT: ZČU pokrývá aplikace výkonové elektroniky ve společné platformě výuky čipů",
+    "Společný vývoj s průmyslem (např. řídicí systém REMCS); projekt výkonové elektroniky CIDAM"
+   ],
+   "train": {
+    "cs": "Součást platformy ČVUT-VUT-ZČU pro výuku polovodičových odborníků (směr výkonová elektronika); programy FEL nebyly v získaných zdrojích rozvedeny.",
+    "en": "Part of the CTU-BUT-ZCU semiconductor education platform (power-electronics track); FEL study programmes not detailed in retrieved sources."
+   },
+   "src": [
+    "https://archiweb.cz/en/n/home/zcu-dokoncilo-posledni-ze-ctyr-vyzkumnych-center-za-625-milionu",
+    "https://www.lupa.cz/aktuality/zachrana-evropskeho-prumyslu-ceske-univerzity-se-spojily-ve-vzdelavani-odborniku-na-cipy/"
+   ]
+  }
  },
  {
   "id": "vsb-tuo",
@@ -687,7 +1360,30 @@
   "li": "school/vsb-technical-university-of-ostrava",
   "note": "",
   "liScope": "page",
-  "liFilter": ""
+  "liFilter": "",
+  "offer": {
+   "en": [
+    "Centre for Nanotechnology (CEET): synthesis, modification and characterisation of nanomaterials",
+    "Methods: electron microscopy, spectroscopy, surface/thermal analysis, electrochemistry; contract research lab",
+    "New laboratory of lithographic and thin-film technologies announced (businessinfo headline, 2026)",
+    "Nanotechnology study programmes (Bc/MSc/PhD) listed on studyin.gov.cz"
+   ],
+   "cs": [
+    "Centrum nanotechnologií (CEET): syntéza, modifikace a charakterizace nanomateriálů",
+    "Metody: elektronová mikroskopie, spektroskopie, povrchová/termická analýza, elektrochemie; smluvní výzkum",
+    "Oznámena nová laboratoř litografických a tenkovrstevných technologií (titulek businessinfo, 2026)",
+    "Studijní programy Nanotechnologie (Bc/Mgr/PhD) uvedené na studyin.gov.cz"
+   ],
+   "train": {
+    "cs": "Bakalářské, magisterské a doktorské programy Nanotechnologie; praktická příprava studentů a doktorandů v charakterizačních metodách na CNT.",
+    "en": "Nanotechnology bachelor's, master's and PhD programmes; hands-on training of students and PhD candidates in characterisation methods at CNT."
+   },
+   "src": [
+    "https://ceet.vsb.cz/cnt/en/cnt/",
+    "https://www.businessinfo.cz/clanky/vsb-tuo-otevira-novou-laborator-litografickych-a-tenkovrstevnych-technologii/",
+    "https://studyin.gov.cz/plan-your-studies/universities/vsb-technical-university-of-ostrava/nanotechnology"
+   ]
+  }
  },
  {
   "id": "tul",
@@ -704,7 +1400,24 @@
   "li": "school/technical-university-of-liberec",
   "note": "",
   "liScope": "page",
-  "liFilter": ""
+  "liFilter": "",
+  "offer": {
+   "en": [
+    "CXI TUL: contract R&D, measurement/testing and consulting for industry across three research areas",
+    "Labs: SEM with EDS/WDS/EBSD, plasma FIB (Helios 5), thin films and coatings, Nanospider nanofibre line",
+    "Mechatronics/robotics/electronics lab (sensors, electronics); additive manufacturing (polymer and metal)",
+    "Accredited environmental analyses (CIA No. 1611); climatic chamber and drivetrain test rigs"
+   ],
+   "cs": [
+    "CXI TUL: smluvní výzkum, měření/zkoušení a poradenství pro průmysl ve třech výzkumných oblastech",
+    "Laboratoře: SEM s EDS/WDS/EBSD, plazmový FIB (Helios 5), tenké vrstvy a povlaky, linka Nanospider",
+    "Laboratoř mechatroniky/robotiky/elektroniky (senzory, elektronika); aditivní výroba (polymer i kov)",
+    "Akreditované environmentální analýzy (ČIA č. 1611); klimatická komora a zkušebny pohonů"
+   ],
+   "src": [
+    "https://cxi.tul.cz/files/pages/CxI%20CZ%202025-full-01%2C2025.pdf"
+   ]
+  }
  },
  {
   "id": "upce",
@@ -721,7 +1434,29 @@
   "li": "school/university-of-pardubice",
   "note": "",
   "liScope": "page",
-  "liFilter": ""
+  "liFilter": "",
+  "offer": {
+   "en": [
+    "FCHT: custom research, support services and expert consultation via its technology transfer centre",
+    "Thin films: spectroscopic ellipsometry, thermoelectric and high-pressure measurements, crystal growth",
+    "Chalcogenide and halogen glasses and amorphous layers; conductive inks for sensors and RFID",
+    "Analytics: ICP-OES/MS, AAS, XRF, GC-MS, HPLC; expanded cooperation with onsemi in research and education"
+   ],
+   "cs": [
+    "FChT: zakázkový výzkum, servisní služby a expertní konzultace přes centrum transferu technologií",
+    "Tenké vrstvy: spektroskopická elipsometrie, termoelektrická a vysokotlaká měření, růst krystalů",
+    "Chalkogenidová a halogenidová skla a amorfní vrstvy; vodivé inkousty pro senzory a RFID",
+    "Analytika: ICP-OES/MS, AAS, XRF, GC-MS, HPLC; rozšířená spolupráce s onsemi ve výzkumu a výuce"
+   ],
+   "train": {
+    "cs": "Studentské stáže v průmyslu, z nichž vznikají témata závěrečných prací; rozšířená spolupráce s onsemi ve výzkumu a vzdělávání (titulek businessinfo).",
+    "en": "Student internships in industry that can lead to thesis topics; expanded research and education cooperation with onsemi (businessinfo headline)."
+   },
+   "src": [
+    "https://fcht.upce.cz/en/fcht/cooperation-with-industry",
+    "https://www.businessinfo.cz/clanky/univerzita-pardubice-a-onsemi-rozsiruji-spolupraci-ve-vyzkumu-a-vzdelavani/"
+   ]
+  }
  },
  {
   "id": "ujep",
@@ -740,7 +1475,26 @@
   "li": "",
   "note": "v katalogu 8/2026, na semicz.cz/memberlist 18. 10. 2026 chybí – ověřit členství",
   "liScope": "none",
-  "liFilter": ""
+  "liFilter": "",
+  "offer": {
+   "en": [
+    "Department of Chemistry Semiconductor Chemistry focus: raw-material processing, single crystals, precursors",
+    "Ultra-pure gases/liquids, dopant recovery, waste-stream treatment, advanced analytics, prototype equipment",
+    "Courses strengthened: inorganic chemistry, non-metallic materials, solid-state physics, instrumental analysis"
+   ],
+   "cs": [
+    "Katedra chemie, zaměření Semiconductor Chemistry: úprava surovin, čisté monokrystaly, prekurzory",
+    "Ultra čisté plyny/kapaliny, recyklace dopantů, čištění odpadních proudů, pokročilá analytika, prototypy",
+    "Posílené předměty: anorganická chemie, nekovové materiály, fyzika pevných látek, instrumentální analýza"
+   ],
+   "train": {
+    "cs": "Polovodičová chemie začleněná do stávajících chemických studijních programů a předmětů (ne samostatný obor); spolupráce s průmyslovými partnery na aplikovaných projektech.",
+    "en": "Semiconductor-chemistry topics embedded in existing chemistry study programmes and courses (not a standalone degree); collaboration with industrial partners on applied projects."
+   },
+   "src": [
+    "https://chemistry.ujep.cz/semiconductor-chemistry/"
+   ]
+  }
  },
  {
   "id": "ceitec",
@@ -757,7 +1511,29 @@
   "li": "company/ceitec---central-european-institute-of-technology",
   "note": "",
   "liScope": "page",
-  "liFilter": ""
+  "liFilter": "",
+  "offer": {
+   "en": [
+    "CEITEC Nano: ISO 5 cleanroom (356 m2) for nanofabrication plus ~1,640 m2 ISO 8 characterisation space",
+    "Equipment groups: nanofabrication, nanocharacterisation, structural analysis, X-ray CT, laser spectroscopy",
+    "Self-service open-access model for academic and industrial users; limited full-service support",
+    "Part of the CzechNanoLab national research infrastructure"
+   ],
+   "cs": [
+    "CEITEC Nano: čistý prostor ISO 5 (356 m2) pro nanofabrikaci plus ~1 640 m2 ISO 8 pro charakterizaci",
+    "Skupiny vybavení: nanofabrikace, nanocharakterizace, strukturní analýza, rentgenové CT, laserová spektroskopie",
+    "Samoobslužný open-access model pro akademické i průmyslové uživatele; omezený full-service",
+    "Součást národní výzkumné infrastruktury CzechNanoLab"
+   ],
+   "train": {
+    "cs": "Obecné a přístrojové školení uživatelů čistých prostor a open-access infrastruktury.",
+    "en": "General and equipment-specific user training for cleanroom and open-access users."
+   },
+   "src": [
+    "https://nano.ceitec.cz/about-ceitec-nano",
+    "https://www.ceitec.eu/vut-cz-research-on-semiconductors-and-chips-at-but-connecting-faculties-research-and-industry/t11532"
+   ]
+  }
  },
  {
   "id": "fzu",
@@ -774,7 +1550,29 @@
   "li": "company/institute-of-physics-of-the-czech-academy-of-sciences",
   "note": "",
   "liScope": "page",
-  "liFilter": ""
+  "liFilter": "",
+  "offer": {
+   "en": [
+    "SAFMAT centre: NanoESCA (photoelectron microscopy/spectroscopy), EPR spectrometer, thin-film metrology",
+    "Open to R&D-active businesses; past partners CEZ, HVM Plasma, Crytur, UJP Praha, Polovodice a.s.",
+    "Semiconductor-relevant: defect studies in doped Si, element mapping on device surfaces",
+    "Partner in Semiconductors4all (TA CR) on materials, detectors and diagnostics"
+   ],
+   "cs": [
+    "Centrum SAFMAT: NanoESCA (fotoelektronová mikroskopie/spektroskopie), EPR spektrometr, metrologie vrstev",
+    "Otevřeno firmám s vlastním R&D; dosavadní partneři ČEZ, HVM Plasma, Crytur, ÚJP Praha, Polovodiče a.s.",
+    "Polovodičová relevance: studium defektů v dopovaném Si, mapování prvků na povrchu součástek",
+    "Partner projektu Semiconductors4all (TA ČR) v materiálech, detektorech a diagnostice"
+   ],
+   "train": {
+    "cs": "Postgraduální vzdělávání v SAFMAT ve spolupráci s MFF UK a fakultami ČVUT.",
+    "en": "Postgraduate education at SAFMAT in cooperation with MFF UK and CTU faculties."
+   },
+   "src": [
+    "https://www.fzu.cz/en/centre-for-analysis-of-functional-materials-safmat",
+    "https://www.businessinfo.cz/clanky/vut-ceske-univerzity-vyzkumne-organizace-a-prumysl-spojily-sily-pro-budoucnost-polovodicu-v-projektu-semiconductors4all/"
+   ]
+  }
  },
  {
   "id": "upt",
@@ -791,7 +1589,30 @@
   "li": "company/-stav-p-strojov-techniky-av-r-v-v-i-",
   "note": "",
   "liScope": "page",
-  "liFilter": ""
+  "liFilter": "",
+  "offer": {
+   "en": [
+    "Electron microscopy: HR-SEM analytics, low-voltage and environmental SEM, detectors, UHV EM",
+    "Electron-beam lithography and diffraction structures; e-beam welding, vacuum brazing, sputtered multilayers",
+    "Laser metrology (frequency standards, interferometry), LIBS and Raman analysis, optical micromanipulation",
+    "Cryogenics and superconductivity: cryostat design, low-temperature thermometry, vacuum technology",
+    "Partner in Semiconductors4all; application guide lists a contact per service area"
+   ],
+   "cs": [
+    "Elektronová mikroskopie: analytický HR-SEM, nízkonapěťový a environmentální SEM, detektory, UHV EM",
+    "Elektronová litografie a difrakční struktury; svařování e-svazkem, vakuové pájení, naprašované multivrstvy",
+    "Laserová metrologie (frekvenční normály, interferometrie), analýzy LIBS a Raman, optické mikromanipulace",
+    "Kryogenika a supravodivost: návrh kryostatů, nízkoteplotní termometrie, vakuová technika",
+    "Partner Semiconductors4all; průvodce aplikačními možnostmi uvádí kontakt pro každou oblast"
+   ],
+   "train": {
+    "cs": "Konzultace a školení k bezpečnosti práce s kryogeny; jinak bez formálního katalogu kurzů (studenti přes spolupráci s univerzitami).",
+    "en": "Consultation and training on cryogenic safety; otherwise no formal course catalogue (students via university cooperation)."
+   },
+   "src": [
+    "https://www.isibrno.cz/sites/default/files/pruvodce_aplikacnimi_moznostmi_upt_av_cr.pdf"
+   ]
+  }
  },
  {
   "id": "ufm",
@@ -808,7 +1629,24 @@
   "li": "company/ustav-fyziky-materialu-avcr",
   "note": "",
   "liScope": "page",
-  "liFilter": ""
+  "liFilter": "",
+  "offer": {
+   "en": [
+    "Materials science: relation of structure and microstructure to properties and service life of materials",
+    "Mechanical testing of fatigue, creep, creep-fatigue interaction and fracture across temperatures/environments",
+    "Structural characterisation down to atomic level; magnetic, electrical and transport measurements",
+    "Development and preparation of special materials"
+   ],
+   "cs": [
+    "Materiálové vědy: vztah struktury a mikrostruktury k vlastnostem a životnosti materiálů",
+    "Mechanické zkoušky únavy, creepu, interakce creep-únava a lomu v rozsahu teplot a prostředí",
+    "Strukturní charakterizace až na atomární úroveň; měření magnetických, elektrických a transportních vlastností",
+    "Vývoj a příprava speciálních materiálů"
+   ],
+   "src": [
+    "https://www.czechspaceportal.cz/?p=1586"
+   ]
+  }
  },
  {
   "id": "ufe",
@@ -825,7 +1663,28 @@
   "li": "company/ufe-avcr",
   "note": "",
   "liScope": "page",
-  "liFilter": ""
+  "liFilter": "",
+  "offer": {
+   "en": [
+    "Photonics: optical biosensors, high-power fibre lasers, mid-IR sources, special optical fibres",
+    "Optoelectronics: nanomaterial surfaces for sensors/light sources; FEB/FIB-grown semiconductor nanostructures",
+    "Czech national time and frequency standard lab: time dissemination, calibration of standards, consulting",
+    "Bioelectrodynamics and detection systems"
+   ],
+   "cs": [
+    "Fotonika: optické biosenzory, výkonové vláknové lasery, zdroje ve střední IR, speciální optická vlákna",
+    "Optoelektronika: povrchy nanomateriálů pro senzory/zdroje světla; polovodičové nanostruktury FEB/FIB depozicí",
+    "Národní laboratoř času a frekvence: distribuce času, kalibrace sekundárních normálů, poradenství",
+    "Bioelektrodynamika a detekční systémy"
+   ],
+   "train": {
+    "cs": "Vedení závěrečných prací s univerzitami a letní stáže Otevřená věda pro středoškoláky; semináře a dny otevřených dveří každý listopad.",
+    "en": "Thesis supervision with universities and Open Science summer internships for secondary-school students; seminars and open days each November."
+   },
+   "src": [
+    "https://www.ufe.cz/wp-content/uploads/2024/07/ufe-profil-printa5-a4-1.pdf"
+   ]
+  }
  },
  {
   "id": "ufch-jh",
@@ -842,7 +1701,18 @@
   "li": "company/heu-praha",
   "note": "",
   "liScope": "page",
-  "liFilter": ""
+  "liFilter": "",
+  "offer": {
+   "en": [
+    "English brochure and annual reports exist (search results) but were not retrievable"
+   ],
+   "cs": [
+    "Anglická brožura a výroční zprávy existují (výsledky vyhledávání), ale nebyly dostupné"
+   ],
+   "src": [
+    "https://www.jh-inst.cas.cz/sites/www.drupal/files/data/inline-files/ufch_jh_brozura_aj_nahled.pdf"
+   ]
+  }
  },
  {
   "id": "cybersecurityhub",
@@ -859,7 +1729,29 @@
   "li": "",
   "note": "",
   "liScope": "none",
-  "liFilter": ""
+  "liFilter": "",
+  "offer": {
+   "en": [
+    "Founded by MUNI, CTU and BUT (2020) as a cybersecurity cooperation centre building on the NC3 network",
+    "Partner in EDIH Cybersecurity Innovation Hub (coordinator RHK Brno): test-before-invest, skills, funding",
+    "Planned certification-authority role for security conformity of new technologies (EEA-valid certificates)",
+    "Support for Czech cybersecurity firms and secure digitalisation of industry and public sector"
+   ],
+   "cs": [
+    "Založen MU, ČVUT a VUT (2020) jako centrum spolupráce v kyberbezpečnosti navazující na síť NC3",
+    "Partner EDIH Cybersecurity Innovation Hub (koordinátor RHK Brno): test před investicí, dovednosti, financování",
+    "Plánovaná role certifikační autority pro bezpečnostní shodu nových technologií (certifikáty platné v EHP)",
+    "Podpora českých kyberbezpečnostních firem a bezpečné digitalizace průmyslu a veřejné správy"
+   ],
+   "train": {
+    "cs": "Školení a rozvoj dovedností poskytované přes EDIH Cybersecurity Innovation Hub (odborné vzdělávání hodnoceno 3/5 v katalogu EDIH); vlastní seznam kurzů nenačten.",
+    "en": "Training and skills development delivered through the EDIH Cybersecurity Innovation Hub (vocational training rated 3/5 in the EDIH catalogue); no own course list retrieved."
+   },
+   "src": [
+    "https://em.muni.cz/udalosti/13410-cybersecurity-hub-posili-spolupraci-v-oblasti-kyberbezpecnosti/amp",
+    "https://european-digital-innovation-hubs.ec.europa.eu/edih-catalogue/cih-0"
+   ]
+  }
  },
  {
   "id": "icuk",
@@ -876,7 +1768,27 @@
   "li": "company/icuk-inovacni-centrum-usteckeho-kraje",
   "note": "",
   "liScope": "page",
-  "liFilter": ""
+  "liFilter": "",
+  "offer": {
+   "en": [
+    "Startup incubation programmes (two per year, free): marketing, company management, financial planning",
+    "Consulting and advisory for entrepreneurs; startup festival with investor pitches; 140+ startups supported",
+    "Founded by Usti Region, UJEP and the Chamber of Commerce; semiconductor ties (Silicon Saxony Days, Taiwan)"
+   ],
+   "cs": [
+    "Inkubační programy pro startupy (dvakrát ročně, zdarma): marketing, řízení firmy, finanční plánování",
+    "Poradenství pro podnikatele; startupový festival s pitchi před investory; podpořeno 140+ startupů",
+    "Zřízen Ústeckým krajem, UJEP a hospodářskou komorou; polovodičové vazby (Silicon Saxony Days, Tchaj-wan)"
+   ],
+   "train": {
+    "cs": "Bezplatný inkubační program pro začínající podnikatele zaměřený na základy podnikání, marketing a leadership.",
+    "en": "Free incubation programme for early-stage founders covering business basics, marketing and leadership."
+   },
+   "src": [
+    "https://cnn.iprima.cz/inovacni-centrum-usteckeho-kraje-slavi-10-let-pomohlo-uz-140-startupum-491247",
+    "https://www.businessinfo.cz/clanky/icuk-se-zapojil-do-silicon-saxony-days-2026-diskuze-o-budoucnosti-polovodicu-i-preshranicni-spoluprace/"
+   ]
+  }
  },
  {
   "id": "zlinsky-kraj",
@@ -893,7 +1805,29 @@
   "li": "company/krajsk-ad-zl-nsk-ho-kraje",
   "note": "",
   "liScope": "page",
-  "liFilter": ""
+  "liFilter": "",
+  "offer": {
+   "en": [
+    "Member of the European Semiconductor Regions Alliance (ESRA) since 2024, second Czech region after JMK",
+    "Home to onsemi Roznov (SiC expansion) and NXP's Czech site; regional innovation strategy adds semiconductors",
+    "UTB Zlin new Faculty of Technology with a semiconductor field developed with onsemi (Bc from 2026)",
+    "Planned career-counselling system; Roznov technical school and gymnasium cooperate with industry"
+   ],
+   "cs": [
+    "Člen European Semiconductor Regions Alliance (ESRA) od 2024, druhý český region po JMK",
+    "Sídlo onsemi Rožnov (expanze SiC) a českého NXP; regionální inovační strategie posiluje polovodiče",
+    "Nová Fakulta technologická UTB Zlín s polovodičovým oborem vyvinutým s onsemi (Bc od 2026)",
+    "Plánovaný systém kariérového poradenství; rožnovská průmyslovka a gymnázium spolupracují s průmyslem"
+   ],
+   "train": {
+    "cs": "Podporuje polovodičové vzdělávání přes nový bakalářský obor UTB Zlín (s onsemi) a spolupráci středních škol v Rožnově; vlastní kurzy nenabízí.",
+    "en": "Supports semiconductor education via UTB Zlin's new bachelor's field (with onsemi) and secondary-school cooperation in Roznov; no own courses."
+   },
+   "src": [
+    "https://www.lupa.cz/aktuality/zlinsky-kraj-se-po-jizni-morave-dostal-mezi-nejvyspelejsi-cipove-regiony-v-evrope/",
+    "https://www.businessinfo.cz/clanky/zlinsky-kraj-aktualizuje-regionalni-inovacni-strategii-a-posiluje-zamereni-na-polovodice/"
+   ]
+  }
  },
  {
   "id": "rhk-brno",
@@ -910,6 +1844,29 @@
   "li": "company/brno-regional-chamber-of-commerce",
   "note": "",
   "liScope": "page",
-  "liFilter": ""
+  "liFilter": "",
+  "offer": {
+   "en": [
+    "International B2B matchmaking (Kontakt-Kontrakt at AMPER, MSV); business missions and cooperation exchanges",
+    "Export support: seminars, international offer/request databases, certificates of origin, ATA carnets",
+    "Free consultations (MARKETING360), digitalisation, cybersecurity and sustainability audits; networking",
+    "Coordinator of EDIH Cybersecurity Innovation Hub; ~400 members, ~20,000 clients/yr (self-reported)"
+   ],
+   "cs": [
+    "Mezinárodní B2B matchmaking (Kontakt-Kontrakt na AMPER, MSV); podnikatelské mise a kooperační burzy",
+    "Podpora exportu: semináře, mezinárodní databáze nabídek/poptávek, certifikáty původu, karnety ATA",
+    "Bezplatné konzultace (MARKETING360), audity digitalizace, kyberbezpečnosti a udržitelnosti; networking",
+    "Koordinátor EDIH Cybersecurity Innovation Hub; ~400 členů, ~20 000 klientů ročně (vlastní údaj)"
+   ],
+   "train": {
+    "cs": "Semináře, workshopy, konzultační dny a konference pro firmy; školení zaměstnanců členských firem hrazené z EU dotace (titulek businessinfo).",
+    "en": "Seminars, workshops, consultation days and conferences for companies; EU-subsidised employee training for member firms (businessinfo headline)."
+   },
+   "src": [
+    "https://www.b2match.com/e/contact-contract-amper-2026/participations/693015",
+    "https://european-digital-innovation-hubs.ec.europa.eu/edih-catalogue/cih-0",
+    "https://www.businessinfo.cz/clanky/rhk-brno-nabizi-diky-evropske-dotaci-desitky-skoleni-zdarma/"
+   ]
+  }
  }
 ]

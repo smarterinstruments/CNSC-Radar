@@ -113,6 +113,22 @@ h2{font-size:22px;font-weight:600;margin:0 0 6px}
 .card .links a{text-decoration:none;border-bottom:1px solid transparent}
 .card .links a:hover{border-bottom-color:var(--blue)}
 .card .note{font-size:11.5px;color:var(--warn)}
+.card .tr{display:inline-flex;align-items:center;gap:5px;font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.04em;color:var(--blue);background:var(--blue-soft);border-radius:999px;padding:2px 8px;align-self:flex-start}
+.offer{border-top:1px dashed var(--line);padding-top:8px;margin-top:2px}
+.offer summary{cursor:pointer;font-family:"IBM Plex Mono",monospace;font-size:11.5px;color:var(--blue);list-style:none;display:flex;align-items:center;gap:6px}
+.offer summary::-webkit-details-marker{display:none}
+.offer summary::before{content:"+";display:inline-block;width:14px;height:14px;border:1px solid var(--blue);border-radius:4px;font-size:11px;line-height:12px;text-align:center}
+.offer[open] summary::before{content:"\2013"}
+.offer .ob{margin-top:8px;display:flex;flex-direction:column;gap:8px}
+.offer h5{font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin:0 0 3px}
+.offer ul{padding-left:16px;margin:0;font-size:12.5px;color:var(--ink)}
+.offer li{margin:2px 0}
+.offer .oi{font-size:12.5px;padding:3px 0;border-bottom:1px dashed var(--line2)}
+.offer .oi:last-child{border-bottom:0}
+.offer .oi b{font-weight:600;display:block;font-size:12.5px}
+.offer .oi span{color:var(--muted);white-space:pre-line}
+.offer .train{font-size:12.5px;background:var(--blue-soft);border-radius:8px;padding:6px 9px}
+.offer .osrc{font-family:"IBM Plex Mono",monospace;font-size:10.5px;color:var(--faint)}
 /* events */
 .ev{display:grid;grid-template-columns:130px 1fr;gap:4px 16px;padding:12px 0;border-bottom:1px solid var(--line2)}
 .ev .w{font-family:"IBM Plex Mono",monospace;font-size:12.5px;color:var(--ink);font-weight:600}
@@ -210,7 +226,8 @@ const UI = {
        level:'Stupeň', none:'zatím žádný člen', topH:'Hlavní položky edice', topSub:'Nejdůležitější novinky týdne napříč segmenty; úplný log je v záložce Novinky.',
        newsH:'Log novinek', newsSub:'Všechny zařazené položky, nejnovější nahoře. Filtr typu a segmentu se kombinují; číslo u tlačítka říká, kolik položek by zůstalo.', all:'Vše', noitems:'V tomto výběru zatím nic není.',
        fType:'Typ', fSeg:'Segment', items1:'položka', items2:'položky', items:'položek', filter:'filtr', clear:'zrušit filtr',
-       memH:'Členové podle segmentů', memSub:'Kmenová data z katalogu klastru a semicz.cz. Poslední aktivita se počítá z logu novinek.', web:'web', li:'LinkedIn', last:'poslední aktivita', nolast:'zatím bez sledované aktivity', acad:'akademický návrh čipů',
+       memH:'Členové podle segmentů', memSub:'Kmenová data z katalogu klastru a semicz.cz. Poslední aktivita se počítá z logu novinek. Rozbalením „Nabídka“ zobrazíte produkty, služby, expertizu a školení, které člen veřejně nabízí.', web:'web', li:'LinkedIn', last:'poslední aktivita', nolast:'zatím bez sledované aktivity', acad:'akademický návrh čipů',
+       offer:'Nabídka: produkty, služby, expertiza', oTech:'Technologické domény', oSrv:'Nabízené služby', oWhat:'Produkty a služby', oTrain:'Školení a kurzy', trainChip:'školení', srcTsm:'Zdroj: CNSC Technology & Service Mapping (8/2026), popisy v původním znění', srcWeb:'Zdroj: veřejný web člena, tiskové zprávy a veřejné profily', oNone:'Podrobnější nabídka zatím není zpracována.',
        evH:'Nadcházející akce a termíny', evSub:'Akce členů a ekosystému, které stojí za zápis do kalendáře.', noev:'Žádná nadcházející akce.',
        abH:'O radaru', cluster:'CNSC', approx:'≈', source:'zdroj',
        about:[
@@ -230,7 +247,8 @@ const UI = {
        level:'Level', none:'no member yet', topH:'Headline items of this edition', topSub:'The most important news of the week across segments; the full log is under News.',
        newsH:'News log', newsSub:'All items recorded, newest first. Type and segment filters combine; the number on a button says how many items would remain.', all:'All', noitems:'Nothing in this selection yet.',
        fType:'Type', fSeg:'Segment', items1:'item', items2:'items', items:'items', filter:'filter', clear:'clear filter',
-       memH:'Members by segment', memSub:'Master data from the cluster catalogue and semicz.cz. Last activity is computed from the news log.', web:'website', li:'LinkedIn', last:'last activity', nolast:'no tracked activity yet', acad:'academic chip design',
+       memH:'Members by segment', memSub:'Master data from the cluster catalogue and semicz.cz. Last activity is computed from the news log. Expand “Offer” for the products, services, expertise and training a member publicly offers.', web:'website', li:'LinkedIn', last:'last activity', nolast:'no tracked activity yet', acad:'academic chip design',
+       offer:'Offer: products, services, expertise', oTech:'Technology domains', oSrv:'Services offered', oWhat:'Products and services', oTrain:'Training and courses', trainChip:'training', srcTsm:'Source: CNSC Technology & Service Mapping (Aug 2026), descriptions as provided', srcWeb:'Source: member’s public website, press releases and public profiles', oNone:'A detailed offer has not been compiled yet.',
        evH:'Upcoming events and deadlines', evSub:'Member and ecosystem events worth a calendar entry.', noev:'No upcoming event.',
        abH:'About the radar', cluster:'CNSC', approx:'≈', source:'source',
        about:[
@@ -356,6 +374,23 @@ function renderNews() {
   bindGo($('newsList'));
 }
 
+// Member offer: o.tech / o.srv come from the cluster's Technology & Service Mapping (original wording),
+// o.cs / o.en bullets and o.train{cs,en} from the member's public website and semicz.cz profile.
+const hasTraining = m => { const o = m.offer; if (!o) return false; if (o.train && (o.train.cs || o.train.en)) return true; return (o.srv || []).some(([k]) => /training/i.test(k)); };
+function offerHTML(m) {
+  const t = T(), o = m.offer;
+  if (!o) return '';
+  const bullets = L({cs: o.cs, en: o.en});
+  let h = '';
+  if (Array.isArray(bullets) && bullets.length) h += `<div><h5>${esc(t.oWhat)}</h5><ul>${bullets.map(b => `<li>${esc(b)}</li>`).join('')}</ul></div>`;
+  if (o.train && (o.train.cs || o.train.en)) h += `<div class="train">🎓 <b>${esc(t.oTrain)}:</b> ${esc(L(o.train))}</div>`;
+  if (o.tech && o.tech.length) h += `<div><h5>${esc(t.oTech)}</h5>${o.tech.map(([k, v]) => `<div class="oi"><b>${esc(k)}</b><span>${esc(v)}</span></div>`).join('')}</div>`;
+  if (o.srv && o.srv.length) h += `<div><h5>${esc(t.oSrv)}</h5>${o.srv.map(([k, v]) => `<div class="oi"><b>${esc(k)}</b><span>${esc(v)}</span></div>`).join('')}</div>`;
+  if (!h) h = `<div class="fine">${esc(t.oNone)}</div>`;
+  const src = [o.tech || o.srv ? t.srcTsm : null, (Array.isArray(bullets) && bullets.length) || (o.train && (o.train.cs || o.train.en)) ? t.srcWeb : null].filter(Boolean).join(' · ');
+  return `<details class="offer"><summary>${esc(t.offer)}</summary><div class="ob">${h}<div class="osrc">${esc(src)}</div></div></details>`;
+}
+
 function renderMembers() {
   const t = T();
   $('memberList').innerHTML = D.segments.map(s => {
@@ -368,8 +403,9 @@ function renderMembers() {
         const links = [m.url ? `<a href="${esc(m.url)}" target="_blank" rel="noopener">${esc(t.web)} ↗</a>` : '', m.li ? `<a href="https://www.linkedin.com/${esc(m.li)}/" target="_blank" rel="noopener">${esc(t.li)} ↗</a>` : ''].filter(Boolean).join('');
         return `<div class="card" id="member-${m.id}" style="--c:${segColor(s.id)};--rc:${ringColor(r)}"><div class="hd"><h4>${esc(m.n)}</h4><span class="city">${esc(m.city)}</span></div>` +
           (m.acadChip ? `<div class="fine">🎓 ${esc(t.acad)}</div>` : '') +
-          `<p>${esc(L({cs:m.cs,en:m.en}))}</p><div class="last"><i></i>${lastTxt}</div><div class="links">${links}</div>` +
-          (m.note ? `<div class="note">${esc(m.note)}</div>` : '') + `</div>`;
+          `<p>${esc(L({cs:m.cs,en:m.en}))}</p>` + (hasTraining(m) ? `<span class="tr">🎓 ${esc(t.trainChip)}</span>` : '') +
+          `<div class="last"><i></i>${lastTxt}</div><div class="links">${links}</div>` +
+          (m.note ? `<div class="note">${esc(m.note)}</div>` : '') + offerHTML(m) + `</div>`;
       }).join('') + `</div></div>`;
   }).join('');
 }
