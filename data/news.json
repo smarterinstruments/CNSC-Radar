@@ -24,6 +24,51 @@
   "u": "https://www.linkedin.com/feed/update/urn:li:activity:7522272005811826689/"
  },
  {
+  "d": "2026-11-01",
+  "a": false,
+  "m": [
+   "smarter-instruments"
+  ],
+  "ty": "launch",
+  "src": "cnsc",
+  "top": false,
+  "cs": "Smarter Instruments vydal pro CNSC novou edici Radaru aktivit členů (W43/2026) s veřejnou nabídkou produktů, služeb a školení u všech 53 členů; připravuje také týdenní EU Chips Act Pillar I Weekly Radar a Pilot Lines Monitor pro síť aCCCess.",
+  "en": "Smarter Instruments released a new edition of the CNSC Member Activity Radar (W43/2026) with the public offer of products, services and training of all 53 members; it also prepares the weekly EU Chips Act Pillar I Weekly Radar and the Pilot Lines Monitor for the aCCCess network.",
+  "u": "https://smarterinstruments.github.io/CNSC-Radar/"
+ },
+ {
+  "d": "2026-10-31",
+  "a": false,
+  "m": [
+   "smarter-instruments"
+  ],
+  "ty": "project",
+  "src": "cnsc",
+  "top": false,
+  "cs": "Smarter Instruments podpořil přípravu a podání českých projektů IPCEI AST k prenotifikaci Evropské komisi (projektová portfolia přímých účastníků).",
+  "en": "Smarter Instruments supported the preparation and submission of the Czech IPCEI AST projects for pre-notification to the European Commission (direct participants' project portfolios).",
+  "u": "https://www.linkedin.com/feed/update/urn:li:activity:7522272005811826689/"
+ },
+ {
+  "d": "2026-10-31",
+  "a": false,
+  "m": [
+   "thermo-fisher",
+   "crytur",
+   "esc-aerospace",
+   "mycroftmind",
+   "ujp-praha",
+   "nxp",
+   "hitachi-energy"
+  ],
+  "ty": "project",
+  "src": "cnsc",
+  "top": false,
+  "cs": "Thermo Fisher Scientific Brno, Crytur, ESC Aerospace, MycroftMind, UJP Praha, NXP Semiconductors a Hitachi Energy podaly jako přímí účastníci své projekty IPCEI AST k prenotifikaci Evropské komisi.",
+  "en": "Thermo Fisher Scientific Brno, Crytur, ESC Aerospace, MycroftMind, UJP Praha, NXP Semiconductors and Hitachi Energy submitted their IPCEI AST projects for pre-notification to the European Commission as direct participants.",
+  "u": "https://www.linkedin.com/feed/update/urn:li:activity:7522272005811826689/"
+ },
+ {
   "d": "2026-10-24",
   "a": false,
   "m": [],

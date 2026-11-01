@@ -1897,9 +1897,13 @@
   "liFilter": "",
   "offer": {
    "en": [
+    "IPCEI – support for preparing and submitting IPCEI AST projects (direct participants' project portfolios for pre-notification)",
+    "Development and weekly updates of radars for CNSC and aCCCess: CNSC Member Activity Radar, EU Chips Act Pillar I Weekly Radar, Pilot Lines Monitor",
     "Contract R&D project with BUT FIT (2021, computer graphics/vision group of P. Zemcik)"
    ],
    "cs": [
+    "IPCEI – podpora přípravy a podání projektů IPCEI AST (projektová portfolia přímých účastníků k prenotifikaci)",
+    "Vývoj a týdenní aktualizace radarů pro CNSC a aCCCess: Radar aktivit členů CNSC, EU Chips Act Pillar I Weekly Radar, Pilot Lines Monitor",
     "Smluvní výzkumný projekt s FIT VUT (2021, skupina počítačové grafiky/vidění P. Zemčíka)"
    ],
    "tech": [

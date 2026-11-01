@@ -59,7 +59,7 @@ h2{font-size:22px;font-weight:600;margin:0 0 6px}
 .st .l{margin-top:6px;font-weight:600;font-size:14px;line-height:1.3}
 .st .s{margin-top:4px;font-family:"IBM Plex Mono",monospace;font-size:11.5px;color:var(--muted);line-height:1.4}
 /* radar */
-.radarwrap{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(260px,.8fr);gap:22px;align-items:start}
+.radarwrap{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(250px,.7fr);gap:22px;align-items:start}
 .radar{background:var(--chip);border-radius:16px;padding:12px;position:relative;box-shadow:0 24px 60px -28px rgba(12,24,38,.45)}
 .radar svg{display:block;width:100%;height:auto}
 .key{display:flex;flex-direction:column;gap:10px}
@@ -68,6 +68,10 @@ h2{font-size:22px;font-weight:600;margin:0 0 6px}
 .rk .t{font-weight:600;font-size:15px}
 .rk .w{font-size:12.5px;color:var(--muted);margin-top:2px}
 .seglist{display:flex;flex-wrap:wrap;gap:6px 14px;font-family:"IBM Plex Mono",monospace;font-size:11.5px;color:var(--muted);margin-top:4px}
+.rk.legend{border-left-style:dashed}
+.rk.legend .li{font-size:12.5px;color:var(--muted);margin-top:5px;line-height:1.4}
+.rk.legend .li b{color:var(--ink);font-weight:600}
+.rk.legend .seglist{margin-top:10px;padding-top:8px;border-top:1px dashed var(--line2)}
 .seglist i{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:5px;vertical-align:-1px;background:var(--c)}
 .tip{position:absolute;pointer-events:none;background:var(--panel);color:var(--ink);border:1px solid var(--line);border-radius:8px;padding:8px 10px;font-size:12.5px;line-height:1.35;box-shadow:var(--shadow);max-width:260px;display:none;z-index:5}
 .tip b{display:block;font-family:"Space Grotesk",sans-serif;font-size:14px}
@@ -222,7 +226,7 @@ const UI = {
        s_week:'členů s aktivitou tento týden', s_week_s:'veřejný příspěvek nebo zpráva za posledních 7 dní',
        s_month:'členů s aktivitou tento měsíc', s_month_s:'posledních 31 dní',
        s_items:'položek v edici', s_items_s:'novinky zařazené v tomto týdnu',
-       radarH:'Radar aktivit členů', radarSub:'Výseče jsou segmenty hodnotového řetězce, každý bod je jeden člen s veřejnou aktivitou za poslední čtvrtletí. Čím blíž středu, tím čerstvější poslední aktivita. Členové bez sledované aktivity se na radaru nezobrazují. Najetím myší zobrazíte poslední položku.',
+       radarH:'Radar aktivit členů', radarSub:'Výseče jsou segmenty hodnotového řetězce, každý bod je jeden člen s veřejnou aktivitou za poslední měsíc: vnitřní kruh tento týden, vnější tento měsíc. Členové bez aktivity za poslední měsíc se na radaru nezobrazují, zůstávají v záložce Členové. Najetím myší zobrazíte poslední položku, kliknutím kartu člena.', legendH:'Legenda', legend:[['Výseč','segment hodnotového řetězce; barva výseče = barva bodu'],['Bod','jeden člen; popisek je zkrácený název'],['Vzdálenost od středu','stáří poslední veřejné aktivity: kruh 1 do 7 dnů, kruh 2 8–31 dnů'],['Zdroj','firemní stránky členů na LinkedIn, weby členů, semicz.cz; stupeň není hodnocení člena']], legendQuiet:'Mimo radar:', legendQuiet2:'členů bez aktivity za poslední měsíc (záložka Členové)',
        level:'Stupeň', none:'zatím žádný člen', topH:'Hlavní položky edice', topSub:'Nejdůležitější novinky týdne napříč segmenty; úplný log je v záložce Novinky.',
        newsH:'Log novinek', newsSub:'Všechny zařazené položky, nejnovější nahoře. Filtr typu a segmentu se kombinují; číslo u tlačítka říká, kolik položek by zůstalo.', all:'Vše', noitems:'V tomto výběru zatím nic není.',
        fType:'Typ', fSeg:'Segment', items1:'položka', items2:'položky', items:'položek', filter:'filtr', clear:'zrušit filtr',
@@ -233,7 +237,7 @@ const UI = {
        about:[
         ['Co radar sleduje','Veřejné aktivity členů Czech National Semiconductor Cluster: nové produkty a technologie, investice a expanze, získané projekty a granty, akce a vystoupení, partnerství a MoU, ocenění a změny ve vedení. Každá položka nese datum, členy, typ, zdroj a jednu větu.'],
         ['Odkud data pocházejí','Firemní stránky členů na LinkedIn (nikdy osobní profily), weby a tiskové zprávy členů, kanály CNSC a položky, které členové pošlou na info@semicz.cz s předmětem „Radar“. Data o členech vycházejí z katalogu klastru a ze seznamu členů na semicz.cz. U nadnárodních členů se sledují jen zprávy o jejich českých pracovištích.'],
-        ['Jak číst radar','Čtyři stupně čerstvosti: tento týden (do 7 dnů), tento měsíc (8–31 dnů), toto čtvrtletí (32–92 dnů), bez sledované aktivity. Stupeň říká jen to, kdy jsme naposledy zaznamenali veřejnou aktivitu; není to hodnocení člena. Členové bez sledované aktivity nejsou na radaru vykresleni, v záložce Členové zůstávají. Data označená ≈ jsou odvozená z relativního stáří příspěvku.'],
+        ['Jak číst radar','Čtyři stupně čerstvosti: tento týden (do 7 dnů), tento měsíc (8–31 dnů), toto čtvrtletí (32–92 dnů), bez sledované aktivity. Stupeň říká jen to, kdy jsme naposledy zaznamenali veřejnou aktivitu; není to hodnocení člena. Na radaru jsou vykresleny jen stupně 1 a 2 (poslední měsíc); ostatní členové zůstávají v záložce Členové. Data označená ≈ jsou odvozená z relativního stáří příspěvku.'],
         ['Jak často a kdo','Nová edice každou neděli dopoledne; položky se přidávají, starší zůstávají v logu. Sestavuje Czech National Semiconductor Cluster, z.s.; opravy, doplnění a přihlášení k odběru: info@semicz.cz.'],
         ['Co tu není','Interní informace klastru, obchodně citlivé údaje členů, projektové záměry a členská data mimo veřejný katalog. Radar pracuje jen s tím, co členové sami zveřejnili.']
        ]},
@@ -243,7 +247,7 @@ const UI = {
        s_week:'members active this week', s_week_s:'a public post or news item in the last 7 days',
        s_month:'members active this month', s_month_s:'last 31 days',
        s_items:'items in this edition', s_items_s:'news added this week',
-       radarH:'Member activity radar', radarSub:'Sectors are value-chain segments, each dot is one member with public activity in the last quarter. The closer to the centre, the more recent the last activity. Members with no tracked activity are not shown on the radar. Hover for the latest item.',
+       radarH:'Member activity radar', radarSub:'Sectors are value-chain segments, each dot is one member with public activity in the last month: inner ring this week, outer ring this month. Members with no activity in the last month are not shown on the radar; they stay listed under Members. Hover for the latest item, click for the member card.', legendH:'Legend', legend:[['Sector','value-chain segment; sector colour = dot colour'],['Dot','one member; the label is its short name'],['Distance from centre','age of the last public activity: ring 1 up to 7 days, ring 2 8–31 days'],['Source','members’ LinkedIn company pages, member websites, semicz.cz; the level is not a rating of the member']], legendQuiet:'Off the radar:', legendQuiet2:'members with no activity in the last month (see Members)',
        level:'Level', none:'no member yet', topH:'Headline items of this edition', topSub:'The most important news of the week across segments; the full log is under News.',
        newsH:'News log', newsSub:'All items recorded, newest first. Type and segment filters combine; the number on a button says how many items would remain.', all:'All', noitems:'Nothing in this selection yet.',
        fType:'Type', fSeg:'Segment', items1:'item', items2:'items', items:'items', filter:'filter', clear:'clear filter',
@@ -254,7 +258,7 @@ const UI = {
        about:[
         ['What the radar tracks','Public activities of the members of the Czech National Semiconductor Cluster: new products and technologies, investments and expansion, projects and grants won, events and talks, partnerships and MoUs, awards and leadership changes. Each item carries a date, the members, a type, a source and one sentence.'],
         ['Where the data comes from','The members’ LinkedIn company pages (never personal profiles), the members’ websites and press releases, CNSC channels, and items members send to info@semicz.cz with the subject “Radar”. Member master data comes from the cluster catalogue and the member list on semicz.cz. For multinational members only news about their Czech sites is tracked.'],
-        ['How to read the radar','Four freshness levels: this week (up to 7 days), this month (8–31 days), this quarter (32–92 days), no tracked activity. The level only says when we last recorded a public activity; it is not a rating of the member. Members with no tracked activity are not drawn on the radar but stay listed under Members. Dates marked ≈ are derived from the relative age of a post.'],
+        ['How to read the radar','Four freshness levels: this week (up to 7 days), this month (8–31 days), this quarter (32–92 days), no tracked activity. The level only says when we last recorded a public activity; it is not a rating of the member. Only levels 1 and 2 (the last month) are drawn on the radar; the other members stay listed under Members. Dates marked ≈ are derived from the relative age of a post.'],
         ['How often and by whom','A new edition every Sunday morning; items are added, older ones stay in the log. Compiled by Czech National Semiconductor Cluster, z.s.; corrections, additions and subscription: info@semicz.cz.'],
         ['What is not here','Internal cluster information, commercially sensitive member data, project pipelines and member data outside the public catalogue. The radar only works with what members have published themselves.']
        ]}
@@ -431,27 +435,27 @@ function renderAbout() {
 
 function renderRadar() {
   const t = T();
-  const W = 1040, H = 690, C = W / 2, CY = 345, R = [0, 140, 225, 300];
+  const W = 1180, H = 770, C = W / 2, CY = 385, R = [0, 210, 342];
   const segs = D.segments;
   const counts = Object.fromEntries(segs.map(s => [s.id, D.members.filter(m => m.s === s.id).length]));
   const tot = segs.reduce((a, s) => a + Math.max(2, counts[s.id]), 0);
   let ang = -Math.PI / 2; const span = {};
   segs.forEach(s => { const w = Math.max(2, counts[s.id]) / tot * 2 * Math.PI; span[s.id] = [ang, ang + w]; ang += w; });
   let h = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(t.radarH)}">`;
-  for (let i = 3; i >= 1; i--) h += `<circle cx="${C}" cy="${CY}" r="${R[i]}" fill="${i % 2 ? '#141a24' : '#0f141d'}" stroke="#2a3344" stroke-width="1.5"/>`;
+  for (let i = 2; i >= 1; i--) h += `<circle cx="${C}" cy="${CY}" r="${R[i]}" fill="${i % 2 ? '#141a24' : '#0f141d'}" stroke="#2a3344" stroke-width="1.5"/>`;
   segs.forEach(s => {
     const [a0, a1] = span[s.id];
-    h += `<line x1="${C}" y1="${CY}" x2="${(C + R[3] * Math.cos(a0)).toFixed(1)}" y2="${(CY + R[3] * Math.sin(a0)).toFixed(1)}" stroke="#2a3344" stroke-width="1.5"/>`;
-    const m = (a0 + a1) / 2, lr = R[3] + 16, x = C + lr * Math.cos(m), y = CY + lr * Math.sin(m);
-    const anc = Math.abs(Math.cos(m)) < .25 ? 'middle' : (Math.cos(m) > 0 ? 'start' : 'end'); const yoff = Math.abs(Math.cos(m)) < .25 ? (Math.sin(m) < 0 ? -6 : 14) : 4;
-    h += `<text x="${x.toFixed(1)}" y="${(y + yoff).toFixed(1)}" text-anchor="${anc}" font-size="13" font-weight="700" fill="${segColor(s.id)}" font-family="Space Grotesk,Inter,sans-serif">${esc(s.code)} ${esc(L(s))}</text>`;
+    h += `<line x1="${C}" y1="${CY}" x2="${(C + R[2] * Math.cos(a0)).toFixed(1)}" y2="${(CY + R[2] * Math.sin(a0)).toFixed(1)}" stroke="#2a3344" stroke-width="1.5"/>`;
+    const m = (a0 + a1) / 2, lr = R[2] + 18, x = C + lr * Math.cos(m), y = CY + lr * Math.sin(m);
+    const anc = Math.abs(Math.cos(m)) < .25 ? 'middle' : (Math.cos(m) > 0 ? 'start' : 'end'); const yoff = Math.abs(Math.cos(m)) < .25 ? (Math.sin(m) < 0 ? -8 : 18) : 6;
+    h += `<text x="${x.toFixed(1)}" y="${(y + yoff).toFixed(1)}" text-anchor="${anc}" font-size="16" font-weight="700" fill="${segColor(s.id)}" font-family="Space Grotesk,Inter,sans-serif">${esc(s.code)} ${esc(L(s))}</text>`;
   });
-  for (let i = 1; i <= 3; i++) h += `<text x="${C + 6}" y="${CY - R[i] + 14}" font-size="11" fill="#5d6677" font-family="IBM Plex Mono,monospace">${i}</text>`;
+  for (let i = 1; i <= 2; i++) h += `<text x="${C + 6}" y="${CY - R[i] + 16}" font-size="13" fill="#5d6677" font-family="IBM Plex Mono,monospace">${i}</text>`;
   const dots = [];
   segs.forEach(s => {
     const ms = D.members.filter(m => m.s === s.id);
-    const byRing = {1:[],2:[],3:[]};
-    ms.forEach(m => { const r = ringOf(m.id); if (r <= 3) byRing[r].push(m); });
+    const byRing = {1:[],2:[]};
+    ms.forEach(m => { const r = ringOf(m.id); if (r <= 2) byRing[r].push(m); });
     const [a0, a1] = span[s.id];
     Object.entries(byRing).forEach(([ring, arr]) => {
       arr.forEach((m, i) => {
@@ -459,19 +463,38 @@ function renderRadar() {
         // stagger radius inside the ring so dense rings do not overlap
         const r0 = R[ring - 1], r1 = R[ring];
         let frac = 0.55;
-        if (ring == 1) frac = k > 1 ? (i % 2 ? 0.9 : 0.58) : 0.72;
-        else if (k > 4) frac = 0.3 + 0.5 * ((i % 3) / 2);
+        if (ring == 1) frac = k > 3 ? [0.38, 0.66, 0.94][i % 3] : k > 1 ? (i % 2 ? 0.9 : 0.55) : 0.72;
+        else if (k > 3) frac = 0.28 + 0.56 * ((i % 3) / 2);
         else if (k > 1) frac = i % 2 ? 0.72 : 0.4;
         const r = r0 + (r1 - r0) * frac;
         dots.push({m, ring: +ring, x: C + r * Math.cos(a), y: CY + r * Math.sin(a), s});
       });
     });
   });
-  dots.forEach(d => {
-    const quiet = d.ring === 4;
-    h += `<g class="dot" data-id="${d.m.id}" style="cursor:pointer"><circle cx="${d.x.toFixed(1)}" cy="${d.y.toFixed(1)}" r="${quiet ? 5 : 7}" fill="${segColor(d.s.id)}" fill-opacity="${quiet ? .55 : 1}" stroke="#0d121a" stroke-width="2"/>`;
-    if (d.ring <= 2) { const right = Math.cos(Math.atan2(d.y - CY, d.x - C)) >= 0; h += `<text x="${(d.x + (right ? 11 : -11)).toFixed(1)}" y="${(d.y + 4).toFixed(1)}" text-anchor="${right ? 'start' : 'end'}" font-size="12" font-weight="600" fill="#eef1f6" font-family="Inter,sans-serif">${esc(d.m.short)}</text>`; }
-    h += `</g>`;
+  // labels: horizontal text next to the dot; overlapping labels are nudged apart vertically (same side, overlapping x-range)
+  const labels = dots.map(d => { const right = Math.cos(Math.atan2(d.y - CY, d.x - C)) >= 0; const w = d.m.short.length * 7.8 + 6; return {d, right, x: d.x + (right ? 12 : -12), y: d.y + 5, w, h: 16}; });
+  // other members' dots are fixed obstacles for a label (box around the dot, in label coordinates: y = baseline)
+  const items = labels.concat(dots.map(d => ({d, fixed: true, x0: d.x - 10, x1: d.x + 10, y: d.y + 5, h: 20})));
+  const xr = o => o.fixed ? [o.x0, o.x1] : (o.right ? [o.x, o.x + o.w] : [o.x - o.w, o.x]);
+  for (let it = 0; it < 10; it++) {
+    items.sort((p, q) => p.y - q.y);
+    for (let i = 0; i < items.length; i++) for (let j = i + 1; j < items.length; j++) {
+      const A = items[i], B = items[j]; if (B.y - A.y >= Math.max(A.h, B.h)) break;
+      if (A.fixed && B.fixed) continue;
+      if (!A.fixed && !B.fixed && A.d === B.d) continue;
+      if ((A.fixed && A.d === B.d) || (B.fixed && B.d === A.d)) continue;  // a label may sit next to its own dot
+      const [ax0, ax1] = xr(A), [bx0, bx1] = xr(B);
+      if (ax1 < bx0 || bx1 < ax0) continue;
+      const need = (A.h + B.h) / 2 - (B.y - A.y) + 0.5;
+      if (A.fixed) B.y += need; else if (B.fixed) A.y -= need; else { A.y -= need / 2; B.y += need / 2; }
+    }
+  }
+  labels.forEach(l => {
+    const d = l.d;
+    h += `<g class="dot" data-id="${d.m.id}" style="cursor:pointer">`;
+    if (Math.abs(l.y - (d.y + 5)) > 7) h += `<line x1="${d.x.toFixed(1)}" y1="${d.y.toFixed(1)}" x2="${(l.x + (l.right ? -3 : 3)).toFixed(1)}" y2="${(l.y - 4).toFixed(1)}" stroke="#5d6677" stroke-width="1"/>`;
+    h += `<circle cx="${d.x.toFixed(1)}" cy="${d.y.toFixed(1)}" r="8" fill="${segColor(d.s.id)}" stroke="#0d121a" stroke-width="2"/>`;
+    h += `<text x="${l.x.toFixed(1)}" y="${l.y.toFixed(1)}" text-anchor="${l.right ? 'start' : 'end'}" font-size="14" font-weight="600" fill="#eef1f6" font-family="Inter,sans-serif">${esc(d.m.short)}</text></g>`;
   });
   h += '</svg>';
   $('radarSvg').innerHTML = h;
@@ -486,12 +509,17 @@ function renderRadar() {
     g.addEventListener('mouseleave', () => tip.style.display = 'none');
     g.addEventListener('click', () => { showTab('members'); const el = document.getElementById('member-' + m.id); if (el) el.scrollIntoView({behavior:'smooth', block:'center'}); });
   });
-  $('key').innerHTML = D.rings.map(r => {
+  const quietN = D.members.filter(m => ringOf(m.id) > 2).length;
+  const levels = D.rings.filter(r => r.n <= 2).map(r => {
     const who = D.members.filter(m => ringOf(m.id) === r.n).map(m => m.short);
-    const w = r.n === 4 ? (who.length ? `${who.length} ${LANG === 'cs' ? 'členů – na radaru se nezobrazují, viz záložka Členové' : 'members – not shown on the radar, see Members'}` : `<span style="color:var(--faint)">${esc(t.none)}</span>`) : who.length ? (who.length > 12 ? who.slice(0, 12).join(', ') + ` +${who.length - 12}` : who.join(', ')) : `<span style="color:var(--faint)">${esc(t.none)}</span>`;
+    const w = who.length ? who.join(', ') : `<span style="color:var(--faint)">${esc(t.none)}</span>`;
     return `<div class="rk" style="--c:${ringColor(r.n)}"><div class="n">${esc(t.level)} ${r.n} · ${esc(L({cs:r.desc_cs,en:r.desc_en}))}</div><div class="t">${esc(L(r))}</div><div class="w">${w}</div></div>`;
   }).join('');
-  $('seglist').innerHTML = segs.map(s => `<span style="--c:${segColor(s.id)}"><i></i>${esc(s.code)} ${esc(L(s))} (${counts[s.id]})</span>`).join('');
+  const seglist = segs.map(s => `<span style="--c:${segColor(s.id)}"><i></i>${esc(s.code)} ${esc(L(s))} (${counts[s.id]})</span>`).join('');
+  $('key').innerHTML = levels + `<div class="rk legend" style="--c:var(--line)"><div class="n">${esc(t.legendH)}</div>` +
+    t.legend.map(([k, v]) => `<div class="li"><b>${esc(k)}</b> ${esc(v)}</div>`).join('') +
+    `<div class="li"><b>${esc(t.legendQuiet)}</b> ${quietN} ${esc(t.legendQuiet2)}</div><div class="seglist">${seglist}</div></div>`;
+  $('seglist').innerHTML = '';
 }
 
 function renderAll() { renderStatic(); renderStats(); renderRadar(); renderTop(); renderNews(); renderMembers(); renderEvents(); renderAbout(); }
