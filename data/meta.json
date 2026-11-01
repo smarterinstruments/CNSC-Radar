@@ -1,6 +1,6 @@
 {
- "edition": "W42/2026",
- "updated": "2026-10-18",
+ "edition": "W43/2026",
+ "updated": "2026-10-25",
  "status": "alpha",
  "org": "Czech National Semiconductor Cluster, z.s.",
  "contact": "info@semicz.cz",
@@ -15,7 +15,7 @@
   "en": "What the members of the Czech National Semiconductor Cluster publish each week: new products and technologies, investments, projects won, events, partnerships and awards. Compiled from the members' public company channels, once a week."
  },
  "banner": {
-  "cs": "Alfa verze. První sběr 18. 10. 2026 pokryl LinkedIn stránky členů za posledních ~30 dní; weby členů bez LinkedInu (UJEP, CyberSecurityHub) zatím sledovány nejsou. Opravy a doplnění: info@semicz.cz, předmět „Radar“.",
-  "en": "Alpha version. The first collection on 18 Oct 2026 covered the members' LinkedIn pages for the last ~30 days; websites of members without LinkedIn (UJEP, CyberSecurityHub) are not tracked yet. Corrections and additions: info@semicz.cz, subject “Radar”."
+  "cs": "Alfa verze – edice W43/2026 (25. 10. 2026). Sledujeme firemní stránky členů na LinkedIn, weby členů bez LinkedInu a semicz.cz; položky za posledních ~31 dní. Opravy a doplnění: info@semicz.cz, předmět „Radar“.",
+  "en": "Alpha version – edition W43/2026 (25 Oct 2026). We track the members' LinkedIn company pages, the websites of members without LinkedIn and semicz.cz; items from the last ~31 days. Corrections and additions: info@semicz.cz, subject “Radar”."
  }
 }

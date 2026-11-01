@@ -27,6 +27,33 @@
   "u": "https://www.linkedin.com/company/edhouse-s-r-o-/posts/"
  },
  {
+  "d": "2026-10-27",
+  "end": "2026-10-29",
+  "when": {
+   "cs": "27.–29. 10. 2026",
+   "en": "27–29 Oct 2026"
+  },
+  "m": [
+   "tropic-square"
+  ],
+  "cs": "it-sa Expo & Congress, Norimberk: Tropic Square s devkity TROPIC01",
+  "en": "it-sa Expo & Congress, Nuremberg: Tropic Square with TROPIC01 devkits",
+  "u": "https://www.linkedin.com/company/tropic-square/posts/"
+ },
+ {
+  "d": "2026-10-28",
+  "when": {
+   "cs": "28. 10. 2026",
+   "en": "28 Oct 2026"
+  },
+  "m": [
+   "dynanic"
+  ],
+  "cs": "Altera Innovators Day, San José: DynaNIC (Gold sponzor) s živým 400G Ultra Ethernet demem na Agilex 7",
+  "en": "Altera Innovators Day, San Jose: DynaNIC (Gold sponsor) with a live 400G Ultra Ethernet demo on Agilex 7",
+  "u": "https://www.linkedin.com/company/dynanic/posts/"
+ },
+ {
   "d": "2026-10-31",
   "when": {
    "cs": "31. 10. 2026",
@@ -36,6 +63,20 @@
   "cs": "Uzávěrka prenotifikace IPCEI AST (MPO) – projekty členů v pokročilých polovodičových technologiích",
   "en": "IPCEI AST pre-notification deadline (Ministry of Industry and Trade) – members' projects in advanced semiconductor technologies",
   "u": "https://mpo.gov.cz/cz/prumysl/zpracovatelsky-prumysl/vyzva-k_vyjadreni-zajmu-o-ucast-v_evropskych-projektech-ipcei-ast-_-v_oblasti-pokrocilych-polovodicovych-technologii---prodlouzena-do-31--1--2026---290441/"
+ },
+ {
+  "d": "2026-11-03",
+  "end": "2026-11-04",
+  "when": {
+   "cs": "3.–4. 11. 2026",
+   "en": "3–4 Nov 2026"
+  },
+  "m": [
+   "upt"
+  ],
+  "cs": "Deep Layers 2026 – workshop o umělé inteligenci (AIMT Lab ÚPT AV ČR, Brno)",
+  "en": "Deep Layers 2026 – workshop on artificial intelligence (AIMT Lab, ISI CAS, Brno)",
+  "u": "https://www.linkedin.com/company/-stav-p-strojov-techniky-av-r-v-v-i-/posts/"
  },
  {
   "d": "2026-11-04",
@@ -49,15 +90,179 @@
   "u": "https://allpros.eu/events/technology-sovereignty-package-practice"
  },
  {
+  "d": "2026-11-04",
+  "when": {
+   "cs": "4. 11. 2026",
+   "en": "4 Nov 2026"
+  },
+  "m": [
+   "rhk-brno"
+  ],
+  "cs": "RHK Brno: pasování nových členů, beseda Média, byznys a AI, Speed Business Meeting",
+  "en": "Brno Regional Chamber of Commerce: inauguration of new members, talk on media, business and AI, Speed Business Meeting",
+  "u": "https://www.linkedin.com/company/brno-regional-chamber-of-commerce/posts/"
+ },
+ {
+  "d": "2026-11-05",
+  "when": {
+   "cs": "5. 11. 2026",
+   "en": "5 Nov 2026"
+  },
+  "m": [
+   "vut-brno"
+  ],
+  "cs": "Seminář k programu Digital Europe (CzechInvest, NKM) na Rektorátu VUT v Brně",
+  "en": "Digital Europe programme seminar (CzechInvest, national contact point) at the BUT Rectorate, Brno",
+  "u": "https://www.linkedin.com/school/vysokeucenitechnickevbrne/posts/"
+ },
+ {
+  "d": "2026-11-05",
+  "end": "2026-11-06",
+  "when": {
+   "cs": "5.–6. 11. 2026",
+   "en": "5–6 Nov 2026"
+  },
+  "m": [
+   "ufe"
+  ],
+  "cs": "Dny otevřených dveří ÚFE AV ČR (Kobylisy, Lysolaje) v rámci Týdne Akademie věd",
+  "en": "IPE CAS open days (Kobylisy, Lysolaje) during the Czech Academy of Sciences Week",
+  "u": "https://dod.ufe.cz"
+ },
+ {
   "d": "2026-11-10",
   "when": {
    "cs": "10.–13. 11. 2026",
    "en": "10–13 Nov 2026"
   },
-  "m": [],
-  "cs": "SEMICON Europa, Mnichov: český stánek s MPO a CzechInvestem, finále Chips Venture Forum 11. 11., spuštění Pillar I Weekly Radar",
-  "en": "SEMICON Europa, Munich: Czech pavilion with the Ministry of Industry and Trade and CzechInvest, Chips Venture Forum final on 11 Nov, launch of the Pillar I Weekly Radar",
+  "m": [
+   "tropic-square"
+  ],
+  "cs": "SEMICON Europa / electronica, Mnichov: český stánek s MPO a CzechInvestem, finále Chips Venture Forum 11. 11., Tropic Square s devkity TROPIC01, spuštění Pillar I Weekly Radar",
+  "en": "SEMICON Europa / electronica, Munich: Czech pavilion with the Ministry of Industry and Trade and CzechInvest, Chips Venture Forum final on 11 Nov, Tropic Square with TROPIC01 devkits, launch of the Pillar I Weekly Radar",
   "u": "https://www.semiconeuropa.org/"
+ },
+ {
+  "d": "2026-11-10",
+  "when": {
+   "cs": "10. 11. 2026",
+   "en": "10 Nov 2026"
+  },
+  "m": [
+   "cvut"
+  ],
+  "cs": "Young AI Research Forum 2026: From Research to Impact, CIIRC ČVUT (CZAI; partner Czech Semiconductor Centre)",
+  "en": "Young AI Research Forum 2026: From Research to Impact, CIIRC CTU (CZAI; partner Czech Semiconductor Centre)",
+  "u": "https://www.linkedin.com/school/cvutpraha/posts/"
+ },
+ {
+  "d": "2026-11-10",
+  "end": "2026-11-12",
+  "when": {
+   "cs": "10.–12. 11. 2026",
+   "en": "10–12 Nov 2026"
+  },
+  "m": [
+   "tropic-square"
+  ],
+  "cs": "Enlit Europe, Vídeň: Tropic Square s devkity TROPIC01; CNSC plánuje účast",
+  "en": "Enlit Europe, Vienna: Tropic Square with TROPIC01 devkits; CNSC plans to attend",
+  "u": "https://www.linkedin.com/company/tropic-square/posts/"
+ },
+ {
+  "d": "2026-11-11",
+  "end": "2026-11-13",
+  "when": {
+   "cs": "11.–13. 11. 2026",
+   "en": "11–13 Nov 2026"
+  },
+  "m": [
+   "upt",
+   "crytur"
+  ],
+  "cs": "Konference Laser66, Kurdějov (pořádá ÚPT AV ČR; partner mj. Crytur)",
+  "en": "Laser66 conference, Kurdějov (organised by ISI CAS; partners incl. Crytur)",
+  "u": "https://laser.isibrno.cz"
+ },
+ {
+  "d": "2026-11-12",
+  "when": {
+   "cs": "12. 11. 2026",
+   "en": "12 Nov 2026"
+  },
+  "m": [],
+  "cs": "Silicon Europe Drinks & Bites na SEMICON Europa, Mnichov (hala B1, stánek Holland High Tech B1534, 16:30–18:00)",
+  "en": "Silicon Europe Drinks & Bites at SEMICON Europa, Munich (Hall B1, Holland High Tech booth B1534, 16:30–18:00)",
+  "u": "https://www.linkedin.com/company/silicon-europe/posts/"
+ },
+ {
+  "d": "2026-11-15",
+  "end": "2026-11-20",
+  "when": {
+   "cs": "15.–20. 11. 2026",
+   "en": "15–20 Nov 2026"
+  },
+  "m": [
+   "dynanic"
+  ],
+  "cs": "SC26, Chicago: DynaNIC s živým Nx400G demem pro Ultra Ethernet",
+  "en": "SC26, Chicago: DynaNIC with a live Nx400G Ultra Ethernet demo",
+  "u": "https://www.linkedin.com/company/dynanic/posts/"
+ },
+ {
+  "d": "2026-11-18",
+  "end": "2026-11-20",
+  "when": {
+   "cs": "18.–20. 11. 2026",
+   "en": "18–20 Nov 2026"
+  },
+  "m": [
+   "dynanic"
+  ],
+  "cs": "SuriCon 2026, Lisabon: DynaNIC (Community Advocate sponzor) – Suricata Turbo, 400G IDS akcelerace",
+  "en": "SuriCon 2026, Lisbon: DynaNIC (Community Advocate sponsor) – Suricata Turbo, 400G IDS acceleration",
+  "u": "https://www.linkedin.com/company/dynanic/posts/"
+ },
+ {
+  "d": "2026-11-22",
+  "end": "2026-11-25",
+  "when": {
+   "cs": "22.–25. 11. 2026",
+   "en": "22–25 Nov 2026"
+  },
+  "m": [
+   "ujp-praha"
+  ],
+  "cs": "ANTS 2026 – konference o jaderných technologiích pro vesmír, Praha (ENS, ESA; partner UJP PRAHA)",
+  "en": "ANTS 2026 – conference on nuclear technologies for space, Prague (ENS, ESA; partner UJP PRAHA)",
+  "u": "https://www.linkedin.com/company/ujp/posts/"
+ },
+ {
+  "d": "2026-11-24",
+  "when": {
+   "cs": "24. 11. 2026",
+   "en": "24 Nov 2026"
+  },
+  "m": [
+   "zlinsky-kraj"
+  ],
+  "cs": "ZLINTECH 2026, Aula UTB Zlín (Smart akcelerátor Zlínského kraje III)",
+  "en": "ZLINTECH 2026, TBU Aula, Zlín (Zlín Region Smart Accelerator III)",
+  "u": "https://www.zlin.tech"
+ },
+ {
+  "d": "2026-11-24",
+  "end": "2026-11-26",
+  "when": {
+   "cs": "24.–26. 11. 2026",
+   "en": "24–26 Nov 2026"
+  },
+  "m": [
+   "vsb-tuo"
+  ],
+  "cs": "U!REKA European University Research Days 2026, VŠB-TUO Ostrava (registrace do 30. 10.)",
+  "en": "U!REKA European University Research Days 2026, VSB-TUO Ostrava (registration until 30 Oct)",
+  "u": "https://www.linkedin.com/school/vsb-technical-university-of-ostrava/posts/"
  },
  {
   "d": "2026-12-02",
@@ -69,5 +274,19 @@
   "cs": "EFECS 2026, Helsinki (Chips JU): evropské fórum pro elektronické komponenty a systémy",
   "en": "EFECS 2026, Helsinki (Chips JU): the European forum for electronic components and systems",
   "u": "https://efecs.eu/"
+ },
+ {
+  "d": "2026-12-09",
+  "end": "2026-12-11",
+  "when": {
+   "cs": "9.–11. 12. 2026",
+   "en": "9–11 Dec 2026"
+  },
+  "m": [
+   "dynanic"
+  ],
+  "cs": "SEMICON Japan, Tokio: DynaNIC",
+  "en": "SEMICON Japan, Tokyo: DynaNIC",
+  "u": "https://www.linkedin.com/company/dynanic/posts/"
  }
 ]

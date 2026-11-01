@@ -24,6 +24,352 @@
   "u": "https://www.linkedin.com/feed/update/urn:li:activity:7522272005811826689/"
  },
  {
+  "d": "2026-10-24",
+  "a": false,
+  "m": [],
+  "ty": "cluster",
+  "src": "press",
+  "top": false,
+  "cs": "Chips Venture Forum v Bordeaux (21.–22. 10.) v rámci projektu aCCCess, jehož je CNSC partnerem, propojilo evropské polovodičové start-upy s investory; finále proběhne na SEMICON Europa v Mnichově.",
+  "en": "The Chips Venture Forum in Bordeaux (21–22 Oct), run under the aCCCess project in which CNSC is a partner, brought European semiconductor start-ups together with investors; the final takes place at SEMICON Europa in Munich.",
+  "u": "https://www.linkedin.com/company/acccess-project/posts/"
+ },
+ {
+  "d": "2026-10-24",
+  "a": true,
+  "m": [
+   "analog-bits"
+  ],
+  "ty": "launch",
+  "src": "linkedin",
+  "top": false,
+  "cs": "Analog Bits zveřejnil demo video testovacího čipu N2P2 na procesu TSMC N2P se silicon daty; recenzi přinesl SemiWiki.",
+  "en": "Analog Bits released a demo video of its N2P2 test chip on TSMC's N2P process with silicon data, reviewed by SemiWiki.",
+  "u": "https://www.linkedin.com/company/analog-bits/posts/"
+ },
+ {
+  "d": "2026-10-23",
+  "a": false,
+  "m": [
+   "vut-brno"
+  ],
+  "ty": "award",
+  "src": "linkedin",
+  "top": false,
+  "cs": "Dinara Sobola z FEKT VUT a CEITEC VUT, která zkoumá funkční materiály pro kvantové technologie a neuromorfní elektroniku, se v žebříčku World's Top 2% Scientists zařadila mezi 1,6 % nejcitovanějších vědců v aplikované fyzice za rok 2025.",
+  "en": "Dinara Sobola of FEEC BUT and CEITEC BUT, who works on functional materials for quantum technologies and neuromorphic electronics, ranked among the 1.6% most-cited scientists in applied physics for 2025 in the World's Top 2% Scientists list.",
+  "u": "https://www.linkedin.com/school/vysokeucenitechnickevbrne/posts/"
+ },
+ {
+  "d": "2026-10-23",
+  "a": false,
+  "m": [
+   "vscht"
+  ],
+  "ty": "project",
+  "src": "linkedin",
+  "top": true,
+  "cs": "VŠCHT Praha (skupina prof. Zdeňka Sofera) je partnerem projektu EIC Pathfinder 2D FERROPLEX vedeného CNRS (téměř 3,9 mil. EUR, 4 roky): atomárně tenké feroelektrické materiály pro plně optický umělý neuron a fotonické neuronové sítě.",
+  "en": "UCT Prague (Prof. Zdeněk Sofer's group) is a partner in the CNRS-led EIC Pathfinder project 2D FERROPLEX (almost EUR 3.9 million, 4 years): atomically thin ferroelectric materials for an all-optical artificial neuron and photonic neural networks.",
+  "u": "https://www.linkedin.com/school/vschtpraha/posts/"
+ },
+ {
+  "d": "2026-10-22",
+  "a": false,
+  "m": [
+   "vscht"
+  ],
+  "ty": "partner",
+  "src": "linkedin",
+  "top": false,
+  "cs": "VŠCHT Praha se stala členem IBM Quantum Innovation Center a získává přístup ke kvantovým počítačům IBM pro výzkum i výuku.",
+  "en": "UCT Prague joined the IBM Quantum Innovation Center, gaining access to IBM quantum computers for research and teaching.",
+  "u": "https://www.linkedin.com/school/vschtpraha/posts/"
+ },
+ {
+  "d": "2026-10-22",
+  "a": false,
+  "m": [
+   "unites",
+   "htest",
+   "edhouse"
+  ],
+  "ty": "event",
+  "src": "linkedin",
+  "top": true,
+  "cs": "12. IMAPS Flash Conference ve Zlíně (22.–23. 10.): CEO UNITES Ondřej Beťák představil metodiku měření Gate Charge u SiC a GaN tranzistorů na testeru Effitest P914 (vč. JEDEC JEP192), H TEST vystavoval parametrický analyzátor Keysight B1500A a SMU B2900C a partnerem konference byl edhouse (aplikace Dataport pro onsemi).",
+  "en": "12th IMAPS Flash Conference in Zlín (22–23 Oct): UNITES CEO Ondřej Beťák presented a Gate Charge measurement methodology for SiC and GaN devices on the Effitest P914 tester (incl. JEDEC JEP192), H TEST exhibited the Keysight B1500A parametric analyser and B2900C SMUs, and edhouse was a conference partner (Dataport application for onsemi).",
+  "u": "https://www.linkedin.com/company/unites-systems-a-s-cz/posts/"
+ },
+ {
+  "d": "2026-10-22",
+  "a": false,
+  "m": [
+   "ujp-praha",
+   "fzu"
+  ],
+  "ty": "project",
+  "src": "linkedin",
+  "top": false,
+  "cs": "UJP PRAHA a FZÚ AV ČR v rámci NCK MATCA vyvíjejí aditivní výrobu (3D tisk) zirkonia pro distanční mřížky jaderného paliva; první tenkostěnné struktury pod 1 mm jsou hotové.",
+  "en": "UJP PRAHA and the Institute of Physics CAS are developing additive manufacturing (3D printing) of zirconium for nuclear-fuel spacer grids within NCK MATCA; the first thin-walled structures below 1 mm are done.",
+  "u": "https://www.linkedin.com/company/ujp/posts/"
+ },
+ {
+  "d": "2026-10-22",
+  "a": false,
+  "m": [
+   "esc-aerospace"
+  ],
+  "ty": "event",
+  "src": "linkedin",
+  "top": false,
+  "cs": "esc Aerospace hostil v rámci Czech-Polish Space Industry Day delegaci polských vesmírných firem ve VZLÚ a představil hyperspektrální snímkování, optickou komunikaci a kvantové technologie; projekt QuTechSpace zveřejnil své QKD komponenty.",
+  "en": "esc Aerospace hosted a delegation of Polish space companies at VZLÚ as part of the Czech-Polish Space Industry Day, presenting hyperspectral imaging, optical communications and quantum technologies; the QuTechSpace project published its QKD components.",
+  "u": "https://www.linkedin.com/company/esc-aerospace/posts/"
+ },
+ {
+  "d": "2026-10-22",
+  "a": false,
+  "m": [
+   "tescan"
+  ],
+  "ty": "event",
+  "src": "linkedin",
+  "top": false,
+  "cs": "Tescan byl průmyslovým partnerem EMBL Imaging Centre Symposium 2026 v Heidelbergu a vedl workshop o Xe plazmovém FIB (SOLARIS X 2) pro in situ strukturní biologii s praktickou ukázkou v laboratoři EMBL.",
+  "en": "Tescan was an industry partner of the EMBL Imaging Centre Symposium 2026 in Heidelberg and ran a workshop on Xe plasma FIB (SOLARIS X 2) for in situ structural biology with a hands-on session in an EMBL lab.",
+  "u": "https://www.linkedin.com/company/tescan-group/posts/"
+ },
+ {
+  "d": "2026-10-22",
+  "a": false,
+  "m": [
+   "activair"
+  ],
+  "ty": "launch",
+  "src": "linkedin",
+  "top": false,
+  "cs": "Activair představil jednostupňovou olejovou vývěvu řady HWT s vysokou tolerancí vody, integrovaným odlučovačem olejové mlhy a chlazením vzduch–olej.",
+  "en": "Activair introduced the HWT series single-stage oil-sealed vacuum pump with high water tolerance, an integrated oil-mist separator and air–oil cooling.",
+  "u": "https://www.linkedin.com/company/activaircz/posts/"
+ },
+ {
+  "d": "2026-10-22",
+  "a": false,
+  "m": [
+   "upt"
+  ],
+  "ty": "award",
+  "src": "linkedin",
+  "top": false,
+  "cs": "Petr Nejedlý z ÚPT AV ČR (skupina AIMT Lab) převzal Cenu Akademie věd ČR pro mladé vědecké pracovníky za lokalizaci epileptických ložisek pomocí multimodálních dat a umělé inteligence.",
+  "en": "Petr Nejedlý of ISI CAS (AIMT Lab) received the Czech Academy of Sciences Award for young researchers for localising epileptic foci using multimodal data and artificial intelligence.",
+  "u": "https://www.linkedin.com/company/-stav-p-strojov-techniky-av-r-v-v-i-/posts/"
+ },
+ {
+  "d": "2026-10-22",
+  "a": false,
+  "m": [
+   "icuk",
+   "ujep"
+  ],
+  "ty": "event",
+  "src": "linkedin",
+  "top": false,
+  "cs": "ICUK, CzechInvest a UJEP uspořádaly pro tchajwanskou delegaci (CzechTourism) seminář o polovodičovém potenciálu Ústeckého kraje a rozvoji českých dodavatelských řetězců navázaných na TSMC, včetně návštěvy CPTO.",
+  "en": "ICUK, CzechInvest and UJEP held a seminar for a Taiwanese delegation (CzechTourism) on the Ústí Region's semiconductor potential and the development of Czech supplier chains linked to TSMC, including a visit to the CPTO centre.",
+  "u": "https://www.linkedin.com/company/icuk-inovacni-centrum-usteckeho-kraje/posts/"
+ },
+ {
+  "d": "2026-10-21",
+  "a": false,
+  "m": [
+   "tescan"
+  ],
+  "ty": "event",
+  "src": "linkedin",
+  "top": false,
+  "cs": "Tescan na National Conference on Electron Microscopy 2026 představil workflow od UniTOM po AMBER X a TENSOR a novinky pro přípravu TEM vzorků: Orage 2 (Ga+ FIB, o 40 % rychlejší), Mistral (plazmový FIB, o 60 % rychlejší) a Aura (Ar leštění do 200 eV).",
+  "en": "At the 2026 National Conference on Electron Microscopy Tescan showed its UniTOM–AMBER X–TENSOR workflow and new TEM sample-preparation tools: Orage 2 (Ga+ FIB, 40% faster), Mistral (plasma FIB, 60% faster) and Aura (Ar polishing down to 200 eV).",
+  "u": "https://www.linkedin.com/company/tescan-group/posts/"
+ },
+ {
+  "d": "2026-10-21",
+  "a": false,
+  "m": [
+   "techsoft",
+   "cvut"
+  ],
+  "ty": "event",
+  "src": "linkedin",
+  "top": false,
+  "cs": "TechSoft Engineering pořádá na Fakultě strojní ČVUT první ročník SimAcademy – živou výuku Ansys Discovery, Mechanical a Fluent pro sponzorované studentské týmy (kapacita naplněna).",
+  "en": "TechSoft Engineering runs the first SimAcademy at the CTU Faculty of Mechanical Engineering – live Ansys Discovery, Mechanical and Fluent training for the student teams it sponsors (fully booked).",
+  "u": "https://www.linkedin.com/company/techsoft-engineering-s.r.o/posts/"
+ },
+ {
+  "d": "2026-10-20",
+  "a": false,
+  "m": [
+   "dynanic",
+   "vut-brno"
+  ],
+  "ty": "launch",
+  "src": "linkedin",
+  "top": true,
+  "cs": "DynaNIC nasadil u cloudového providera Nethost postkvantovou kryptografii na FPGA pro propojení cloudových lokalit: ustavení klíčů i šifrování běží přímo v FPGA (karty Silicom, kryptografické IP z VUT v Brně), CPU serverů zůstávají zákazníkům.",
+  "en": "DynaNIC deployed FPGA-based post-quantum cryptography at the cloud provider Nethost to protect its inter-site links: key establishment and encryption run inside the FPGA (Silicom cards, cryptographic IP from Brno University of Technology), leaving the server CPUs to customer workloads.",
+  "u": "https://www.linkedin.com/company/dynanic/posts/"
+ },
+ {
+  "d": "2026-10-20",
+  "a": false,
+  "m": [
+   "codasip"
+  ],
+  "ty": "launch",
+  "src": "linkedin",
+  "top": true,
+  "cs": "Codasip ukázal zabezpečení edge AI aplikace na platformě RISC-V CHERI s akcelerátorem Hailo: inženýr za jedno odpoledne změnil ~100 řádků kódu v driveru, runtime a aplikaci, firmware akcelerátoru zůstal beze změny.",
+  "en": "Codasip showed how to secure an edge AI workload on a RISC-V CHERI platform with a Hailo accelerator: one engineer changed ~100 lines of driver, runtime and application code in an afternoon, with the accelerator firmware untouched.",
+  "u": "https://www.linkedin.com/company/codasip/posts/"
+ },
+ {
+  "d": "2026-10-20",
+  "a": false,
+  "m": [
+   "tropic-square"
+  ],
+  "ty": "event",
+  "src": "linkedin",
+  "top": true,
+  "cs": "Tropic Square vyráží s devkity TROPIC01 na it-sa do Norimberku (27.–29. 10.), electronica/SEMICON Europa v Mnichově a Enlit Europe ve Vídni (10.–13. 11.); k nezávislému ověření čipu uvádí evaluaci KU Leuven a diplomovou práci na ČVUT, v níž čip prošel 1 286 testy náhodnosti AIS 31.",
+  "en": "Tropic Square takes TROPIC01 devkits to it-sa in Nuremberg (27–29 Oct), electronica/SEMICON Europa in Munich and Enlit Europe in Vienna (10–13 Nov); as independent validation it cites the KU Leuven evaluation and a CTU thesis in which the chip passed 1,286 AIS 31 randomness tests.",
+  "u": "https://www.linkedin.com/company/tropic-square/posts/"
+ },
+ {
+  "d": "2026-10-20",
+  "a": false,
+  "m": [
+   "streicher"
+  ],
+  "ty": "invest",
+  "src": "linkedin",
+  "top": true,
+  "cs": "STREICHER slavnostně otevřel 17. 10. ve Štěnovicích dvě nové průmyslové haly strojírenské divize – centrální sklad a výrobní halu 5 pro výrobu a finální povrchovou úpravu nerezových a hliníkových vakuových komor.",
+  "en": "On 17 Oct STREICHER officially opened two new industrial halls of its Mechanical Engineering Division in Štěnovice – a central warehouse and Production Hall 5 for manufacturing and final surface finishing of stainless-steel and aluminium vacuum chambers.",
+  "u": "https://www.linkedin.com/company/streicher-spol-s-r-o-plze%C5%88/posts/"
+ },
+ {
+  "d": "2026-10-20",
+  "a": false,
+  "m": [
+   "mycroftmind"
+  ],
+  "ty": "event",
+  "src": "linkedin",
+  "top": false,
+  "cs": "Mycroft Mind se zapojil do Inovační platformy Energetika (SIC a TA ČR, 15. 10.) s tématem propojení provozu budov, trhu s elektřinou, AI, řízení a bateriových systémů.",
+  "en": "Mycroft Mind took part in the Energy Innovation Platform (SIC and TA ČR, 15 Oct), bringing together building operations, the electricity market, AI, control and battery systems.",
+  "u": "https://www.linkedin.com/company/mycroftmind/posts/"
+ },
+ {
+  "d": "2026-10-20",
+  "a": false,
+  "m": [
+   "ceitec",
+   "tescan",
+   "upt"
+  ],
+  "ty": "event",
+  "src": "linkedin",
+  "top": false,
+  "cs": "7. setkání „120 seconds: Meet Brnoregion Microscopy“ hostil poprvé CEITEC VUT: 138 účastníků, 18 dvouminutových prezentací (mj. ÚPT AV ČR), moderovali zástupci Tescanu.",
+  "en": "The 7th “120 seconds: Meet Brnoregion Microscopy” was hosted for the first time by CEITEC BUT: 138 attendees, 18 two-minute pitches (incl. ISI CAS), moderated by Tescan representatives.",
+  "u": "https://www.linkedin.com/company/ceitec---central-european-institute-of-technology/posts/"
+ },
+ {
+  "d": "2026-10-20",
+  "a": false,
+  "m": [
+   "vut-brno",
+   "thermo-fisher",
+   "ceitec"
+  ],
+  "ty": "event",
+  "src": "linkedin",
+  "top": false,
+  "cs": "Ústav mikroelektroniky FEKT VUT uspořádal první letní školu Chip Design & Semiconductor Technologies pro mezinárodní studenty – teprve druhou letní školu projektu CHIPS of Europe po Lund University; partnery byly Thermo Fisher Scientific a CEITEC.",
+  "en": "The Department of Microelectronics at FEEC BUT held its first Chip Design & Semiconductor Technologies summer school for international students – only the second summer school of the CHIPS of Europe project after Lund University; Thermo Fisher Scientific and CEITEC were partners.",
+  "u": "https://www.linkedin.com/school/vysokeucenitechnickevbrne/posts/"
+ },
+ {
+  "d": "2026-10-20",
+  "a": false,
+  "m": [
+   "icuk"
+  ],
+  "ty": "event",
+  "src": "linkedin",
+  "top": false,
+  "cs": "Startupový festival FESTUP 2026 v ICUK (15. 10.): Pitch Night s osmi finalisty vyhrál PharmacoScope (software pro správné dávkování léčiv).",
+  "en": "FESTUP 2026 start-up festival at ICUK (15 Oct): the Pitch Night with eight finalists was won by PharmacoScope (drug-dosing software).",
+  "u": "https://www.linkedin.com/company/icuk-inovacni-centrum-usteckeho-kraje/posts/"
+ },
+ {
+  "d": "2026-10-19",
+  "a": false,
+  "m": [
+   "dynanic"
+  ],
+  "ty": "event",
+  "src": "linkedin",
+  "top": false,
+  "cs": "DynaNIC je Gold sponzorem Altera Innovators Day v San José (28. 10.) a předvede živé 400G Ultra Ethernet demo pro AI infrastrukturu na kartě Silicom ThunderFjord s FPGA Altera Agilex 7.",
+  "en": "DynaNIC is a Gold sponsor of Altera Innovators Day in San Jose (28 Oct) and will run a live 400G Ultra Ethernet demo for AI infrastructure on a Silicom ThunderFjord card with an Altera Agilex 7 FPGA.",
+  "u": "https://www.linkedin.com/company/dynanic/posts/"
+ },
+ {
+  "d": "2026-10-19",
+  "a": false,
+  "m": [
+   "rhk-brno"
+  ],
+  "ty": "event",
+  "src": "linkedin",
+  "top": false,
+  "cs": "RHK Brno zve 4. 11. na odpoledne s pasováním nových členů, besedou o médiích, byznysu a AI a Speed Business Meetingem.",
+  "en": "The Brno Regional Chamber of Commerce invites members to an afternoon on 4 Nov with the inauguration of new members, a talk on media, business and AI and a Speed Business Meeting.",
+  "u": "https://www.linkedin.com/company/brno-regional-chamber-of-commerce/posts/"
+ },
+ {
+  "d": "2026-10-18",
+  "a": false,
+  "m": [
+   "ceitec"
+  ],
+  "ty": "award",
+  "src": "linkedin",
+  "top": false,
+  "cs": "Martin Pumera (Future Energy and Innovation Lab, CEITEC VUT) je už osmý rok po sobě v žebříčku Stanford/Elsevier mezi 500 nejvlivnějšími vědci světa (č. 434, 1. v ČR, 15. v nanovědách).",
+  "en": "Martin Pumera (Future Energy and Innovation Lab, CEITEC BUT) is among the world's top 500 scientists in the Stanford/Elsevier ranking for the eighth consecutive year (#434 worldwide, #1 in Czechia, #15 in nanoscience).",
+  "u": "https://www.linkedin.com/company/ceitec---central-european-institute-of-technology/posts/"
+ },
+ {
+  "d": "2026-10-16",
+  "a": false,
+  "m": [
+   "ceitec"
+  ],
+  "ty": "event",
+  "src": "linkedin",
+  "top": false,
+  "cs": "CEITEC VUT hostil 4. mezinárodní setkání PHASE in Brno 2026 o kvantitativním fázovém zobrazování (51 účastníků, holografická mikroskopie, optická tomografie).",
+  "en": "CEITEC BUT hosted the 4th international PHASE in Brno 2026 meeting on quantitative phase imaging (51 participants, holographic microscopy, optical tomography).",
+  "u": "https://www.linkedin.com/company/ceitec---central-european-institute-of-technology/posts/"
+ },
+ {
   "d": "2026-10-16",
   "a": true,
   "m": [
@@ -77,13 +423,39 @@
  },
  {
   "d": "2026-10-14",
+  "a": false,
+  "m": [
+   "cvut"
+  ],
+  "ty": "award",
+  "src": "linkedin",
+  "top": false,
+  "cs": "Národní centrum průmyslu 4.0 při CIIRC ČVUT získalo od Veletrhů Brno ocenění za dlouhodobou podporu MSV a rozvoj projektu Digitální továrna 2.0 (300 m², 11 partnerů vč. RICAIP, Siemens, KUKA, Škoda Auto).",
+  "en": "The National Centre for Industry 4.0 at CIIRC CTU received an award from Trade Fairs Brno for its long-term support of the MSV fair and the Digital Factory 2.0 project (300 m², 11 partners incl. RICAIP, Siemens, KUKA, Škoda Auto).",
+  "u": "https://www.linkedin.com/school/cvutpraha/posts/"
+ },
+ {
+  "d": "2026-10-14",
+  "a": false,
+  "m": [
+   "renesas"
+  ],
+  "ty": "event",
+  "src": "press",
+  "top": false,
+  "cs": "V Praze se 7. 10. konalo první Zephyr Maintainers Forum; sponzorem setkání správců open-source RTOS Zephyr byl Renesas Electronics.",
+  "en": "The first-ever Zephyr Maintainers Forum took place in Prague on 7 Oct; the meeting of the open-source Zephyr RTOS maintainers was sponsored by Renesas Electronics.",
+  "u": "https://www.linkedin.com/company/the-zephyr-project/posts/"
+ },
+ {
+  "d": "2026-10-14",
   "a": true,
   "m": [
    "dynanic"
   ],
   "ty": "event",
   "src": "linkedin",
-  "top": true,
+  "top": false,
   "cs": "DynaNIC byl v jednom týdnu na pěti akcích na třech kontinentech: KES 2026 v Soulu (český pavilon), Network X ve Vídni (start-up pod), SEMICON West v San Franciscu a workshop P4 Language Consortium v San José.",
   "en": "DynaNIC attended five events on three continents in one week: KES 2026 in Seoul (Czech pavilion), Network X in Vienna (start-up pod), SEMICON West in San Francisco and the P4 Language Consortium workshop in San Jose.",
   "u": "https://www.linkedin.com/company/dynanic/posts/"
@@ -96,10 +468,23 @@
   ],
   "ty": "event",
   "src": "linkedin",
-  "top": true,
+  "top": false,
   "cs": "UNITES Systems: CEO Ondřej Beťák přednese keynote o měření Qg u SiC součástek na 12. IMAPS Flash Conference ve Zlíně (22.–23. 10., téma Comprehensive Semiconductor Analysis).",
   "en": "UNITES Systems: CEO Ondřej Beťák gives a keynote on Qg characterisation of SiC devices at the 12th IMAPS Flash Conference in Zlín (22–23 Oct, theme Comprehensive Semiconductor Analysis).",
   "u": "https://www.linkedin.com/company/unites-systems-a-s-cz/posts/"
+ },
+ {
+  "d": "2026-10-13",
+  "a": false,
+  "m": [
+   "edhouse"
+  ],
+  "ty": "award",
+  "src": "linkedin",
+  "top": false,
+  "cs": "edhouse obsadil 2. místo v krajském kole soutěže Firma roku 2026 a získal ocenění Ekonomicky nejúspěšnější firma Zlínského kraje.",
+  "en": "edhouse took 2nd place in the Zlín Region round of the Company of the Year 2026 competition and was named the region's Most Economically Successful Company.",
+  "u": "https://www.linkedin.com/company/edhouse-s-r-o-/posts/"
  },
  {
   "d": "2026-10-13",
@@ -113,6 +498,19 @@
   "cs": "Argotech vystavoval na Photonics Days 2026 v Berlíně (OpTecBB) a jednal o společných projektech v polovodičové fotonice.",
   "en": "Argotech exhibited at Photonics Days 2026 in Berlin (OpTecBB) and discussed joint projects in semiconductor photonics.",
   "u": "https://www.linkedin.com/company/argotech-semiconductor-photonics/posts/"
+ },
+ {
+  "d": "2026-10-12",
+  "a": false,
+  "m": [
+   "vsb-tuo"
+  ],
+  "ty": "invest",
+  "src": "linkedin",
+  "top": false,
+  "cs": "VŠB-TUO otevřela nové výzkumně-vývojové centrum CPIT TL4 za 126 mil. Kč s prvním univerzitním testovacím polygonem v ČR (380 m, vlastní 5G síť) pro autonomní vozidla, e-mobilitu, robotiku, digitální dvojčata a AI; součástí je společné pracoviště s korejským institutem KATECH.",
+  "en": "VSB-TUO opened the new CPIT TL4 R&D centre (CZK 126 million) with the first university test polygon in Czechia (380 m, own 5G network) for autonomous vehicles, e-mobility, robotics, digital twins and AI, including a joint workplace with the Korean institute KATECH.",
+  "u": "https://www.linkedin.com/school/vsb-technical-university-of-ostrava/posts/"
  },
  {
   "d": "2026-10-12",
@@ -165,6 +563,33 @@
   "u": "https://smarterinstruments.github.io/Pillar1-Monitor/"
  },
  {
+  "d": "2026-10-09",
+  "a": false,
+  "m": [
+   "cybersecurityhub"
+  ],
+  "ty": "event",
+  "src": "web",
+  "top": false,
+  "cs": "Tým projektu CZQCI (CyberSecurityHub) vystoupil na konferenci QCI Days 2026 v Padově s vizí propojení národních kvantových sítí do EuroQCI.",
+  "en": "The CZQCI project team (CyberSecurityHub) presented at QCI Days 2026 in Padua a vision for linking national quantum networks into EuroQCI.",
+  "u": "https://www.cybersecurityhub.cz/aktualne/clanky/"
+ },
+ {
+  "d": "2026-10-08",
+  "a": false,
+  "m": [
+   "onsemi",
+   "ceitec"
+  ],
+  "ty": "event",
+  "src": "linkedin",
+  "top": false,
+  "cs": "onsemi Czechia bylo partnerem konference EFEPR 2026 (pořádané s CEITEC): účastníci si prohlédli výrobu v Rožnově pod Radhoštěm a Petr Kostelník vystoupil jako řečník k materiálovým vědám v polovodičích.",
+  "en": "onsemi Czechia was a partner of the EFEPR 2026 conference (organised with CEITEC): participants toured the Rožnov pod Radhoštěm fab and Petr Kostelník spoke on materials science in semiconductors.",
+  "u": "https://www.linkedin.com/showcase/onsemi-czechia/posts/"
+ },
+ {
   "d": "2026-10-07",
   "a": false,
   "m": [],
@@ -174,6 +599,73 @@
   "cs": "CNSC vystoupil na MSV Brno s prezentací o českém polovodičovém ekosystému a IPCEI AST.",
   "en": "CNSC presented the Czech semiconductor ecosystem and IPCEI AST at the MSV Brno international engineering fair.",
   "u": "https://www.bvv.cz/msv/"
+ },
+ {
+  "d": "2026-10-06",
+  "a": false,
+  "m": [
+   "vut-brno"
+  ],
+  "ty": "event",
+  "src": "linkedin",
+  "top": false,
+  "cs": "VUT přivezlo na MSV 2026 přes 20 exponátů: spin-off BeamShape poprvé na světě ukázal 3D tiskárnu kovů ElectronForge (tavení elektronovým svazkem ve vakuu, i měď a wolfram), FEKT 5G brány pro kritickou infrastrukturu a Czech Semiconductor Centre cestu od křemíku k čipu.",
+  "en": "BUT brought 20+ exhibits to MSV 2026: spin-off BeamShape unveiled the ElectronForge electron-beam metal 3D printer (vacuum melting, incl. copper and tungsten) for the first time worldwide, FEEC showed 5G gateways for critical infrastructure and the Czech Semiconductor Centre the path from silicon to chip.",
+  "u": "https://www.linkedin.com/school/vysokeucenitechnickevbrne/posts/"
+ },
+ {
+  "d": "2026-10-06",
+  "a": false,
+  "m": [
+   "activair",
+   "vut-brno",
+   "crytur"
+  ],
+  "ty": "event",
+  "src": "linkedin",
+  "top": false,
+  "cs": "Activair, VUT v Brně a Crytur se jako členové Českého optického klastru zúčastnili konference a B2B matchmakingu Baltic Photonics 2026 ve Vilniusu (fotonika, lasery, polovodiče; LASER-PRO Excellence Hub).",
+  "en": "Activair, Brno University of Technology and Crytur took part as members of the Czech Optical Cluster in the Baltic Photonics 2026 conference and B2B matchmaking in Vilnius (photonics, lasers, semiconductors; LASER-PRO Excellence Hub).",
+  "u": "https://www.linkedin.com/company/activaircz/posts/"
+ },
+ {
+  "d": "2026-10-05",
+  "a": false,
+  "m": [
+   "onsemi"
+  ],
+  "ty": "event",
+  "src": "linkedin",
+  "top": false,
+  "cs": "onsemi v Rožnově pod Radhoštěm otevřelo provoz žákům 8. a 9. tříd v rámci Technického jarmarku pořádaného s Krajskou hospodářskou komorou Zlínského kraje.",
+  "en": "onsemi in Rožnov pod Radhoštěm opened its site to 8th- and 9th-grade pupils during the Technical Fair organised with the Zlín Region Chamber of Commerce.",
+  "u": "https://www.linkedin.com/showcase/onsemi-czechia/posts/"
+ },
+ {
+  "d": "2026-10-05",
+  "a": false,
+  "m": [
+   "crytur"
+  ],
+  "ty": "event",
+  "src": "linkedin",
+  "top": false,
+  "cs": "Crytur uspořádal 18. 10. den otevřených dveří v Turnově s exkurzemi do provozů a workshopy.",
+  "en": "Crytur held an open day at its Turnov sites on 18 Oct with production tours and workshops.",
+  "u": "https://www.linkedin.com/company/crytur-spol-s-r-o-/posts/"
+ },
+ {
+  "d": "2026-10-05",
+  "a": false,
+  "m": [
+   "ufe"
+  ],
+  "ty": "event",
+  "src": "linkedin",
+  "top": false,
+  "cs": "ÚFE AV ČR zve 5.–6. 11. v rámci Týdne Akademie věd na dny otevřených dveří v Kobylisích a Lysolajích (vláknové lasery, optická vlákna, nanomateriály, biosenzory; večerní „Noční tah“ s výrobou optického vlákna).",
+  "en": "IPE CAS invites visitors to its open days on 5–6 Nov during the Czech Academy of Sciences Week in Kobylisy and Lysolaje (fibre lasers, optical fibres, nanomaterials, biosensors; an evening fibre-drawing session).",
+  "u": "https://www.linkedin.com/company/ufe-avcr/posts/"
  },
  {
   "d": "2026-10-04",
@@ -187,6 +679,33 @@
   "cs": "UJP PRAHA vystavovala na konferenci RADECS 2026 o radiačních účincích na součástky a systémy.",
   "en": "UJP PRAHA exhibited at RADECS 2026, the conference on radiation effects on components and systems.",
   "u": "https://www.linkedin.com/company/ujp/posts/"
+ },
+ {
+  "d": "2026-10-01",
+  "a": false,
+  "m": [
+   "cybersecurityhub"
+  ],
+  "ty": "project",
+  "src": "web",
+  "top": false,
+  "cs": "Třináct partnerů včetně CyberSecurityHubu zahájilo projekt EuroQSS, který má vybudovat otevřený a interoperabilní softwarový ekosystém pro kvantové výpočty v průmyslu.",
+  "en": "Thirteen partners including CyberSecurityHub launched the EuroQSS project to build an open, interoperable software ecosystem for industrial quantum computing.",
+  "u": "https://www.cybersecurityhub.cz/aktualne/clanky/"
+ },
+ {
+  "d": "2026-09-30",
+  "a": false,
+  "m": [
+   "upt",
+   "crytur"
+  ],
+  "ty": "award",
+  "src": "linkedin",
+  "top": false,
+  "cs": "Ondřej Ambrož z ÚPT AV ČR získal 3. místo v Microscopy Today Micrograph Awards 2026 za video pořízené při řízeném ohřevu vzorku u Cryturu v Turnově detektorem zpětně odražených elektronů Karmen (vývoj Crytur, projekt NCK CAEPO).",
+  "en": "Ondřej Ambrož of ISI CAS took 3rd place in the Microscopy Today Micrograph Awards 2026 for a video captured during controlled sample heating at Crytur in Turnov with the Karmen backscattered-electron detector (developed by Crytur, NCK CAEPO project).",
+  "u": "https://www.linkedin.com/company/-stav-p-strojov-techniky-av-r-v-v-i-/posts/"
  },
  {
   "d": "2026-09-30",
@@ -228,6 +747,35 @@
   "u": "https://www.linkedin.com/company/ufe-avcr/posts/"
  },
  {
+  "d": "2026-09-25",
+  "a": false,
+  "m": [
+   "zcu"
+  ],
+  "ty": "award",
+  "src": "linkedin",
+  "top": false,
+  "cs": "Prof. Zdeněk Peroutka, ředitel centra RICE ZČU a viceprezident CNSC pro výkonovou elektroniku, se stal prvním českým laureátem ceny Prof. Istvan Nagy Award za zásadní přínos výkonové elektronice (předána na IEEE-PEMC v Tallinnu).",
+  "en": "Prof. Zdeněk Peroutka, director of the RICE centre at UWB and CNSC vice-president for power electronics, became the first Czech laureate of the Prof. Istvan Nagy Award for fundamental contributions to power electronics (presented at IEEE-PEMC in Tallinn).",
+  "u": "https://www.linkedin.com/school/z%C3%A1pado%C4%8Desk%C3%A1-univerzita-v-plzni-z%C4%8Du-/posts/"
+ },
+ {
+  "d": "2026-09-24",
+  "a": false,
+  "m": [
+   "zcu",
+   "uk",
+   "vut-brno",
+   "muni"
+  ],
+  "ty": "event",
+  "src": "linkedin",
+  "top": false,
+  "cs": "V Plzni začala konference projektu QM4ST (Kvantové materiály pro aplikace v udržitelných technologiích), na němž ZČU spolupracuje s Univerzitou Karlovou, VUT v Brně a Masarykovou univerzitou.",
+  "en": "The conference of the QM4ST project (Quantum Materials for Applications in Sustainable Technologies) opened in Pilsen; UWB works on it with Charles University, Brno University of Technology and Masaryk University.",
+  "u": "https://www.linkedin.com/school/z%C3%A1pado%C4%8Desk%C3%A1-univerzita-v-plzni-z%C4%8Du-/posts/"
+ },
+ {
   "d": "2026-09-24",
   "a": false,
   "m": [
@@ -239,6 +787,46 @@
   "cs": "Valná hromada CNSC 2026 (24. 9., Brno): sešlo se 50+ členských organizací; odpoledne patřilo prohlídce výroby Thermo Fisher Scientific v Brně.",
   "en": "CNSC General Assembly 2026 (24 Sep, Brno): 50+ member organisations met; the afternoon was spent inside Thermo Fisher Scientific's Brno production.",
   "u": "https://www.linkedin.com/company/cz_semi_cluster/posts/"
+ },
+ {
+  "d": "2026-09-23",
+  "a": false,
+  "m": [
+   "tropic-square"
+  ],
+  "ty": "partner",
+  "src": "linkedin",
+  "top": false,
+  "cs": "Výrobce CAIM1 staví 4K filmovou kameru, která podepisuje záběry v okamžiku pořízení; podpisové klíče drží secure element TROPIC01 od Tropic Square.",
+  "en": "CAIM1 is building a 4K cinema camera that signs footage at the moment of capture, with the signing keys held in Tropic Square's TROPIC01 secure element.",
+  "u": "https://www.linkedin.com/company/tropic-square/posts/"
+ },
+ {
+  "d": "2026-09-22",
+  "a": false,
+  "m": [
+   "fzu"
+  ],
+  "ty": "award",
+  "src": "linkedin",
+  "top": false,
+  "cs": "Europhysics Prize 2026 Evropské fyzikální společnosti poprvé míří do ČR: Libor Šmejkal, Jairo Sinova a Tomáš Jungwirth (FZÚ AV ČR) ji získali za objev altermagnetismu, třetí základní třídy magnetického uspořádání.",
+  "en": "The European Physical Society's 2026 Europhysics Prize goes to Czechia for the first time: Libor Šmejkal, Jairo Sinova and Tomáš Jungwirth (Institute of Physics CAS) received it for the discovery of altermagnetism, the third fundamental class of magnetic order.",
+  "u": "https://www.linkedin.com/company/institute-of-physics-of-the-czech-academy-of-sciences/posts/"
+ },
+ {
+  "d": "2026-09-21",
+  "a": false,
+  "m": [
+   "zlinsky-kraj",
+   "cvut"
+  ],
+  "ty": "partner",
+  "src": "linkedin",
+  "top": false,
+  "cs": "Zlínský kraj se zapojí do Česko-vietnamského inovačního a impaktového hubu (s UTB, ČVUT a výzkumnými centry) a chystá program Zlín Impact Accelerator – první vietnamské start-upy mají přijet v 1. čtvrtletí 2027.",
+  "en": "The Zlín Region joins the Czech–Vietnamese innovation and impact hub (with TBU, CTU and research centres) and is preparing the Zlín Impact Accelerator – the first Vietnamese start-ups are expected in Q1 2027.",
+  "u": "https://www.linkedin.com/company/krajsk-ad-zl-nsk-ho-kraje/posts/"
  },
  {
   "d": "2026-09-18",

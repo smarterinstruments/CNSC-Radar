@@ -196,6 +196,50 @@
     "Zjednodušuje programování FPGA, aby zákazníci využili programovatelné čipy bez vlastních FPGA expertů",
     "V partnerském katalogu Intel/Altera: FPGA akcelerovaný DPDK SmartNIC; dříve BrnoLogic"
    ],
+   "tech": [
+    [
+     "ASIC / ASSP / FPGA",
+     "[Main focus] · FPGA-based high-speed packet processing IP, SmartNIC architectures, Versal / Agilex platforms · Access model: Commercial IP licensing and joint development\nProof-of-concept collaborations\nIntegration partnerships with FPGA board vendors and system integrators · TRL coverage: Proven deployment on commercial FPGA platforms (Intel Agilex, AMD/Xilinx Versal) in telco and data centre environments; scalable architecture validated at 400G line-rate."
+    ],
+    [
+     "Chip Design",
+     "[Main focus] · High-throughput digital architecture design, pipeline optimization, low-latency packet engines · Access model: Commercial IP licensing and joint development\nProof-of-concept collaborations\nIntegration partnerships with FPGA board vendors and system integrators · TRL coverage: Proven deployment on commercial FPGA platforms (Intel Agilex, AMD/Xilinx Versal) in telco and data centre environments; scalable architecture validated at 400G line-rate."
+    ],
+    [
+     "Digital platforms & Tools",
+     "[Secondary] · FPGA development environments, hardware acceleration frameworks, P4-compatible architectures · Access model: Commercial IP licensing and joint development\nProof-of-concept collaborations\nIntegration partnerships with FPGA board vendors and system integrators · TRL coverage: Proven deployment on commercial FPGA platforms (Intel Agilex, AMD/Xilinx Versal) in telco and data centre environments; scalable architecture validated at 400G line-rate."
+    ],
+    [
+     "IC Design (Digital)",
+     "[Main focus] · RTL architecture for high-speed networking, scalable data-plane acceleration · Access model: Commercial IP licensing and joint development\nProof-of-concept collaborations\nIntegration partnerships with FPGA board vendors and system integrators · TRL coverage: Proven deployment on commercial FPGA platforms (Intel Agilex, AMD/Xilinx Versal) in telco and data centre environments; scalable architecture validated at 400G line-rate."
+    ],
+    [
+     "Quantum Technologies / devices",
+     "[Emerging] · FPGA-based acceleration platform for Post-Quantum Cryptography (PQC) integration in high-speed networking environments.\nSmartNIC architectures enabling line-rate encrypted traffic handling (100G–400G+).\nSupport for hardware-accelerated PQC/ECC handshakes and secure data-plane processing.\nScalable packet-processing pipeline suitable for quantum-safe network infrastructure. · Access model: Commercial IP licensing and joint development\nProof-of-concept collaborations\nIntegration partnerships with FPGA board vendors and system integrators · TRL coverage: Proven deployment on commercial FPGA platforms (Intel Agilex, AMD/Xilinx Versal) in telco and data centre environments; scalable architecture validated at 400G line-rate."
+    ],
+    [
+     "Systems Engineering",
+     "[Secondary] · End-to-end SmartNIC system integration, 400G+ networking solutions, PCIe/DMA integration · Access model: Commercial IP licensing and joint development\nProof-of-concept collaborations\nIntegration partnerships with FPGA board vendors and system integrators · TRL coverage: Proven deployment on commercial FPGA platforms (Intel Agilex, AMD/Xilinx Versal) in telco and data centre environments; scalable architecture validated at 400G line-rate."
+    ]
+   ],
+   "srv": [
+    [
+     "Feasibility assessment and concept validation",
+     "Architecture feasibility studies for high-speed packet processing and SmartNIC implementations · Typical users: FPGA-card vendors and end customers from telco, datatcenter and cybersec area."
+    ],
+    [
+     "Design enablement and modelling support",
+     "RTL architecture design, performance modelling, pipeline optimization for 100G–400G+ · Typical users: FPGA-card vendors and end customers from telco, datatcenter and cybersec area."
+    ],
+    [
+     "Prototyping support and technical coaching",
+     "FPGA-based prototyping on commercial accelerator cards (Intel / AMD platforms) · Typical users: FPGA-card vendors and end customers from telco, datatcenter and cybersec area."
+    ],
+    [
+     "Business development & matchmaking",
+     "Strategic partnerships in networking, cybersecurity and high-performance computing sectors · Typical users: FPGA-card vendors and end customers from telco, datatcenter and cybersec area."
+    ]
+   ],
    "src": [
     "https://en.ain.ua/2024/11/29/dynanic-secures-eur550000-pre-seed-by-tensor-ventures",
     "https://intel.com/content/www/us/en/partner/showcase/offering/a5b3b0000004fTUAAY/dynanic-fpga-accelerated-dpdk-smartnic.html"
@@ -230,6 +274,54 @@
     "Praha zajišťuje výrobní a dodavatelské vazby na foundry a vestavěný firmware ke svým čipům",
     "Praha je hlavní softwarové centrum pro IoT edge server SmartServer (jádro MQTT; BACnet, Modbus, LonWorks)",
     "V roce 2022 přes 40 lidí v Praze a plánovaný nábor cca 25 softwarových pozic"
+   ],
+   "tech": [
+    [
+     "Advanced digital",
+     "[Main focus]"
+    ],
+    [
+     "ASIC / ASSP / FPGA",
+     "[Main focus]"
+    ],
+    [
+     "Chip Design",
+     "[Main focus]"
+    ],
+    [
+     "High Frequency & RF",
+     "[Secondary]"
+    ],
+    [
+     "IC Design (Analog & AMS)",
+     "[Main focus]"
+    ],
+    [
+     "IC Design (Digital)",
+     "[Main focus]"
+    ],
+    [
+     "IC Design (RF)",
+     "[Secondary]"
+    ]
+   ],
+   "srv": [
+    [
+     "Feasibility assessment and concept validation",
+     ""
+    ],
+    [
+     "Prototyping support and technical coaching",
+     ""
+    ],
+    [
+     "Guidance for foundry selection",
+     ""
+    ],
+    [
+     "Guidance for packaging & OSAT selection",
+     ""
+    ]
    ],
    "src": [
     "https://www.lupa.cz/clanky/ivo-horsky-renesas-v-cesku-po-navrhu-cipu-rozjizdime-vyvoj-chytreho-serveru/"
@@ -339,6 +431,106 @@
     "Obory: výroba polovodičů, systémy pro řízení energií, elektronová mikroskopie",
     "Přes 100 specialistů, sídlo Zlín a další pobočky v ČR; ISO 9001 a ISO 27001"
    ],
+   "tech": [
+    [
+     "Advanced digital",
+     "[Main focus] · Machine learning, image processing. Defect detection, Digital twin custom software development. · TRL coverage: TRL 7–9"
+    ],
+    [
+     "Cleanroom Technologies",
+     "[Emerging] · SW for cleanroom management and integration into fab. · TRL coverage: TRL 4–6"
+    ],
+    [
+     "Digital platforms & Tools",
+     "[Main focus] · Machine learning, image processing. Defect detection, Digital twin custom software development. · TRL coverage: TRL 7–9"
+    ],
+    [
+     "EDA / CAD Tool Development",
+     "[Emerging] · SW development for specific EDA / CAD tools. · TRL coverage: TRL 4–6"
+    ],
+    [
+     "Failure analysis, Reliability testing",
+     "[Secondary] · SW for wafer probing and testing, testing data processing · TRL coverage: TRL 4–6"
+    ],
+    [
+     "Flexible / sustainable electronics",
+     "[Emerging] · Firmware level · TRL coverage: TRL 1–3"
+    ],
+    [
+     "Functional Testing, Characterisation",
+     "[Emerging] · SW testing, hardware validation and verification · TRL coverage: TRL 1–3"
+    ],
+    [
+     "MEMS / Microsystems",
+     "[Emerging] · Design of a low thermal mass MEMS micro-heater for fast and stable temperature control. Electro-thermal and mechanical multiphysics simulations (Joule heating, stress, thermal distribution) · TRL coverage: TRL 4–6"
+    ],
+    [
+     "Systems Engineering",
+     "[Secondary] · Translation of customer and business requirements into a coherent system architecture covering hardware, firmware, software, interfaces, safety, and lifecycle considerations. End-to-end technical ownership of the system, including architectural trade-offs, platform selection, integration strategy, and risk management.Ensuring system verification, compliance, and long-term sustainability through traceability, validation strategy, safety alignment, and lifecycle management. · TRL coverage: TRL 7–9"
+    ]
+   ],
+   "srv": [
+    [
+     "Feasibility assessment and concept validation",
+     ""
+    ],
+    [
+     "Design enablement and modelling support",
+     ""
+    ],
+    [
+     "Prototyping support and technical coaching",
+     ""
+    ],
+    [
+     "Business development & matchmaking",
+     ""
+    ],
+    [
+     "Access to infrastructure (labs, cleanrooms, test benches)",
+     ""
+    ],
+    [
+     "System software",
+     "We will prepare you a safe platform enabling applications to reliably operate hardware. · Comments: https://www.edhouse.eu/en/competencies/"
+    ],
+    [
+     "Enterprise software",
+     "Development of robust enterprise applications using modern technologies and cloud platforms. We provide complex systems integration and industrial process automation with an emphasis on scalability for large volumes of data. We offer tailored solutions that increase efficiency, support digital transformation and facilitate the management of corporate IT infrastructure. · Comments: https://www.edhouse.eu/en/competencies/"
+    ],
+    [
+     "DevOps",
+     "We automate application development and deployment using DevOps and DevSecOps for more efficient and secure software project management. CI/CD · Comments: https://www.edhouse.eu/en/competencies/"
+    ],
+    [
+     "SW Quality Assurance",
+     "Strategic Quality Management, Test Automation & CI/CD Integration, Shift-Left Approach: Quality from the Start, Advanced Metrics & Risk Management, SQA Analysis, Certifications · Comments: https://www.edhouse.eu/en/competencies/"
+    ],
+    [
+     "Cloud",
+     "Containerization of applications, Cloud for Pioneers and Innovators, Reducing Cloud Spending, Private Cloud and Hybrid Solutions, Edge Computing · Comments: https://www.edhouse.eu/en/competencies/"
+    ],
+    [
+     "UI/UX design",
+     "UI / UX design and architecture, Prototyping, Implementation, Design · Comments: https://www.edhouse.eu/en/competencies/"
+    ],
+    [
+     "Embedded sowtware",
+     "We specialize in the development of embedded systems using platforms such as STM32, ARM, Atmel AVR and ESP32, with C++ and RUST programming languages. Real-time OS (FreeRTOS, ThreadX), working with communication protocols (I2C, SPI). · Comments: https://www.edhouse.eu/en/competencies/"
+    ],
+    [
+     "Computational Intelligence",
+     "Image Processing and Machine Vision, Machine Learning and AI, Working with data, Modelling and simulations, High Performance Computing · Comments: https://www.edhouse.eu/en/competencies/"
+    ],
+    [
+     "Support of legacy systems and re-architecting",
+     "Systems suport and maintenance. Legacy codebase updates and modernization. · Comments: https://www.edhouse.eu/en/competencies/"
+    ],
+    [
+     "Application software",
+     "End user applications. Analytical software for controlling complex equipment · Comments: https://www.edhouse.eu/en/competencies/"
+    ]
+   ],
    "src": [
     "https://startup-house.com/directory/edhouse"
    ]
@@ -370,6 +562,98 @@
     "Růst a zpracování syntetických krystalů, přesné obrábění a integrovaná řešení na bázi krystalů",
     "Scintilační detektory pro elektronovou mikroskopii; krystaly pro detekci záření a optoelektroniku",
     "Zákaznické vývojové projekty a dlouhodobá spolupráce s akademickou sférou; závod 11 200 m2"
+   ],
+   "tech": [
+    [
+     "Advanced Integration & Packaging",
+     "[Main focus] · High-precision, solid-state laser-based solutions for widening of the advanced packaging capabilities and industrial-scale up, precise mechanical parts for effective thermomanagement of packaged solutions. · Access model: OEM and tools on demand · TRL coverage: TRL 4-6, TRL 7-9"
+    ],
+    [
+     "Advanced Lithography",
+     "[Main focus] · Compact, high-precise, efficient, cheaply operational, solid-state laser-based solutions for advanced semiconductor lithography. · Access model: OEM and tools on demand · TRL coverage: TRL 4-6, TRL 7-9"
+    ],
+    [
+     "ASIC / ASSP / FPGA",
+     "[Main focus] · Compact, high-precise, efficient, cheaply operational, solid-state laser-based solutions for advanced semiconductor processing. · Access model: OEM and tools on demand · TRL coverage: TRL 4-6, TRL 7-9"
+    ],
+    [
+     "Cleanroom Technologies",
+     "[Main focus] · Semiconductor-level clean rooms enabling complex system assembly under ISO 9001 certification. · Access model: Manufacturing facility · TRL coverage: TRL 7-9"
+    ],
+    [
+     "CMOS Micro / Nano Technology",
+     "[Main focus] · Compact, high-precise, efficient, cheaply operational, solid-state laser-based solutions for advanced semiconductor processing. · Access model: OEM and tools on demand · TRL coverage: TRL 4-6, TRL 7-9"
+    ],
+    [
+     "Compound Semiconductors",
+     "[Main focus] · Compact, high-precise, efficient, cheaply operational, solid-state laser-based solutions for WBG/UWBG semiconductor processing. · Access model: OEM and tools on demand · TRL coverage: TRL 4-6, TRL 7-9"
+    ],
+    [
+     "Failure analysis, Reliability testing",
+     "[Main focus] · E-beam wafer defect inspection and wafer/chip/mask characterisation of material properties. · Access model: OEM units on demand · TRL coverage: TRL 7-9"
+    ],
+    [
+     "Functional Testing, Characterisation",
+     "[Main focus] · E-beam wafer defect inspection and wafer/chip/mask characterisation of material properties. · Access model: OEM units on demand · TRL coverage: TRL 7-9"
+    ],
+    [
+     "MEMS / Microsystems",
+     "[Main focus] · Compact, high-precise, efficient, cheaply operational, solid-state laser-based solutions for advanced semiconductor processing. E-beam units for wafer inspection/characterisation. · Access model: OEM and tools on demand · TRL coverage: TRL 4-6, TRL 7-9"
+    ],
+    [
+     "Non-CMOS Micro / Nano Technology",
+     "[Main focus] · Compact, high-precise, efficient, cheaply operational, solid-state laser-based solutions for advanced semiconductor processing. E-beam units for wafer inspection/characterisation. · Access model: OEM and tools on demand · TRL coverage: TRL 4-6, TRL 7-9"
+    ],
+    [
+     "Photonic Integrated Circuits (PICs)",
+     "[Main focus] · High-precision, solid-state laser-based solutions for widening of the advanced packaging capabilities and industrial-scale up, precise mechanical parts for effective thermomanagement of PIC solutions. · Access model: OEM and tools on demand · TRL coverage: TRL 4-6, TRL 7-9"
+    ],
+    [
+     "Power Electronics (Si, SiC, GaN)",
+     "[Main focus] · Compact, high-precise, efficient, cheaply operational, solid-state laser-based solutions for WBG/UWBG wafer processing. E-beam units for wafer characterisation. · Access model: OEM and tools on demand · TRL coverage: TRL 4-6, TRL 7-9"
+    ],
+    [
+     "Other wide Bandgap Semiconductors",
+     "[Main focus] · Compact, high-precise, efficient, cheaply operational, solid-state laser-based solutions for WBG/UWBG wafer processing. · Access model: OEM and tools on demand · TRL coverage: TRL 4-6, TRL 7-9"
+    ],
+    [
+     "Quantum Technologies / devices",
+     "[Main focus] · Laser sources for quantum technology devices and communication. · Access model: OEM and tools on demand · TRL coverage: TRL 4-6, TRL 7-9"
+    ],
+    [
+     "Systems Engineering",
+     "[Main focus] · Manufacturing/characterisation OEM solutions/tools providing data for data-driven processing optimisation. · Access model: OEM and tools on demand · TRL coverage: TRL 7-9"
+    ],
+    [
+     "Other (specify)\nSmart & Predictive Manufacturing",
+     "[Main focus] · Manufacturing/characterisation OEM solutions/tools providing data for data-driven processing optimisation. · Access model: OEM and tools on demand · TRL coverage: TRL 7-9"
+    ]
+   ],
+   "srv": [
+    [
+     "Feasibility assessment and concept validation",
+     "Strong R&D team providing support during common development phase (technical/optical labs, equipped cleanrooms). · Typical users: Wafer fabs, IDMs, foundries."
+    ],
+    [
+     "Design enablement and modelling support",
+     "Strong R&D team providing support during common development phase (construction/modeling softwares). · Typical users: Wafer fabs, IDMs, foundries."
+    ],
+    [
+     "Prototyping support and technical coaching",
+     "Pilot deployments and technical coaching for developed solutions. · Typical users: Wafer fabs, IDMs, foundries."
+    ],
+    [
+     "Funding support (public / private)",
+     "Active in development supported by EU public programs (IPCEI, Horizon, etc.) · Typical users: Wafer fabs, IDMs, foundries, SME."
+    ],
+    [
+     "Business development & matchmaking",
+     "Open for product and development matchmaking within the EU semiconductor ecosystem. · Typical users: Wafer fabs, IDMs, foundries, SME."
+    ],
+    [
+     "Access to infrastructure (labs, cleanrooms, test benches)",
+     "Based on the joint project or customer demand specifications (labs, cleanrooms) · Typical users: Wafer fabs, IDMs, foundries, SME."
+    ]
    ],
    "src": [
     "https://crytur.cz/about-us",
@@ -421,9 +705,9 @@
   "cs": "Výroba křemíkových desek a čipů; centrum výkonových polovodičů (SiC).",
   "en": "Wafer and chip manufacturing; power semiconductor (SiC) hub.",
   "logo": "https://www.semicz.cz/wp-content/uploads/2025/01/onsemi.webp",
-  "li": "company/onsemi",
-  "note": "",
-  "liScope": "global",
+  "li": "showcase/onsemi-czechia",
+  "note": "sledována česká stránka onsemi Czechia (showcase)",
+  "liScope": "page",
   "liFilter": "Rožnov|Roznov|Brno|Czech",
   "offer": {
    "en": [
@@ -440,6 +724,98 @@
     "cs": "Spolupracuje s českými univerzitami a technickými školami: přednášky a stáže pro program návrhu čipů na FEKT VUT, nový polovodičový obor s UTB Zlín (Bc od 2026); veřejný katalog kurzů nenalezen.",
     "en": "Cooperates with Czech universities and technical schools: lectures and internships for the BUT FEEC chip-design programme, a new semiconductor field with UTB Zlín (Bc from 2026); no public course catalogue found."
    },
+   "tech": [
+    [
+     "Advanced Integration & Packaging",
+     "Power discrete & module packaging know-how; planned advanced packaging capability for vertically integrated SiC site."
+    ],
+    [
+     "ASIC / ASSP / FPGA",
+     "Mixed-signal power management ICs; digital control blocks (HDL, DFT) for drivers/controllers."
+    ],
+    [
+     "Chip Design",
+     "IC design in CZ (Roznov + Brno): power management, controllers/regulators, mixed-signal drivers; verification & validation."
+    ],
+    [
+     "Cleanroom Technologies",
+     "High-volume wafer fab cleanroom operations; Si & SiC wafer processing and epitaxy; automotive-quality manufacturing."
+    ],
+    [
+     "CMOS Micro / Nano Technology",
+     "Metal-gate CMOS and bipolar IC processes (0.8–3 µm) at Roznov."
+    ],
+    [
+     "Compound Semiconductors",
+     "SiC polished wafer + SiC epitaxy (EPI) wafer production; scaling of SiC capacity at Roznov."
+    ],
+    [
+     "Digital platforms & Tools",
+     "Fab/engineering digitalization (MES/SPC/yield analytics), design flows, data-driven quality tools."
+    ],
+    [
+     "Failure analysis, Reliability testing",
+     "Failure analysis & reliability qualification support for power devices (root cause, stress tests)."
+    ],
+    [
+     "Functional Testing, Characterisation",
+     "Electrical characterization, wafer sort/final test support, parametric & application-level characterization."
+    ],
+    [
+     "IC Design (Analog & AMS)",
+     "Analog & mixed-signal IC design (power management, controllers, drivers); validation/characterization."
+    ],
+    [
+     "IC Design (Digital)",
+     "Digital RTL/verification/DFT for mixed-signal power ICs; interface protocols (I2C/SPI/LIN/CAN)."
+    ],
+    [
+     "Materials research & characterization",
+     "Silicon raw wafer and epitaxy production; SiC wafer + epitaxy; metrology & material characterization."
+    ],
+    [
+     "Non-CMOS Micro / Nano Technology",
+     "Power device technologies: PowerFET, IGBT, bipolar; process and device engineering."
+    ],
+    [
+     "Power Electronics (Si, SiC, GaN)",
+     "Power semiconductors and SiC manufacturing; supports EV/charging/energy infrastructure; design + manufacturing."
+    ],
+    [
+     "Other wide Bandgap Semiconductors",
+     "Diamond, Ga2O3: no local production; but cooperation and work on feasibilities"
+    ],
+    [
+     "Systems Engineering",
+     "System/application engineering for power conversion (requirements, reference designs, validation support)."
+    ]
+   ],
+   "srv": [
+    [
+     "Feasibility assessment and concept validation",
+     "Early feasibility assessment for power semiconductor applications (Si/SiC), DFM/DFX considerations, capability screening."
+    ],
+    [
+     "Design enablement and modelling support",
+     "Application & device modelling guidance, simulation support, design-in assistance for power management and SiC solutions."
+    ],
+    [
+     "Prototyping support and technical coaching",
+     "Prototype build/evaluation support, lab characterization, coaching on power device application and qualification basics."
+    ],
+    [
+     "Training and awareness-raising workshops",
+     "Workshops on power electronics / SiC technology, manufacturing basics, and design-in considerations (tailored for CNSC audience)."
+    ],
+    [
+     "Business development & matchmaking",
+     "Matchmaking via CNSC channels and EU networks to connect potential customers/partners to onsemi capabilities."
+    ],
+    [
+     "Access to infrastructure (labs, cleanrooms, test benches)",
+     "Access to selected characterization labs/test benches and (where possible) fab visits; not an open-access cleanroom."
+    ]
+   ],
    "src": [
     "https://investor.onsemi.com/news-releases/news-release-details/onsemi-expands-its-silicon-carbide-fab-czech-republic",
     "https://czechinvest.gov.cz/en/Homepage/News/June-2024/American-chip-manufacturer-onsemi-has-announced-an-investment-of-more-than-CZK-40-billion-in-the-exp",
@@ -475,6 +851,86 @@
     "Čisté prostory tříd 10k a 100k z roku 2010; ISO 9001 od 2011; založeno 2006",
     "Staví na regionálním know-how v optice, elektronice a přesné mechanice"
    ],
+   "tech": [
+    [
+     "Advanced Integration & Packaging",
+     "[Main focus] · complete line · Access model: open · TRL coverage: TRL 1-9"
+    ],
+    [
+     "Failure analysis, Reliability testing",
+     "[Secondary] · on packaging le´vel · Access model: open · TRL coverage: TRL 1-9"
+    ],
+    [
+     "Flexible / sustainable electronics",
+     "[Secondary] · assembly and integration · Access model: open · TRL coverage: TRL 1-9"
+    ],
+    [
+     "Functional Testing, Characterisation",
+     "[Secondary] · on package/system level · Access model: open · TRL coverage: TRL 1-9"
+    ],
+    [
+     "High Frequency & RF",
+     "[Main focus] · integration platform for the HF components integration · Access model: open · TRL coverage: TRL 1-9"
+    ],
+    [
+     "MEMS / Microsystems",
+     "[Main focus] · packaging including design · Access model: open · TRL coverage: TRL 1-7"
+    ],
+    [
+     "Non-CMOS Micro / Nano Technology",
+     "[Main focus] · assembly and integration"
+    ],
+    [
+     "Photonic Integrated Circuits (PICs)",
+     "[Main focus] · assembly and integration · Access model: open · TRL coverage: TRL 1-7"
+    ],
+    [
+     "Quantum Technologies / devices",
+     "[Main focus] · fiber-to-chip coupling · Access model: open · TRL coverage: TRL 1-7"
+    ],
+    [
+     "Systems Engineering",
+     "[Secondary] · designing evalboards od systems using inhouse packaged components · Access model: open · TRL coverage: TRL 1-7"
+    ],
+    [
+     "Other (specify) - Photonic Chip and Arrays integration",
+     "[Main focus] · single and multimode application · Access model: open · TRL coverage: TRL 1-7"
+    ]
+   ],
+   "srv": [
+    [
+     "Feasibility assessment and concept validation",
+     "from the packaging level"
+    ],
+    [
+     "Design enablement and modelling support",
+     "from the packaging level"
+    ],
+    [
+     "Prototyping support and technical coaching",
+     ""
+    ],
+    [
+     "Guidance for packaging & OSAT selection",
+     ""
+    ],
+    [
+     "Funding support (public / private)",
+     ""
+    ],
+    [
+     "Business development & matchmaking",
+     ""
+    ],
+    [
+     "Access to infrastructure (labs, cleanrooms, test benches)",
+     ""
+    ],
+    [
+     "Other (please specify) - Optical simulation / design",
+     "photonic systems"
+    ]
+   ],
    "src": [
     "https://www.gophotonics.com/companies-amp/2664/argotech-a-s-"
    ]
@@ -493,7 +949,7 @@
   "en": "Diffusion and LPCVD furnaces and process equipment for semiconductor manufacturing.",
   "logo": "https://www.semicz.cz/wp-content/uploads/2024/12/svcs-1.png",
   "li": "company/svcs-process-innovation",
-  "note": "",
+  "note": "LinkedIn company/svcs-process-innovation je jen automatický záznam bez příspěvků – ověřit správný slug",
   "liScope": "page",
   "liFilter": "",
   "offer": {
@@ -580,6 +1036,42 @@
     "cs": "Technická školení vedená zkušenými inženýry Swagelok (fluidní systémy, trubkové spoje); konkrétní názvy kurzů český web neuvádí.",
     "en": "Technical trainings led by experienced Swagelok engineers (fluid-system and tube-fitting topics); no specific course names listed on the Czech site."
    },
+   "tech": [
+    [
+     "Advanced Lithography",
+     "[Main focus]"
+    ],
+    [
+     "Cleanroom Technologies",
+     "[Main focus]"
+    ],
+    [
+     "Systems Engineering",
+     "[Main focus]"
+    ],
+    [
+     "Other (specify)",
+     "[Main focus] · https://www.swagelok.com/en/industries/semiconductor"
+    ]
+   ],
+   "srv": [
+    [
+     "Prototyping support and technical coaching",
+     ""
+    ],
+    [
+     "Training and awareness-raising workshops",
+     ""
+    ],
+    [
+     "Business development & matchmaking",
+     ""
+    ],
+    [
+     "Access to infrastructure (labs, cleanrooms, test benches)",
+     ""
+    ]
+   ],
    "src": [
     "https://czech.swagelok.com/en"
    ]
@@ -613,6 +1105,18 @@
     "Kompletní projektová dokumentace v BIM (3D); vlastní výroba a montáž komponent čistých prostor",
     "Obory: čipy/elektronika (ref. onsemi Rožnov), automotive, optika, farmacie, zdravotnictví, výzkum",
     "Přes 150 zaměstnanců, zhruba třetina projektantů (2021); součást skupiny ČEZ ESCO"
+   ],
+   "tech": [
+    [
+     "Cleanroom Technologies",
+     "[Main focus] · DESIGN & BUILD of building technical systems for cleanrooms such as HVAC, cooling, heating, high and low voltage electrical systems, instrumentation and control system, process media piping and other utility systems · Access model: contractor · TRL coverage: TRL 7-9"
+    ]
+   ],
+   "srv": [
+    [
+     "Access to infrastructure (labs, cleanrooms, test benches)",
+     "COMPLEX CLEANROOM SOLUTION, DESIGN & BUILD: BIM PROJECT DOCUMENTATION \nCLEANROOM INSTALLATION\nQUALIFICATION MEASUREMENT AND VALIDATION · Typical users: semiconductor manufacturing, automotive industry, optics and precision mechanics, research and development · Comments: WE CREATE CLEANROOMS FOR THOSE CREATING THE FUTURE"
+    ]
    ],
    "src": [
     "https://www.cez.cz/cs/pro-media/tiskove-zpravy/cez-esco-ziskala-firmu-ep-roznov-specialistu-na-ciste-prostory.-akvizice-otevre-dvere-narocnym-zakazkam-v-mnoha-oborech-147108"
@@ -709,6 +1213,82 @@
     "Vakuové komory pro výzkum, modulární S-CUBE, termovakuové (TVAC), RGA/vypalovací a UV čisticí komory",
     "Vakuové tavicí, povlakovací, tepelně-zpracovací a sušicí zařízení; tenkovrstvé odparky",
     "Zařízení na míru od konceptu po uvedení do provozu; vakuová technika, automatizace, montáž čistých prostor"
+   ],
+   "tech": [
+    [
+     "Advanced digital",
+     "[YES] · CAD/CAE/CAM engineering tools, BIM integration, digital project management systems, welding documentation tracking, quality control databases · Access model: Project-based integration / internal digital systems · TRL coverage: TRL 6–9 – deployed in real industrial EPC projects"
+    ],
+    [
+     "Advanced Integration & Packaging",
+     "[YES] · We can deliver within the cleanroom conditions with special ULO packing specified by ZEISS."
+    ],
+    [
+     "Cleanroom Technologies",
+     "[YES] · We do have a cleanroom ISO 8, ISO 7, ISO6 and an ISO5 tent for the highest cleanliness standards given by ZEISS"
+    ],
+    [
+     "Digital platforms & Tools",
+     "[YES] · Digital engineering workflows, 3D modelling, BIM coordination, document management systems · Access model: Project-based integration · TRL coverage: TRL 6–9"
+    ],
+    [
+     "EDA / CAD Tool Development",
+     "[YES] · CAD/CAE/CAM engineering tools, BIM integration, digital project management systems, welding documentation tracking, quality control databases · Access model: Project-based integration / internal digital systems · TRL coverage: TRL 6–9 – deployed in real industrial EPC projects"
+    ],
+    [
+     "Failure analysis, Reliability testing",
+     "[YES] · Non-destructive testing (NDT), welding certification, pressure testing, material inspection, cleanroom standard testing + RGA, FTIR and ZEISS verification methods · Access model: Industrial service / on-site validation · TRL coverage: TRL 7–9"
+    ],
+    [
+     "Functional Testing, Characterisation",
+     "[YES] · FAT and SAT testing of teh vacuum adn related processes that we are delivering within compelx systems that suport creation of environment for semiconductor aplication · Access model: On-site commissioning · TRL coverage: TRL 7–9"
+    ],
+    [
+     "Materials research & characterization",
+     "[Secondary] · Metallurgical testing, welding procedure qualification (WPQR), steel material validation · Access model: Project-based / certified labs · TRL coverage: TRL 6–9"
+    ],
+    [
+     "Power Electronics (Si, SiC, GaN)",
+     "[Secondary] · Mechanical and infrastructure solutions supporting energy and power systems · Access model: EPC contracts · TRL coverage: TRL 7–9"
+    ],
+    [
+     "Systems Engineering",
+     "[Main focus] · Turnkey EPC delivery of pipeline systems, compressor stations, drilling technologies and energy infrastructure integration · Access model: Turnkey EPC contracts · TRL coverage: TRL 7–9 – full industrial deployment"
+    ],
+    [
+     "Other (Energy Infrastructure & Pipeline Systems)",
+     "[Main focus] · Gas and hydrogen-ready pipelines, compressor stations, industrial steel structures, pressure vessels · Access model: EPC / industrial manufacturing · TRL coverage: TRL 7–9"
+    ]
+   ],
+   "srv": [
+    [
+     "Feasibility assessment and concept validation",
+     "Technical and economic feasibility studies for industrial and energy infrastructure projects · Typical users: Energy utilities, infrastructure operators, industrial investors"
+    ],
+    [
+     "Design enablement and modelling support",
+     "Mechanical and process engineering design, 3D modelling, FEM stress analysis using ANSIS, thermall and vacuum calculations · Typical users: Industrial and energy companies"
+    ],
+    [
+     "Prototyping support and technical coaching",
+     "Prototype fabrication of industrial components and pilot infrastructure sections · Typical users: Industrial partners"
+    ],
+    [
+     "Training and awareness-raising workshops",
+     "Technical training on welding standards, safety regulations and infrastructure implementation · Typical users: Industrial clients"
+    ],
+    [
+     "Business development & matchmaking",
+     "Industrial partnerships within EU energy and infrastructure ecosystem · Typical users: EU industrial partners"
+    ],
+    [
+     "Access to infrastructure (labs, cleanrooms, test benches)",
+     "Access to heavy fabrication facilities, welding infrastructure, testing stations and commissioning environments, cleanrooms · Typical users: Industrial clients"
+    ],
+    [
+     "Other – Turnkey EPC Project Delivery",
+     "Complete engineering, procurement and construction of industrial energy infrastructure · Typical users: Energy utilities, infrastructure operators · Comments: Core business"
+    ]
    ],
    "src": [
     "https://exporters.czechtrade.gov.cz/streicher"
@@ -819,6 +1399,86 @@
     "cs": "Přispívá přednáškami a stážemi do programu FEKT VUT Návrh čipů a moderní polovodičové technologie; na českém kariérním webu je sekce pro studenty (detail nenačten).",
     "en": "Contributes lectures and internships to the BUT FEEC programme Chip Design and Modern Semiconductor Technologies; a Students section exists on its Czech career site (details not fetched)."
    },
+   "tech": [
+    [
+     "Advanced Integration & Packaging",
+     "[Secondary]"
+    ],
+    [
+     "Advanced Lithography",
+     "[Emerging]"
+    ],
+    [
+     "Compound Semiconductors",
+     "[Main focus]"
+    ],
+    [
+     "Digital platforms & Tools",
+     "[Emerging]"
+    ],
+    [
+     "Failure analysis, Reliability testing",
+     "[Main focus]"
+    ],
+    [
+     "Functional Testing, Characterisation",
+     "[Main focus]"
+    ],
+    [
+     "Graphene / 2D materials Technologies",
+     "[Emerging]"
+    ],
+    [
+     "High Frequency & RF",
+     "[Secondary]"
+    ],
+    [
+     "Materials research & characterization",
+     "[Main focus]"
+    ],
+    [
+     "MEMS / Microsystems",
+     "[Secondary]"
+    ],
+    [
+     "Non-CMOS Micro / Nano Technology",
+     "[Secondary]"
+    ],
+    [
+     "Photonic Integrated Circuits (PICs)",
+     "[Secondary]"
+    ],
+    [
+     "Power Electronics (Si, SiC, GaN)",
+     "[Main focus]"
+    ],
+    [
+     "Other wide Bandgap Semiconductors",
+     "[Secondary]"
+    ],
+    [
+     "Quantum Technologies / devices",
+     "[Emerging]"
+    ]
+   ],
+   "srv": [
+    [
+     "Design enablement and modelling support",
+     ""
+    ],
+    [
+     "Prototyping support and technical coaching",
+     ""
+    ],
+    [
+     "Training and awareness-raising workshops",
+     ""
+    ],
+    [
+     "Business development & matchmaking",
+     ""
+    ]
+   ],
    "src": [
     "https://thermofisher.jobs.cz/en",
     "https://www.ceitec.eu/vut-cz-research-on-semiconductors-and-chips-at-but-connecting-faculties-research-and-industry/t11532"
@@ -837,7 +1497,7 @@
   "cs": "Testery a manipulátory pro finální testování integrovaných obvodů.",
   "en": "Testers and handlers for final IC testing.",
   "logo": "https://www.semicz.cz/wp-content/uploads/2025/01/unites.webp",
-  "li": "company/unites-systems-a-s-",
+  "li": "company/unites-systems-a-s-cz",
   "note": "",
   "liScope": "page",
   "liFilter": "",
@@ -879,6 +1539,26 @@
    "cs": [
     "Zastupuje přední výrobce měřicí a testovací techniky v ČR, SK, HU a RO (působí i v Rakousku)",
     "Přístroje a systémy pro měření elektrických i neelektrických veličin; testování telekom/datakom sítí"
+   ],
+   "tech": [
+    [
+     "Failure analysis, Reliability testing",
+     "[Main focus]"
+    ],
+    [
+     "Functional Testing, Characterisation",
+     "[Main focus]"
+    ],
+    [
+     "Materials research & characterization",
+     "[Main focus]"
+    ]
+   ],
+   "srv": [
+    [
+     "Design enablement and modelling support",
+     ""
+    ]
    ],
    "src": [
     "https://aetechron.com/wp-content/uploads/2024/11/SP-HTEST.html"
@@ -1012,6 +1692,58 @@
     "Dodávané jako HW+SW nebo jen SW pro chytré elektroměry, nabíječky EV, baterie, FV střídače a EMS",
     "Užití: predikce výroby FVE, analýza ztrát a flexibility na trafostanicích, průmysloví prosumeři"
    ],
+   "tech": [
+    [
+     "Advanced digital",
+     "[Main focus] · Embedded AI/ML, mBORT algorithms, edge intelligence for energy sector, predictive AI/ML for industrial sites · Access model: R&D Collaboration / Licensing · TRL coverage: TRL 1-9: From research to grid deployment"
+    ],
+    [
+     "ASIC / ASSP / FPGA",
+     "[Secondary] · Optimization of algorithms for RISC-V and FPGA platforms in smart meters · Access model: R&D Collaboration / Service-based · TRL coverage: TRL 4-6: Prototyping and testing"
+    ],
+    [
+     "Chip Design",
+     "[Emerging] · Contribution to reference designs for energy-intelligent chips (Edge AI), specifically integration of energy algorithms into NPU-accelerated platforms · Access model: R&D Collaboration / Licensing · TRL coverage: TRL 2-5: Design of embedded logic for AIoT"
+    ],
+    [
+     "Digital platforms & Tools",
+     "[Main focus] · Energy market intelligence, Energy Intelligence Centre (EIC), digital twins for DSOs, data analytics platforms · Access model: R&D Collaboration / Commercial / SaaS · TRL coverage: TRL 1-9: From research to Operational analytics and grid management tools"
+    ],
+    [
+     "Power Electronics (Si, SiC, GaN)",
+     "[Secondary] · AI-based observability and health monitoring for wide-bandgap power converters; providing intelligent insights for higher-level Energy Management Systems (EMS) · Access model: R&D Collaboration / Service-based · TRL coverage: TRL 4-6: Validation of inference models on power electronic data streams"
+    ],
+    [
+     "Systems Engineering",
+     "[Main focus] · Next-gen smart meter architecture, AIoT integration into grid infrastructure, edge controllers into PV plants and industrial sites · Access model: R&D Collaboration / Service-based · TRL coverage: TRL 4-8: System integration and pilot installations to end-to-end industrial implementations"
+    ]
+   ],
+   "srv": [
+    [
+     "Feasibility assessment and concept validation",
+     "Validation of energy models and AI/ML algorithms using real-world distribution grid data · Typical users: DSOs, smart meter manufacturers, electricity traders, PV Plant owners"
+    ],
+    [
+     "Design enablement and modelling support",
+     "Prediction use-case modeling and functional requirement specification for embedded intelligence · Typical users: AIoT Developers, Energy communities, Industrial site owners, PV plant owners"
+    ],
+    [
+     "Prototyping support and technical coaching",
+     "Implementation of embedded energy intelligence modules into partner hardware and edge devices · Typical users: chip manufacturers"
+    ],
+    [
+     "Business development & matchmaking",
+     "Strategic insights for imbalance management and optimization for short- and mid-term energy trading · Typical users: Electricity traders, PV plant owners"
+    ],
+    [
+     "Access to infrastructure (labs, cleanrooms, test benches)",
+     "Access to real-time data from industrial pilot sites · Typical users: AI Developers, Tech startups"
+    ],
+    [
+     "Other (please specify)",
+     "Complete HW/SW solution for local weather-based energy forecasting · Typical users: PV plant owners, energy communities, electricity traders"
+    ]
+   ],
    "src": [
     "https://exporters.czechtrade.gov.cz/mycroft-mind-a-s"
    ]
@@ -1039,6 +1771,74 @@
    ],
    "cs": [
     "Pražský člen aplikačního segmentu klastru"
+   ],
+   "tech": [
+    [
+     "Advanced digital",
+     "[Main focus] · Production-grade AI/ML-driven predictive decision system integrated into semiconductor fab operations. · Access model: Software platform / on-prem deployment. · TRL coverage: TRL 7-9"
+    ],
+    [
+     "Compound Semiconductors",
+     "[Main focus] · AI-based correlation of defect inspection and WBM to identify electrically and reliability-relevant defects. · Access model: On-premises software, customer-data-driven. · TRL coverage: TRL 7-9"
+    ],
+    [
+     "Digital platforms & Tools",
+     "[Main focus] · DeepFab - predictive decision platform integrated into production workflows, enabling early yield visibility, risk-based wafer test optimization, and reliability risk control. · Access model: On-premises software, customer-data-driven. · TRL coverage: TRL 7-9"
+    ],
+    [
+     "Failure analysis, Reliability testing",
+     "[YES] · AI-based latent defect screening and reliability risk control using WBM, defect inspection, and test data. · Access model: Software analytics, data-driven. · TRL coverage: TRL 7-9"
+    ],
+    [
+     "Functional Testing, Characterisation",
+     "[Main focus] · AI-based analysis of wafer tests (PCM, WAT, defect inspection,) and final test data for yield visibility and defect relevance ranking. · Access model: Software platform · TRL coverage: TRL 7-9"
+    ],
+    [
+     "High Frequency & RF",
+     "[Secondary] · Yield improvement, early defect screening for high reliability. · Access model: Software platform, no CAPEX. · TRL coverage: TRL 7-9"
+    ],
+    [
+     "MEMS / Microsystems",
+     "[Secondary] · Yield improvement, early defect screening for automotive-grade reliability. · Access model: On-premises software, customer-data-driven. · TRL coverage: TRL 7-9"
+    ],
+    [
+     "Photonic Integrated Circuits (PICs)",
+     "[Secondary] · Yield improvement, early defect screening for high reliability. · Access model: Software platform, no CAPEX. · TRL coverage: TRL 7-9"
+    ],
+    [
+     "Power Electronics (Si, SiC, GaN)",
+     "[Main focus] · Yield ramp acceleration, defect impact on device performance, automotive-grade reliability. · Access model: Software platform, no CAPEX. · TRL coverage: TRL 7-9"
+    ],
+    [
+     "Other wide Bandgap Semiconductors",
+     "[Emerging] · Yield improvement, early defect screening for high reliability. · Access model: Software platform, no CAPEX. · TRL coverage: TRL 4-6"
+    ],
+    [
+     "Systems Engineering",
+     "[Main focus] · The system operates as a fab-native decision layer, transforming heterogeneous fab data into actionable operational decisions without additional equipment. · Access model: Project-based integration / platform licensing. · TRL coverage: TRL 7-9"
+    ],
+    [
+     "Other (specify)\nSmart & Predictive Manufacturing",
+     "[Main focus] · Smart wafer/lot routing based on yield prediction. · Access model: Software · TRL coverage: TRL 4-6, TRL 7-9"
+    ]
+   ],
+   "srv": [
+    [
+     "Feasibility assessment and concept validation",
+     "Evaluation of existing fab data for yield prediction, defect relevance, and reliability risk use cases. · Typical users: Wafer fabs, IDMs, foundries, fabless."
+    ],
+    [
+     "Prototyping support and technical coaching",
+     "Pilot deployments and technical coaching for AI-based manufacturing analytics and systems. · Typical users: Wafer fabs, IDMs, foundries, fabless."
+    ],
+    [
+     "Training and awareness-raising workshops",
+     "Open access interactive online tool for insights into Si, SiC, and GaN properties and devices. · Typical users: Wafer fabs, IDMs, foundries, fabless."
+    ],
+    [
+     "Other (please specify)\nProduction AI System Deployment",
+     "Deployment of production-proven AI predictive systems for yield and reliability improvement. · Typical users: Wafer fabs, IDMs, foundries, fabless."
+    ]
    ]
   }
  },
@@ -1092,7 +1892,7 @@
   "en": "Smart measurement and instrumentation technology.",
   "logo": "https://www.semicz.cz/wp-content/uploads/2025/01/smarter-in.webp",
   "li": "company/smarterinstruments",
-  "note": "",
+  "note": "LinkedIn stránka bez příspěvků za posledních 90 dní",
   "liScope": "page",
   "liFilter": "",
   "offer": {
@@ -1101,6 +1901,78 @@
    ],
    "cs": [
     "Smluvní výzkumný projekt s FIT VUT (2021, skupina počítačové grafiky/vidění P. Zemčíka)"
+   ],
+   "tech": [
+    [
+     "Chip Design",
+     "Custom MCU, user defined analog/digital peripherals, device design kits, no fab needed for prototypes"
+    ],
+    [
+     "Digital platforms & Tools",
+     "Advisory on development tools for MCU application"
+    ],
+    [
+     "IC Design (Analog & AMS)",
+     "Custom MCU, user defined analog/digital peripherals, device design kits, no fab needed for prototypes"
+    ],
+    [
+     "IC Design (Digital)",
+     "Custom MCU, user defined analog/digital peripherals, device design kits, no fab needed for prototypes"
+    ],
+    [
+     "MEMS / Microsystems",
+     "Embedded intelligence, self learning AI, optimized for low power, inteligent sensors design"
+    ],
+    [
+     "Power Electronics (Si, SiC, GaN)",
+     "Cognitive systems combinaton of power electronics with leow power self learning AI on MCU"
+    ],
+    [
+     "Systems Engineering",
+     "System/application engineering for MCU and cognitive applications"
+    ],
+    [
+     "Other (specify)",
+     "Ultra low power IoT devices with self learning AI, optimizations of HW, MCU experience and selection, project management with deep knowledge"
+    ]
+   ],
+   "srv": [
+    [
+     "Feasibility assessment and concept validation",
+     "Feasibility studies for EU, non EU partners for semiconductors, low power embedded AI, energy grid, MCU and sensors areas, custom MCUs design, strategic advisory, IPCEI project guidance and partnerships"
+    ],
+    [
+     "Design enablement and modelling support",
+     "Application & device modelling guidance, simulation support, design-in assistance for power management and SiC solutions."
+    ],
+    [
+     "Access to design kits / MPW runs",
+     "via CNSC partners"
+    ],
+    [
+     "Prototyping support and technical coaching",
+     "Prototype concept, feasibility/build/evaluation support coaching on MCU, low power self learning AI device, energy grid application and qualification basics."
+    ],
+    [
+     "Training and awareness-raising workshops",
+     "IPCEI Project portfolio, partnerships setup, negotiation within member states. ICP level, ministry level"
+    ],
+    [
+     "Funding support (public / private)",
+     "Project frames / IPCEI, Sigma, ChipsJU"
+    ],
+    [
+     "Business development & matchmaking",
+     "Business model development with (IPCEI,..) Matchmaking via CNSC channels and EU networks to connect potential customers/partners to project capabilities."
+    ],
+    [
+     "Access to infrastructure (labs, cleanrooms, test benches)",
+     "Thru CNSC partners Access to selected labs/test benches and fab visits"
+    ],
+    [
+     "Other (please specify)",
+     "government relations"
+    ]
    ],
    "src": [
     "https://fit.vut.cz/research/project/1523"
@@ -1143,6 +2015,130 @@
     "cs": "Bakalářský a navazující program návrhu čipů a polovodičových technologií na FEKT (projektová výuka, přístup do čistých prostor CEITEC, přednášky a stáže z průmyslu); polovodičové předměty ve Fyzikálním inženýrství a nanotechnologiích na FSI.",
     "en": "Bachelor's and master's programme in chip design and semiconductor technologies at FEEC (project-based, CEITEC cleanroom access, industry lectures and internships); semiconductor courses within Physical Engineering and Nanotechnology at FME."
    },
+   "tech": [
+    [
+     "Advanced digital",
+     "[Main focus] · Access model: research · TRL coverage: TRL 1-3"
+    ],
+    [
+     "Advanced Integration & Packaging",
+     "[Main focus] · Access model: research · TRL coverage: TRL 1-3"
+    ],
+    [
+     "Advanced Lithography",
+     "[Main focus] · 100kV lithograph · Access model: Open access · TRL coverage: TRL 1-3"
+    ],
+    [
+     "ASIC / ASSP / FPGA",
+     "[Main focus] · Access model: research · TRL coverage: TRL 1-3"
+    ],
+    [
+     "Chip Design",
+     "[Main focus] · Access model: research · TRL coverage: TRL 1-3"
+    ],
+    [
+     "Cleanroom Technologies",
+     "[Main focus] · 2000sq. M, inc. 700m class 100 · Access model: Open access · TRL coverage: TLR 1-3"
+    ],
+    [
+     "CMOS Micro / Nano Technology",
+     "[Secondary] · 2000sq. M, inc. 700m class 100"
+    ],
+    [
+     "Compound Semiconductors",
+     "[Main focus] · Organic semiconductors · Access model: research · TRL coverage: TRL 1-3"
+    ],
+    [
+     "Digital platforms & Tools",
+     "[Main focus] · Access model: research · TRL coverage: TRL 1-3"
+    ],
+    [
+     "Failure analysis, Reliability testing",
+     "[Main focus] · Access model: research · TRL coverage: TRL 1-3"
+    ],
+    [
+     "Functional Testing, Characterisation",
+     "[Main focus]"
+    ],
+    [
+     "Graphene / 2D materials Technologies",
+     "[Secondary] · Graphene modifications · Access model: research · TRL coverage: TRL 1-3"
+    ],
+    [
+     "High Frequency & RF",
+     "[Main focus] · Access model: research · TRL coverage: TRL 1-3"
+    ],
+    [
+     "IC Design (Analog & AMS)",
+     "[Main focus] · Access model: research · TRL coverage: TRL 1-3"
+    ],
+    [
+     "IC Design (Digital)",
+     "[Main focus] · Access model: research · TRL coverage: TRL 1-3"
+    ],
+    [
+     "IC Design (RF)",
+     "[Main focus] · Access model: research · TRL coverage: TRL 1-3"
+    ],
+    [
+     "Materials research & characterization",
+     "[Main focus] · nano.ceitec.cz; Design and Synthesis or organic and hybride semiconductors, optical and electrical characterisations, advanced applications · Access model: Open access · TRL coverage: TRL 1-3"
+    ],
+    [
+     "MEMS / Microsystems",
+     "[Main focus] · Access model: research · TRL coverage: TRL 1-3"
+    ],
+    [
+     "Non-CMOS Micro / Nano Technology",
+     "[Main focus] · Access model: research · TRL coverage: TRL 1-3"
+    ],
+    [
+     "Photonic Integrated Circuits (PICs)",
+     "[Emerging] · Access model: research · TRL coverage: TRL 1-3"
+    ],
+    [
+     "Power Electronics (Si, SiC, GaN)",
+     "[Main focus] · Access model: research · TRL coverage: TRL 1-3"
+    ],
+    [
+     "Other wide Bandgap Semiconductors",
+     "[Main focus] · Especially organic semiconductrs based on High performance pigments, nature inspired materials and perovskites · Access model: research · TRL coverage: TRL 1-3"
+    ],
+    [
+     "Quantum Technologies / devices",
+     "[Emerging] · New materials for QBITS · Access model: research · TRL coverage: TRL 1-3"
+    ],
+    [
+     "Systems Engineering",
+     "[Main focus] · Access model: research · TRL coverage: TRL 1-3"
+    ]
+   ],
+   "srv": [
+    [
+     "Feasibility assessment and concept validation",
+     "Typical users: academics · Comments: complex suite of characterization equipment ceitec.nano.cz"
+    ],
+    [
+     "Design enablement and modelling support",
+     "DFT calculation, deisgn of new materials for suitable applications"
+    ],
+    [
+     "Prototyping support and technical coaching",
+     "Comments: complex lithography prototyping"
+    ],
+    [
+     "Guidance for foundry selection",
+     ""
+    ],
+    [
+     "Funding support (public / private)",
+     "Public · Comments: grant applications"
+    ],
+    [
+     "Access to infrastructure (labs, cleanrooms, test benches)",
+     "glove box, vacuum deposition techniques, spin coating etc."
+    ]
+   ],
    "src": [
     "https://www.fekt.vut.cz/en/faculty/news_new/302655",
     "https://www.ceitec.eu/vut-cz-research-on-semiconductors-and-chips-at-but-connecting-faculties-research-and-industry/t11532",
@@ -1184,6 +2180,50 @@
     "cs": "Nové každoroční předměty FI MU k validaci a verifikaci křemíkových čipů s praktickými cvičeními a workshopy (odborný vstup Renesas), realizované v letech 2025-2027.",
     "en": "New annual FI MUNI courses on silicon chip validation and verification with practical exercises and workshops (industry input from Renesas), delivered within 2025-2027."
    },
+   "tech": [
+    [
+     "Cleanroom Technologies",
+     "[Main focus] · Cleanrooms for trainings, testing and chip fabrication."
+    ],
+    [
+     "IC Design (Digital)",
+     "[Main focus] · Functional and formal design verification. Digital signal and fast data processing."
+    ],
+    [
+     "Materials research & characterization",
+     "[Main focus] · Optical and structural characterisation of semiconductors materials and structures. Surface and bulk properties analysis."
+    ],
+    [
+     "Power Electronics (Si, SiC, GaN)",
+     "[Secondary] · Material, thin films and surface characterisation."
+    ],
+    [
+     "Other wide Bandgap Semiconductors",
+     "[Secondary] · Material, thin films and surface characterisation."
+    ],
+    [
+     "Systems Engineering",
+     "[Main focus] · Development of FW and applications for embedded systems. Development and testing of systems for radiation damage and for nuclear facilities."
+    ]
+   ],
+   "srv": [
+    [
+     "Design enablement and modelling support",
+     "Embedded systems, radiation damage, fast detectors"
+    ],
+    [
+     "Training and awareness-raising workshops",
+     "Training in cleanroom laboratories. · Typical users: Academic users (students, teachers), company experts."
+    ],
+    [
+     "Access to infrastructure (labs, cleanrooms, test benches)",
+     "Cleanroom facility for training and testing mainly for 4“ and 6’’ wafers. · Typical users: Academic users (students, teachers), company experts and other third parties."
+    ],
+    [
+     "Other (please specify)",
+     "Materials characterisation."
+    ]
+   ],
    "src": [
     "https://www.muni.cz/en/research/projects/74472",
     "https://www.lupa.cz/clanky/zalozili-si-obor-a-prihlasili-se-jim-tam-lidi-v-brne-startuje-moderni-vyuka-cipu-zajem-predcil-ocekavani/"
@@ -1491,6 +2531,78 @@
     "cs": "Polovodičová chemie začleněná do stávajících chemických studijních programů a předmětů (ne samostatný obor); spolupráce s průmyslovými partnery na aplikovaných projektech.",
     "en": "Semiconductor-chemistry topics embedded in existing chemistry study programmes and courses (not a standalone degree); collaboration with industrial partners on applied projects."
    },
+   "tech": [
+    [
+     "Advanced Integration & Packaging",
+     "[Emerging] · Access model: all types · TRL coverage: 4-5"
+    ],
+    [
+     "Advanced Lithography",
+     "[Emerging] · Access model: all types · TRL coverage: 4-5"
+    ],
+    [
+     "Chip Design",
+     "[Secondary] · Biochips · Access model: all types · TRL coverage: 4-5"
+    ],
+    [
+     "Cleanroom Technologies",
+     "[Secondary] · Access model: all types · TRL coverage: 4-5"
+    ],
+    [
+     "CMOS Micro / Nano Technology",
+     "[Secondary] · Access model: all types · TRL coverage: 4-5"
+    ],
+    [
+     "Compound Semiconductors",
+     "[Secondary] · Access model: all types · TRL coverage: 4-5"
+    ],
+    [
+     "Graphene / 2D materials Technologies",
+     "[Secondary]"
+    ],
+    [
+     "Materials research & characterization",
+     "[Main focus] · Access model: all types · TRL coverage: 4-5"
+    ],
+    [
+     "Power Electronics (Si, SiC, GaN)",
+     "[Secondary] · Access model: all types · TRL coverage: 4-5"
+    ],
+    [
+     "Systems Engineering",
+     "[Secondary] · Access model: all types · TRL coverage: 4-5"
+    ],
+    [
+     "Other (specify)",
+     "[Main focus] · Semiconductor chemicals · Access model: all types · TRL coverage: 4-5"
+    ]
+   ],
+   "srv": [
+    [
+     "Feasibility assessment and concept validation",
+     "Early-stage technical risk evaluation · Typical users: Universities and research institutions"
+    ],
+    [
+     "Prototyping support and technical coaching",
+     "Hands-on development mentoring · Typical users: Small companies"
+    ],
+    [
+     "Training and awareness-raising workshops",
+     "Professional capacity building sessions · Typical users: Small companies"
+    ],
+    [
+     "Funding support (public / private)",
+     "Grant preparation and advisory · Typical users: Small companies and research institutions"
+    ],
+    [
+     "Business development & matchmaking",
+     "Industry networking and partnership facilitation · Typical users: Small companies and research institutions"
+    ],
+    [
+     "Access to infrastructure (labs, cleanrooms, test benches)",
+     "Laboratory and equipment availability · Typical users: Universities and research institutions"
+    ]
+   ],
    "src": [
     "https://chemistry.ujep.cz/semiconductor-chemistry/"
    ]
@@ -1509,7 +2621,7 @@
   "en": "European centre of excellence for nanotechnology and advanced materials.",
   "logo": "",
   "li": "company/ceitec---central-european-institute-of-technology",
-  "note": "",
+  "note": "na semicz.cz/memberlist 25. 10. 2026 není uveden – ověřit členství",
   "liScope": "page",
   "liFilter": "",
   "offer": {
@@ -1688,18 +2800,18 @@
  },
  {
   "id": "ufch-jh",
-  "n": "Ústav J. Heyrovského AV ČR",
+  "n": "Heyrovského ústav AV ČR",
   "short": "ÚFCH JH",
   "city": "Praha",
   "url": "https://www.jh-inst.cas.cz",
   "s": "research",
   "acadChip": false,
   "partnerIn": [],
-  "cs": "Fyzikální chemie povrchů a nanomateriálů.",
-  "en": "Physical chemistry of surfaces and nanomaterials.",
+  "cs": "Fyzikální chemie povrchů a nanomateriálů (do 30. 6. 2026 Ústav fyzikální chemie J. Heyrovského).",
+  "en": "Physical chemistry of surfaces and nanomaterials (until 30 Jun 2026 the J. Heyrovský Institute of Physical Chemistry).",
   "logo": "https://www.semicz.cz/wp-content/uploads/2025/04/J.-Heyrovsky-Institute-of-Physical-Chemistry.webp",
   "li": "company/heu-praha",
-  "note": "",
+  "note": "od 1. 7. 2026 nový název; na LinkedIn existuje i nová stránka „Heyrovského ústav AV ČR“ – ověřit slug",
   "liScope": "page",
   "liFilter": "",
   "offer": {
@@ -1784,6 +2896,50 @@
     "cs": "Bezplatný inkubační program pro začínající podnikatele zaměřený na základy podnikání, marketing a leadership.",
     "en": "Free incubation programme for early-stage founders covering business basics, marketing and leadership."
    },
+   "tech": [
+    [
+     "Advanced digital",
+     "[Secondary] · Industry 4.0 / DIH; smart manufacturing and AI readiness support for suppliers; data/automation roadmaps and use-case scouting. · Access model: Workshops + 1:1 advisory; project-based support; referrals to technical providers. · TRL coverage: TRL 4–9 (pilots to deployment)"
+    ],
+    [
+     "Digital platforms & Tools",
+     "[Secondary] · Regional Data Platform (Portabo) for Smart City/Region data integration. Digital Innovation Hub (DIH) services focusing on digital transformation and data utilization. · Access model: Service based / Open API (for data platform) · TRL coverage: TRL 7–9"
+    ],
+    [
+     "Other (specify)",
+     "[Main focus] · Startup incubation and acceleration, regional matchmaking, access to funding (public/private), and soft-landing support for investors. Semiconductor ecosystem & supply-chain development (CZ–DE/Saxony): supplier scouting, upgrading pathways, FDI/investment pipeline (industrial sites/brownfields); · Access model: Cluster and DIH facilitation; matchmaking; project consortia; MoUs / partnership agreements. · TRL coverage: TRL 4–6, TRL 7–9"
+    ]
+   ],
+   "srv": [
+    [
+     "Feasibility assessment and concept validation",
+     "Innovation and business feasibility for semiconductor supply-chain opportunities (market/partner mapping, value proposition, investment readiness). · Typical users: SMEs, startups, public sector (industrial parks), investors · Comments: Business-oriented; technical validation via partner network."
+    ],
+    [
+     "Prototyping support and technical coaching",
+     "brokerage to prototyping, testing and lab partners (CZ/DE). · Typical users: SMEs, startups, R&D consortia · Comments: access conditions depend on facility owner."
+    ],
+    [
+     "Training and awareness-raising workshops",
+     "Workshops on digitalization and innovation management. · Typical users: SMEs, startups, academia, students, public sector · Comments: Open events and tailored sessions."
+    ],
+    [
+     "Funding support (public / private)",
+     "Guidance on national and EU grant schemes. · Typical users: Tech startups, SMEs, research organizations seeking grant or VC funding. · Comments: Project-based support; may involve partner organisations."
+    ],
+    [
+     "Business development & matchmaking",
+     "Connecting regional actors with CNSC members. · Typical users: SMEs, corporates, clusters, regional SMEs, international investors, technology providers."
+    ],
+    [
+     "Access to infrastructure (labs, cleanrooms, test benches)",
+     "Brokered access to infrastructure in the region and cross-border partner network (university labs, test benches, pilot facilities). · Typical users: SMEs, startups, R&D consortia · Comments: ICUK facilitates; terms set by infrastructure owners."
+    ],
+    [
+     "Other (please specify)",
+     "supplier upgrading programme; Startup incubation and acceleration, regional matchmaking · Typical users: SMEs (potential semiconductor suppliers) · Comments: Delivered via coaching + specialised partners where needed."
+    ]
+   ],
    "src": [
     "https://cnn.iprima.cz/inovacni-centrum-usteckeho-kraje-slavi-10-let-pomohlo-uz-140-startupum-491247",
     "https://www.businessinfo.cz/clanky/icuk-se-zapojil-do-silicon-saxony-days-2026-diskuze-o-budoucnosti-polovodicu-i-preshranicni-spoluprace/"
