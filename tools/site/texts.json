@@ -1,0 +1,615 @@
+{
+ "nav": [
+  [
+   "./",
+   {
+    "cs": "Domů",
+    "en": "Home"
+   },
+   "home"
+  ],
+  [
+   "clenove.html",
+   {
+    "cs": "Členové",
+    "en": "Members"
+   },
+   "members"
+  ],
+  [
+   "centra.html",
+   {
+    "cs": "Centra a projekty",
+    "en": "Centres"
+   },
+   "centres"
+  ],
+  [
+   "novinky.html",
+   {
+    "cs": "Novinky",
+    "en": "News"
+   },
+   "news"
+  ],
+  [
+   "akce.html",
+   {
+    "cs": "Akce",
+    "en": "Events"
+   },
+   "events"
+  ],
+  [
+   "sluzby.html",
+   {
+    "cs": "Služby",
+    "en": "Services"
+   },
+   "services"
+  ],
+  [
+   "radary.html",
+   {
+    "cs": "Radary",
+    "en": "Radars"
+   },
+   "radars"
+  ],
+  [
+   "o-klastru.html",
+   {
+    "cs": "O klastru",
+    "en": "About"
+   },
+   "about"
+  ],
+  [
+   "kontakt.html",
+   {
+    "cs": "Kontakt",
+    "en": "Contact"
+   },
+   "contact"
+  ]
+ ],
+ "brand": {
+  "cs": "Czech National Semiconductor Cluster",
+  "en": "Czech National Semiconductor Cluster"
+ },
+ "brandSub": {
+  "cs": "český polovodičový klastr · Brno",
+  "en": "the Czech semiconductor cluster · Brno"
+ },
+ "todoLabel": {
+  "cs": "K doplnění klastrem",
+  "en": "To be supplied by the cluster"
+ },
+ "proto": {
+  "cs": "Prototyp nového webu CNSC – struktura a data z Radaru aktivit členů; žluté rámečky označují texty, které musí dodat klastr.",
+  "en": "Prototype of the new CNSC website – structure and data from the Member Activity Radar; yellow boxes mark texts the cluster has to supply."
+ },
+ "footerNote": {
+  "cs": "© 2026 Czech National Semiconductor Cluster, z.s. · Šumavská 416/15, 602 00 Brno · info@semicz.cz",
+  "en": "© 2026 Czech National Semiconductor Cluster, z.s. · Šumavská 416/15, 602 00 Brno · info@semicz.cz"
+ },
+ "home": {
+  "eyebrow": {
+   "cs": "Czech National Semiconductor Cluster · od roku 2022",
+   "en": "Czech National Semiconductor Cluster · since 2022"
+  },
+  "h1a": {
+   "cs": "Od návrhu čipu",
+   "en": "From chip design"
+  },
+  "h1b": {
+   "cs": "po hotový wafer.",
+   "en": "to finished wafer."
+  },
+  "h1c": {
+   "cs": "Vše v Česku.",
+   "en": "All in Czechia."
+  },
+  "lead": {
+   "cs": "Klastr propojuje firmy, univerzity a ústavy Akademie věd napříč celým polovodičovým hodnotovým řetězcem České republiky – od IP a návrhu čipů přes materiály a výrobu až po testování a aplikace. Je členem Silicon Europe a SEMI a podílí se na realizaci EU Chips Act a Národní polovodičové strategie.",
+   "en": "The cluster connects companies, universities and Academy of Sciences institutes across the entire Czech semiconductor value chain – from IP and chip design through materials and manufacturing to test and applications. It is a member of Silicon Europe and SEMI and contributes to the EU Chips Act and the National Semiconductor Strategy."
+  },
+  "tiles": [
+   [
+    {
+     "cs": "členů klastru",
+     "en": "cluster members"
+    },
+    {
+     "cs": "firmy, univerzity, ústavy AV ČR, regiony",
+     "en": "companies, universities, CAS institutes, regions"
+    }
+   ],
+   [
+    {
+     "cs": "segmentů hodnotového řetězce",
+     "en": "value-chain segments"
+    },
+    {
+     "cs": "od návrhu čipů po ekosystém",
+     "en": "from chip design to ecosystem"
+    }
+   ],
+   [
+    {
+     "cs": "centra vedená členy",
+     "en": "centres led by members"
+    },
+    {
+     "cs": "CSC, Semiconductors4All, ACDRC",
+     "en": "CSC, Semiconductors4All, ACDRC"
+    }
+   ],
+   [
+    {
+     "cs": "členů s veřejnou aktivitou tento měsíc",
+     "en": "members publicly active this month"
+    },
+    {
+     "cs": "podle Radaru aktivit členů",
+     "en": "per the Member Activity Radar"
+    }
+   ]
+  ],
+  "topH": {
+   "cs": "Aktuálně v klastru",
+   "en": "Now in the cluster"
+  },
+  "topSub": {
+   "cs": "Hlavní položky z týdenního Radaru aktivit členů; úplný log je v Novinkách.",
+   "en": "Headline items from the weekly Member Activity Radar; the full log is under News."
+  },
+  "evH": {
+   "cs": "Nejbližší akce",
+   "en": "Upcoming events"
+  },
+  "cta": [
+   [
+    "clenove.html",
+    {
+     "cs": "Najít partnera mezi členy",
+     "en": "Find a partner among the members"
+    },
+    {
+     "cs": "53 členů s nabídkou produktů, služeb, expertizy a školení, podle segmentů řetězce.",
+     "en": "53 members with their offer of products, services, expertise and training, by value-chain segment."
+    }
+   ],
+   [
+    "sluzby.html",
+    {
+     "cs": "Služby klastru",
+     "en": "Cluster services"
+    },
+    {
+     "cs": "Matchmaking, podpora IPCEI AST, navigace do EU programů, center a pilotních linek.",
+     "en": "Matchmaking, IPCEI AST support, guidance to EU programmes, centres and pilot lines."
+    }
+   ],
+   [
+    "o-klastru.html#clenstvi",
+    {
+     "cs": "Stát se členem",
+     "en": "Become a member"
+    },
+    {
+     "cs": "Výhody členství, kategorie a postup přijetí.",
+     "en": "Membership benefits, categories and how to join."
+    }
+   ]
+  ]
+ },
+ "members": {
+  "h": {
+   "cs": "Členové podle segmentů hodnotového řetězce",
+   "en": "Members by value-chain segment"
+  },
+  "sub": {
+   "cs": "Kmenová data z katalogu klastru; poslední aktivita z logu novinek. Rozbalením „Nabídka“ zobrazíte produkty, služby, expertizu a školení, které člen veřejně nabízí.",
+   "en": "Master data from the cluster catalogue; last activity from the news log. Expand “Offer” for the products, services, expertise and training a member publicly offers."
+  },
+  "search": {
+   "cs": "Hledat člena, město, technologii, službu…",
+   "en": "Search member, city, technology, service…"
+  },
+  "todo": {
+   "cs": "Loga členů (dnes načítaná ze semicz.cz) do vlastního úložiště a souhlas každého člena s publikací nabídky; krátký profil u členů bez veřejných dat (Heyrovského ústav, Activair, ASICentrum, HTest).",
+   "en": "Member logos (currently loaded from semicz.cz) in the site's own storage and each member's consent to publishing its offer; a short profile for members without public data."
+  }
+ },
+ "centres": {
+  "projH": {
+   "cs": "Projekty a iniciativy klastru",
+   "en": "Cluster projects and initiatives"
+  },
+  "projSub": {
+   "cs": "Evropské a národní projekty, ve kterých klastr nebo jeho členové působí. Texty níže jsou výchozí návrh z veřejných zdrojů.",
+   "en": "European and national projects in which the cluster or its members take part. The texts below are a first draft from public sources."
+  },
+  "projects": [
+   [
+    {
+     "cs": "IPCEI AST – pokročilé polovodičové technologie",
+     "en": "IPCEI AST – advanced semiconductor technologies"
+    },
+    {
+     "cs": "Čeští přímí účastníci odevzdali 31. 10. 2026 projektová portfolia k prenotifikaci Evropské komisi; šest z devíti technologických polí IPCEI AST má českou stopu. Klastr podporoval přípravu podání a koordinoval zájemce s MPO.",
+     "en": "Czech direct participants submitted their project portfolios for pre-notification to the European Commission on 31 Oct 2026; six of the nine IPCEI AST technology fields have a Czech footprint. The cluster supported the preparation of the submissions and coordinated applicants with the Ministry of Industry and Trade."
+    },
+    "https://www.linkedin.com/feed/update/urn:li:activity:7522272005811826689/",
+    {
+     "cs": "veřejná část: harmonogram (dotazy DG COMP, chapeau, notifikace, realizace 2027–2032), role klastru, kontakt pro zájemce",
+     "en": "public part: timeline (DG COMP questions, chapeau, notification, implementation 2027–2032), the cluster's role, contact for applicants"
+    }
+   ],
+   [
+    {
+     "cs": "Chips Act Pilíř I – aCCCess, EuroCDP, pilotní linky",
+     "en": "Chips Act Pillar I – aCCCess, EuroCDP, pilot lines"
+    },
+    {
+     "cs": "Klastr je partnerem síťové akce aCCCess (evropská síť kompetenčních center) a sleduje pro ni i pro české firmy pilotní linky a designovou platformu EuroCDP – viz Radary.",
+     "en": "The cluster is a partner of the aCCCess network action (European network of competence centres) and tracks the pilot lines and the EuroCDP design platform for it and for Czech companies – see Radars."
+    },
+    "https://www.acccess.eu/",
+    {
+     "cs": "jedna věta k roli CNSC v aCCCess a odkaz na Czech Semiconductor Centre jako národní bránu",
+     "en": "one sentence on CNSC's role in aCCCess and a link to the Czech Semiconductor Centre as the national gateway"
+    }
+   ],
+   [
+    {
+     "cs": "CHAMP-ION – kvantová pilotní linka",
+     "en": "CHAMP-ION – quantum pilot line"
+    },
+    {
+     "cs": "Evropská pilotní linka pro iontové kvantové čipy (koordinátor Silicon Austria Labs); českými partnery jsou Ústav přístrojové techniky AV ČR (člen klastru) a Univerzita Palackého v Olomouci.",
+     "en": "European pilot line for ion-trap quantum chips (coordinated by Silicon Austria Labs); the Czech partners are the Institute of Scientific Instruments of the CAS (a cluster member) and Palacký University Olomouc."
+    },
+    "https://champ-ion.eu/",
+    {
+     "cs": "potvrdit formu spolupráce klastru s linkou",
+     "en": "confirm the form of the cluster's cooperation with the line"
+    }
+   ],
+   [
+    {
+     "cs": "Orchestra-EDGE",
+     "en": "Orchestra-EDGE"
+    },
+    {
+     "cs": "Evropský projekt, ve kterém klastr zastupuje český ekosystém: sběr požadavků průmyslu, průmyslové zátěže a koordinace standardů.",
+     "en": "A European project in which the cluster represents the Czech ecosystem: aggregation of industry requirements, industrial workloads and standards coordination."
+    },
+    "",
+    {
+     "cs": "oficiální název, program, trvání, partneři a role CNSC po zveřejnění grantové dohody",
+     "en": "official title, programme, duration, partners and CNSC's role once the grant agreement is public"
+    }
+   ],
+   [
+    {
+     "cs": "Síť memorand o spolupráci",
+     "en": "Network of memoranda of understanding"
+    },
+    {
+     "cs": "Klastr uzavírá memoranda s partnerskými klastry a kompetenčními centry v Evropě (např. High Tech NL – Czech–Netherlands Semiconductor Cooperation Platform, 2026).",
+     "en": "The cluster concludes memoranda with partner clusters and competence centres in Europe (e.g. High Tech NL – Czech–Netherlands Semiconductor Cooperation Platform, 2026)."
+    },
+    "",
+    {
+     "cs": "seznam platných memorand, která klastr chce zveřejnit, s datem a partnerem",
+     "en": "list of memoranda the cluster wants to publish, with date and partner"
+    }
+   ],
+   [
+    {
+     "cs": "Silicon Europe a SEMI",
+     "en": "Silicon Europe and SEMI"
+    },
+    {
+     "cs": "Klastr je členem aliance evropských polovodičových klastrů Silicon Europe a asociace SEMI; členové se účastní společných stánků (SEMICON Europa, SEMICON Taiwan) a pracovních skupin.",
+     "en": "The cluster is a member of the Silicon Europe alliance of European semiconductor clusters and of SEMI; members take part in joint pavilions (SEMICON Europa, SEMICON Taiwan) and working groups."
+    },
+    "https://www.silicon-europe.eu/",
+    {
+     "cs": "rok vstupu a kontaktní osoba pro aliance",
+     "en": "year of accession and contact person for the alliances"
+    }
+   ]
+  ]
+ },
+ "news": {
+  "todo": {
+   "cs": "Archiv týdenních edic (dnes se uchovává jen poslední) a trvalé adresy jednotlivých položek pro sdílení.",
+   "en": "Archive of weekly editions (only the latest is kept today) and permanent addresses of individual items for sharing."
+  }
+ },
+ "events": {
+  "todo": {
+   "cs": "Vlastní akce klastru (valná hromada, výroční setkání, webináře) s registrací a archivem proběhlých akcí s fotografiemi.",
+   "en": "The cluster's own events (general assembly, annual meeting, webinars) with registration and an archive of past events with photos."
+  }
+ },
+ "services": {
+  "h": {
+   "cs": "Služby klastru",
+   "en": "Cluster services"
+  },
+  "sub": {
+   "cs": "Co klastr dělá pro členy, veřejnou správu a zahraniční partnery. Texty jsou výchozí návrh; rozsah a podmínky služeb schvaluje představenstvo.",
+   "en": "What the cluster does for members, public administration and foreign partners. The texts are a first draft; the scope and terms of services are approved by the board."
+  },
+  "items": [
+   [
+    {
+     "cs": "Matchmaking a napojení na experty",
+     "en": "Matchmaking and access to experts"
+    },
+    {
+     "cs": "Hledáte projektové partnery, dodavatele nebo výzkumné kapacity? Klastr zprostředkuje kontakt na správný článek řetězce včetně návštěvy a ukázky kapacit členů.",
+     "en": "Looking for project partners, suppliers or research capacity? The cluster connects you to the right link in the chain, including on-site visits and demonstrations of member capabilities."
+    }
+   ],
+   [
+    {
+     "cs": "Podpora projektů IPCEI AST",
+     "en": "Support for IPCEI AST projects"
+    },
+    {
+     "cs": "Orientace v procesu IPCEI, příprava projektových portfolií a podkladů přímých i nepřímých účastníků, koordinace s MPO a partnery v dalších členských státech.",
+     "en": "Guidance through the IPCEI process, preparation of project portfolios and documentation for direct and indirect participants, coordination with the Ministry and partners in other member states."
+    }
+   ],
+   [
+    {
+     "cs": "Navigace do EU programů, center a pilotních linek",
+     "en": "Guidance to EU programmes, centres and pilot lines"
+    },
+    {
+     "cs": "Chips JU, kompetenční centra (Czech Semiconductor Centre, síť aCCCess), designová platforma EuroCDP a pilotní linky – kam se obrátit a s čím.",
+     "en": "Chips JU, competence centres (Czech Semiconductor Centre, the aCCCess network), the EuroCDP design platform and pilot lines – where to turn and with what."
+    }
+   ],
+   [
+    {
+     "cs": "Zastoupení vůči veřejné správě",
+     "en": "Representation towards public administration"
+    },
+    {
+     "cs": "Odborné podklady k Národní polovodičové strategii a k evropské legislativě (Chips Act 2.0), účast v pracovních skupinách MPO, CzechInvest a Stálého zastoupení ČR.",
+     "en": "Expert input to the National Semiconductor Strategy and European legislation (Chips Act 2.0), participation in working groups of the Ministry, CzechInvest and the Czech Permanent Representation."
+    }
+   ],
+   [
+    {
+     "cs": "Viditelnost: radary, katalogy, společné stánky",
+     "en": "Visibility: radars, catalogues, joint pavilions"
+    },
+    {
+     "cs": "Týdenní radary (Pillar I, pilotní linky, aktivity členů), katalog členů a služeb, katalog IP bloků, český stánek na SEMICON Europa a SEMICON Taiwan.",
+     "en": "Weekly radars (Pillar I, pilot lines, member activities), the member and service catalogue, the IP block catalogue, the Czech pavilion at SEMICON Europa and SEMICON Taiwan."
+    }
+   ],
+   [
+    {
+     "cs": "Talenty a vzdělávání",
+     "en": "Talent and education"
+    },
+    {
+     "cs": "Propojení firem s univerzitami, přehled školení a kurzů členů, podpora programů návrhu čipů (ACDRC, Chips of Europe).",
+     "en": "Connecting companies with universities, an overview of members' training and courses, support for chip-design programmes (ACDRC, Chips of Europe)."
+    }
+   ]
+  ],
+  "catH": {
+   "cs": "Katalogy",
+   "en": "Catalogues"
+  },
+  "cats": [
+   [
+    {
+     "cs": "Katalog členů a služeb",
+     "en": "Member and service catalogue"
+    },
+    {
+     "cs": "Členové podle segmentů s detailem služeb (Technology & Service Mapping), 5 jazyků.",
+     "en": "Members by segment with service detail (Technology & Service Mapping), 5 languages."
+    }
+   ],
+   [
+    {
+     "cs": "Katalog IP bloků",
+     "en": "IP block catalogue"
+    },
+    {
+     "cs": "47 IP bloků od 34 poskytovatelů, parametry včetně použitých EDA nástrojů; poptávka přes formulář.",
+     "en": "47 IP blocks from 34 providers, parameters including the EDA tools used; requests via a form."
+    }
+   ]
+  ],
+  "todo": {
+   "cs": "Schválit rozsah a podmínky služeb (co je pro členy zdarma, co je placené, co je pro nečleny), kontaktní osobu za každou službu a napojení katalogů pod společnou hlavičku (dnes samostatné soubory).",
+   "en": "Approve the scope and terms of services (free for members, paid, available to non-members), a contact person per service and bringing the catalogues under the common header (separate files today)."
+  }
+ },
+ "radars": {
+  "h": {
+   "cs": "Radary CNSC",
+   "en": "CNSC radars"
+  },
+  "sub": {
+   "cs": "Týdenní přehledy, které klastr sestavuje z veřejných zdrojů a sdílí s českým ekosystémem i evropskými sítěmi. Aktualizace každou neděli.",
+   "en": "Weekly overviews the cluster compiles from public sources and shares with the Czech ecosystem and European networks. Updated every Sunday."
+  },
+  "items": [
+   [
+    {
+     "cs": "EU Chips Act Pillar I Weekly Radar",
+     "en": "EU Chips Act Pillar I Weekly Radar"
+    },
+    {
+     "cs": "Pilotní linky, designová platforma EuroCDP, síť kompetenčních center a aCCCess: roadmapy, nové služby, akce. Anglicky, pro evropské publikum; veřejné spuštění 11. 11. 2026 na SEMICON Europa s MPO.",
+     "en": "Pilot lines, the EuroCDP design platform, the competence-centre network and aCCCess: roadmaps, new services, events. In English for a European audience; public launch 11 Nov 2026 at SEMICON Europa with the Ministry."
+    },
+    "https://smarterinstruments.github.io/Pillar1-Monitor/"
+   ],
+   [
+    {
+     "cs": "Pilot Lines Monitor (aCCCess edition)",
+     "en": "Pilot Lines Monitor (aCCCess edition)"
+    },
+    {
+     "cs": "Pět polovodičových pilotních linek a jejich připravenost pro externí uživatele; sestaveno pro síť aCCCess.",
+     "en": "The five semiconductor pilot lines and their readiness for external users; compiled for the aCCCess network."
+    },
+    "https://smarterinstruments.github.io/Pilotlines/"
+   ],
+   [
+    {
+     "cs": "Radar aktivit členů CNSC",
+     "en": "CNSC Member Activity Radar"
+    },
+    {
+     "cs": "Co členové každý týden zveřejní: produkty, investice, projekty, akce, partnerství, ocenění; nabídka členů a centra vedená členy.",
+     "en": "What members publish each week: products, investments, projects, events, partnerships, awards; members' offer and centres led by members."
+    },
+    "https://smarterinstruments.github.io/CNSC-Radar/"
+   ]
+  ],
+  "todo": {
+   "cs": "Rozhodnout, zda radary poběží na doméně klastru (radar.semicz.cz) nebo zůstanou na GitHub Pages s odkazem; doplnit odběr e-mailem.",
+   "en": "Decide whether the radars run on the cluster's domain (radar.semicz.cz) or stay on GitHub Pages with a link; add e-mail subscription."
+  }
+ },
+ "about": {
+  "h": {
+   "cs": "O klastru",
+   "en": "About the cluster"
+  },
+  "mission": {
+   "cs": "Czech National Semiconductor Cluster, z.s., založený v roce 2022 v Brně, je jedno kontaktní místo pro český polovodičový průmysl. Sdružuje přední firmy, univerzity, ústavy Akademie věd ČR a regionální inovační centra; je členem Silicon Europe a SEMI, partnerem Czech Semiconductor Centre a podílí se na realizaci EU Chips Act a Národní polovodičové strategie.",
+   "en": "The Czech National Semiconductor Cluster, z.s., founded in 2022 in Brno, is the single contact point for the Czech semiconductor industry. It brings together leading companies, universities, institutes of the Czech Academy of Sciences and regional innovation centres; it is a member of Silicon Europe and SEMI, a partner of the Czech Semiconductor Centre and contributes to the EU Chips Act and the National Semiconductor Strategy."
+  },
+  "facts": [
+   [
+    {
+     "cs": "Založen",
+     "en": "Founded"
+    },
+    "2022"
+   ],
+   [
+    {
+     "cs": "Právní forma",
+     "en": "Legal form"
+    },
+    {
+     "cs": "zapsaný spolek (z.s.)",
+     "en": "registered association (z.s.)"
+    }
+   ],
+   [
+    {
+     "cs": "Sídlo",
+     "en": "Seat"
+    },
+    "Šumavská 416/15, 602 00 Brno"
+   ],
+   [
+    {
+     "cs": "Členů",
+     "en": "Members"
+    },
+    "50+"
+   ],
+   [
+    {
+     "cs": "Členství",
+     "en": "Memberships"
+    },
+    "Silicon Europe · SEMI · aCCCess (partner) · Czech Semiconductor Centre (konsorcium)"
+   ]
+  ],
+  "bodiesH": {
+   "cs": "Orgány klastru",
+   "en": "Governing bodies"
+  },
+  "bodies": {
+   "cs": "Prezident: Stanislav Černý. Viceprezident: Michal Lorenc (onsemi). Viceprezident pro akademický výzkum a vývoj: Jiří Jakovenko (ČVUT). Viceprezident pro výkonovou elektroniku: Zdeněk Peroutka (ZČU / RICE).",
+   "en": "President: Stanislav Černý. Vice-President: Michal Lorenc (onsemi). Vice-President for academic R&D: Jiří Jakovenko (CTU). Vice-President for power electronics: Zdeněk Peroutka (UWB / RICE)."
+  },
+  "bodiesTodo": {
+   "cs": "Ověřit složení představenstva podle spolkového rejstříku, doplnit kontrolní orgán, kancelář klastru (výkonný ředitel/koordinátor), fotografie a medailonky.",
+   "en": "Verify the board composition against the register, add the supervisory body, the cluster office (executive director/coordinator), photos and short bios."
+  },
+  "membH": {
+   "cs": "Členství",
+   "en": "Membership"
+  },
+  "membTodo": {
+   "cs": "Výhody členství, kategorie členů (firmy podle velikosti, univerzity a ústavy, regiony) a výše příspěvků, postup přijetí (přihláška, rozhodnutí představenstva), přihláškový formulář.",
+   "en": "Membership benefits, member categories (companies by size, universities and institutes, regions) and fees, the admission procedure (application, board decision), the application form."
+  },
+  "docsH": {
+   "cs": "Dokumenty",
+   "en": "Documents"
+  },
+  "docsTodo": {
+   "cs": "Stanovy, výroční zpráva, pozice klastru ke Chips Act 2.0 a k Národní polovodičové strategii, prezentace klastru (CZ/EN), logo a brand kit, tiskové zprávy.",
+   "en": "Statutes, annual report, the cluster's positions on Chips Act 2.0 and the National Semiconductor Strategy, cluster presentation (CZ/EN), logo and brand kit, press releases."
+  }
+ },
+ "contact": {
+  "h": {
+   "cs": "Kontakt",
+   "en": "Contact"
+  },
+  "rows": [
+   [
+    {
+     "cs": "Organizace",
+     "en": "Organisation"
+    },
+    "Czech National Semiconductor Cluster, z.s."
+   ],
+   [
+    {
+     "cs": "Adresa",
+     "en": "Address"
+    },
+    "Šumavská 416/15, 602 00 Brno, Česká republika"
+   ],
+   [
+    {
+     "cs": "E-mail",
+     "en": "E-mail"
+    },
+    "info@semicz.cz"
+   ],
+   [
+    {
+     "cs": "LinkedIn",
+     "en": "LinkedIn"
+    },
+    "linkedin.com/company/cz_semi_cluster"
+   ],
+   [
+    {
+     "cs": "Opravy a doplnění radarů",
+     "en": "Corrections to the radars"
+    },
+    "info@semicz.cz, předmět „Radar“ / subject “Radar”"
+   ]
+  ],
+  "todo": {
+   "cs": "IČO, statutární zástupce, bankovní spojení pro členské příspěvky, zásady zpracování osobních údajů (GDPR), cookies, formulář (kontakt, přihláška) a odběr newsletteru.",
+   "en": "Company ID, statutory representative, bank details for membership fees, privacy policy (GDPR), cookies, forms (contact, application) and newsletter subscription."
+  }
+ }
+}
