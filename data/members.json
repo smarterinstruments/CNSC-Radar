@@ -1995,7 +1995,21 @@
   "en": "Microelectronics and the Chips of Europe project; new study programmes. Chip design: IC design, the RISC-V ecosystem and the ACDRC academic chip design research centre.",
   "logo": "https://www.semicz.cz/wp-content/uploads/2024/12/vut-1.png",
   "li": "school/vysokeucenitechnickevbrne",
-  "note": "",
+  "liMore": [
+   [
+    "FEKT",
+    "company/fektvut"
+   ],
+   [
+    "FIT",
+    "company/fitvut"
+   ],
+   [
+    "ÚMEL FEKT",
+    "company/umel-fekt-vut"
+   ]
+  ],
+  "note": "sledována i FEKT, FIT a Ústav mikroelektroniky FEKT",
   "liScope": "page",
   "liFilter": "",
   "offer": {
@@ -2245,7 +2259,17 @@
   "en": "Electrical engineering and microelectronics. Chip design: analog and digital IC design and education of chip designers.",
   "logo": "https://www.semicz.cz/wp-content/uploads/2025/01/ctu.webp",
   "li": "school/cvutpraha",
-  "note": "",
+  "liMore": [
+   [
+    "FEL",
+    "school/cvutfel"
+   ],
+   [
+    "FIT",
+    "school/fit-ctu"
+   ]
+  ],
+  "note": "sledována i FEL a FIT",
   "liScope": "page",
   "liFilter": "",
   "offer": {

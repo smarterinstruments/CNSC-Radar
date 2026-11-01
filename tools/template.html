@@ -400,7 +400,8 @@ function renderMembers() {
       ms.map(m => {
         const r = ringOf(m.id), n = last[m.id];
         const lastTxt = n ? `${esc(t.last)}: ${esc(fmt(n.d, n.a))}` : esc(t.nolast);
-        const links = [m.url ? `<a href="${esc(m.url)}" target="_blank" rel="noopener">${esc(t.web)} ↗</a>` : '', m.li ? `<a href="https://www.linkedin.com/${esc(m.li)}/" target="_blank" rel="noopener">${esc(t.li)} ↗</a>` : ''].filter(Boolean).join('');
+        const links = [m.url ? `<a href="${esc(m.url)}" target="_blank" rel="noopener">${esc(t.web)} ↗</a>` : '', m.li ? `<a href="https://www.linkedin.com/${esc(m.li)}/" target="_blank" rel="noopener">${esc(t.li)} ↗</a>` : '',
+          ...(m.liMore || []).map(([lab, slug]) => `<a href="https://www.linkedin.com/${esc(slug)}/" target="_blank" rel="noopener" title="${esc(t.li)}">${esc(lab)} ↗</a>`)].filter(Boolean).join('');
         return `<div class="card" id="member-${m.id}" style="--c:${segColor(s.id)};--rc:${ringColor(r)}"><div class="hd"><h4>${esc(m.n)}</h4><span class="city">${esc(m.city)}</span></div>` +
           (m.acadChip ? `<div class="fine">🎓 ${esc(t.acad)}</div>` : '') +
           `<p>${esc(L({cs:m.cs,en:m.en}))}</p>` + (hasTraining(m) ? `<span class="tr">🎓 ${esc(t.trainChip)}</span>` : '') +
