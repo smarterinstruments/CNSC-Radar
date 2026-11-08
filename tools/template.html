@@ -173,6 +173,19 @@ footer{border-top:1px solid var(--line);padding:12px 0 28px;font-family:"IBM Ple
 @media(max-width:900px){.stats{grid-template-columns:repeat(2,minmax(0,1fr))}.radarwrap{grid-template-columns:1fr}.about{grid-template-columns:1fr}.hero{grid-template-columns:1fr}.logo{justify-self:start;height:52px}}
 @media(max-width:560px){.item,.ev{grid-template-columns:1fr}.st .v{font-size:28px}}
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto}}
+/* search across tabs */
+.tabs .qwrap{display:flex;align-items:center;gap:6px;padding:5px 0;margin-left:10px}
+.tabs .qwrap input{width:190px;max-width:44vw;border:1.5px solid var(--blue);border-radius:999px;color:var(--ink);font:600 13px Inter,sans-serif;padding:6px 12px 6px 30px;background-color:var(--blue-soft);background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230066B5' stroke-width='3' stroke-linecap='round'%3E%3Ccircle cx='11' cy='11' r='7'/%3E%3Cpath d='m21 21-4.5-4.5'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:9px center;background-size:14px;transition:width .15s}
+.tabs .qwrap input:focus{width:260px;outline:2px solid var(--blue);outline-offset:1px}
+.tabs .qwrap input::placeholder{color:var(--muted);opacity:1}
+.tabs .qwrap .cnt{font-family:"IBM Plex Mono",monospace;font-size:12px;font-weight:600;color:var(--blue);white-space:nowrap}
+.tabs .qwrap .clr{background:none;border:1px solid var(--line);color:var(--muted);border-radius:50%;width:22px;height:22px;line-height:1;font:600 12px Inter,sans-serif;cursor:pointer;padding:0}
+.tabs .qwrap .clr:hover{color:var(--ink);border-color:var(--blue)}
+.qhit-badge{font-family:"IBM Plex Mono",monospace;font-size:10px;font-weight:600;color:#fff;background:var(--blue);border-radius:999px;padding:1px 6px;margin-left:6px;vertical-align:1px}
+.item.qhide,.card.qhide,.centre.qhide,.ev.qhide,.about .box.qhide{display:none!important}
+#radarSvg g.dot.qdim{opacity:.15}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]) .tabs .qwrap input{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%233B8FD9' stroke-width='3' stroke-linecap='round'%3E%3Ccircle cx='11' cy='11' r='7'/%3E%3Cpath d='m21 21-4.5-4.5'/%3E%3C/svg%3E")}}
+:root[data-theme="dark"] .tabs .qwrap input{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%233B8FD9' stroke-width='3' stroke-linecap='round'%3E%3Ccircle cx='11' cy='11' r='7'/%3E%3Cpath d='m21 21-4.5-4.5'/%3E%3C/svg%3E")}
 </style>
 
 <div class="wrap">
@@ -597,4 +610,47 @@ if (['news','members','centres','events','about'].includes(hash)) showTab(hash);
 if (hash.startsWith('member-')) { showTab('members'); const el = document.getElementById(hash); if (el) el.scrollIntoView({block:'center'}); }
 </script>
 
+<script>
+// search across all tabs: filters news, members, centres, events and about boxes, dims radar dots,
+// shows hit counts per tab, keeps ?q= in the URL; survives language switches and filter re-renders
+(function(){
+  const norm = s => String(s || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
+  const qwrap = document.createElement('span'); qwrap.className = 'qwrap'; qwrap.setAttribute('role','search');
+  qwrap.innerHTML = '<span class="cnt" id="qcnt" hidden></span><input type="search" id="q" aria-label="Search across all tabs"><button type="button" class="clr" id="qclr" hidden aria-label="Clear search" title="Clear">✕</button>';
+  const input = qwrap.querySelector('#q'), qcnt = qwrap.querySelector('#qcnt'), qclr = qwrap.querySelector('#qclr');
+  function mount(){ const tabs = $('tabs'); if (tabs && !tabs.contains(qwrap)) tabs.appendChild(qwrap); input.placeholder = LANG === 'cs' ? 'Hledat v radaru…' : 'Search the radar…'; }
+  function targets(){
+    const t = [];
+    const add = (tab, sel, root) => { if (root) root.querySelectorAll(sel).forEach(el => t.push([tab, el])); };
+    add('overview', '.item', $('topList'));
+    add('news', '.item', $('newsList'));
+    add('members', '.card', $('memberList'));
+    add('centres', '.centre', $('centreList'));
+    add('events', '.ev', $('evList'));
+    add('about', '.box', $('about'));
+    return t;
+  }
+  function badge(tab, n){ const b = document.querySelector('nav.tabs button[data-tab="' + tab + '"]'); if (!b) return; let x = b.querySelector('.qhit-badge'); if (n > 0){ if (!x){ x = document.createElement('span'); x.className = 'qhit-badge'; b.appendChild(x); } x.textContent = n; } else if (x) x.remove(); }
+  function run(){
+    const words = norm(input.value.trim()).split(/\s+/).filter(Boolean);
+    const per = {};
+    targets().forEach(([tab, el]) => { if (!words.length){ el.classList.remove('qhide'); return; } const txt = norm(el.textContent); const hit = words.every(w => txt.includes(w)); el.classList.toggle('qhide', !hit); if (hit) per[tab] = (per[tab] || 0) + 1; });
+    document.querySelectorAll('#radarSvg g.dot').forEach(g => { if (!words.length){ g.classList.remove('qdim'); return; } const m = memById[g.dataset.id]; const n = m && last[m.id]; const txt = norm(m ? [m.n, m.short, m.city, m.cs, m.en, n && n.cs, n && n.en].filter(Boolean).join(' ') : ''); g.classList.toggle('qdim', !words.every(w => txt.includes(w))); });
+    document.querySelectorAll('nav.tabs button[data-tab]').forEach(b => badge(b.dataset.tab, words.length ? (per[b.dataset.tab] || 0) : 0));
+    const total = Object.values(per).reduce((a, b) => a + b, 0);
+    qcnt.hidden = qclr.hidden = !words.length;
+    qcnt.textContent = words.length ? total + (LANG === 'cs' ? ' výsledků' : ' matches') : '';
+    try { const u = new URL(location.href); if (words.length) u.searchParams.set('q', input.value.trim()); else u.searchParams.delete('q'); history.replaceState(null, '', u); } catch(e){}
+  }
+  let deb = 0;
+  input.addEventListener('input', () => { clearTimeout(deb); deb = setTimeout(run, 120); });
+  qclr.addEventListener('click', () => { input.value = ''; run(); input.focus(); });
+  // re-mount and re-run after the page re-renders itself (language switch, news filters, radar redraw)
+  const wrap = name => { const f = window[name]; if (typeof f === 'function') window[name] = function(){ const r = f.apply(this, arguments); mount(); run(); return r; }; };
+  ['renderAll', 'renderNews', 'renderRadar'].forEach(wrap);
+  mount();
+  try { const q0 = new URLSearchParams(location.search).get('q'); if (q0) input.value = q0; } catch(e){}
+  run();
+})();
+</script>
 </body></html>
