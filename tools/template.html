@@ -261,8 +261,9 @@ const D = JSON.parse(document.getElementById('radar-data').textContent.replace(/
 const $ = id => document.getElementById(id);
 const esc = s => String(s ?? '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
 let LANG = 'cs';
-try { LANG = localStorage.getItem('cnsc-radar-lang') === 'en' ? 'en' : 'cs'; } catch (e) {}
-if (location.hash === '#en') LANG = 'en';
+try { const _l = localStorage.getItem('cnsc-radar-lang'); if (['en','de','zh','nl'].includes(_l)) LANG = _l; } catch (e) {}
+const _h0 = (location.hash || '').replace('#', '');
+if (['en','de','zh','nl'].includes(_h0)) LANG = _h0;
 const UI = {
   cs: {radar:'Radar aktivit členů', edition:'Edice', updated:'aktualizováno', prepared:'sestavuje', alpha:'nultá edice',
        tabs:['Přehled','Novinky','Členové','Centra vedená členy CNSC','Akce','O radaru'],
@@ -307,12 +308,78 @@ const UI = {
         ['How to read the radar','Four freshness levels: this week (up to 7 days), this month (8–31 days), this quarter (32–92 days), no tracked activity. The level only says when we last recorded a public activity; it is not a rating of the member. Only levels 1 and 2 (the last month) are drawn on the radar; the other members stay listed under Members. Dates marked ≈ are derived from the relative age of a post.'],
         ['How often and by whom','A new edition every Sunday morning; items are added, older ones stay in the log. Compiled by Czech National Semiconductor Cluster, z.s.; corrections, additions and subscription: info@semicz.cz.'],
         ['What is not here','Internal cluster information, commercially sensitive member data, project pipelines and member data outside the public catalogue. The radar only works with what members have published themselves.']
+       ]},
+  de: {radar:'Radar der Mitgliederaktivitäten', edition:'Ausgabe', updated:'aktualisiert', prepared:'erstellt von', alpha:'Nullausgabe',
+       tabs:['Überblick','Meldungen','Mitglieder','Von CNSC-Mitgliedern geführte Zentren','Termine','Über den Radar'],
+       s_members:'Clustermitglieder', s_members_s:'in 8 Segmenten der Wertschöpfungskette',
+       s_week:'Mitglieder mit Aktivität diese Woche', s_week_s:'öffentlicher Beitrag oder Meldung in den letzten 7 Tagen',
+       s_month:'Mitglieder mit Aktivität diesen Monat', s_month_s:'letzte 31 Tage',
+       s_items:'Einträge in dieser Ausgabe', s_items_s:'in dieser Woche aufgenommene Meldungen',
+       radarH:'Radar der Mitgliederaktivitäten', radarSub:'Die Sektoren sind Segmente der Wertschöpfungskette, jeder Punkt ist ein Mitglied mit öffentlicher Aktivität im letzten Monat: innerer Ring diese Woche, äußerer Ring diesen Monat. Mitglieder ohne Aktivität im letzten Monat erscheinen nicht im Radar; sie bleiben im Reiter Mitglieder gelistet. Mauszeiger zeigt den letzten Eintrag, Klick öffnet die Mitgliedskarte.', legendH:'Legende', legend:[['Sektor','Segment der Wertschöpfungskette; Sektorfarbe = Punktfarbe'],['Punkt','ein Mitglied; die Beschriftung ist der Kurzname'],['Abstand vom Zentrum','Alter der letzten öffentlichen Aktivität: Ring 1 bis 7 Tage, Ring 2 8–31 Tage'],['Quelle','LinkedIn-Unternehmensseiten und Websites der Mitglieder, semicz.cz; die Stufe ist keine Bewertung des Mitglieds']], legendQuiet:'Außerhalb des Radars:', legendQuiet2:'Mitglieder ohne Aktivität im letzten Monat (Reiter Mitglieder)',
+       level:'Stufe', none:'noch kein Mitglied', topH:'Top-Meldungen dieser Ausgabe', topSub:'Die wichtigsten Meldungen der Woche über alle Segmente; das vollständige Log steht im Reiter Meldungen. Noch nicht übersetzte Einträge erscheinen auf Englisch.',
+       newsH:'Meldungs-Log', newsSub:'Alle erfassten Einträge, neueste zuerst. Typ- und Segmentfilter kombinieren sich; die Zahl am Button zeigt, wie viele Einträge übrig blieben. Noch nicht übersetzte Einträge erscheinen auf Englisch.', all:'Alle', noitems:'In dieser Auswahl ist noch nichts.',
+       fType:'Typ', fSeg:'Segment', items1:'Eintrag', items2:'Einträge', items:'Einträge', filter:'Filter', clear:'Filter zurücksetzen',
+       memH:'Mitglieder nach Segmenten', memSub:'Stammdaten aus dem Clusterkatalog und semicz.cz. Die letzte Aktivität wird aus dem Meldungs-Log berechnet. „Angebot“ aufklappen für die Produkte, Dienstleistungen, Expertise und Schulungen, die ein Mitglied öffentlich anbietet.', web:'Website', li:'LinkedIn', last:'letzte Aktivität', nolast:'noch keine erfasste Aktivität', acad:'akademisches Chipdesign',
+       offer:'Angebot: Produkte, Dienstleistungen, Expertise', oTech:'Technologiedomänen', oSrv:'Angebotene Dienstleistungen', oWhat:'Produkte und Dienstleistungen', oTrain:'Schulungen und Kurse', trainChip:'Schulung', srcTsm:'Quelle: CNSC Technology & Service Mapping (8/2026), Beschreibungen im Originalwortlaut', srcWeb:'Quelle: öffentliche Website des Mitglieds, Pressemitteilungen und öffentliche Profile', oNone:'Ein detailliertes Angebot liegt noch nicht vor.',
+       evH:'Kommende Termine und Fristen', evSub:'Termine der Mitglieder und des Ökosystems, die einen Kalendereintrag wert sind.', noev:'Keine kommenden Termine.',
+       cenH:'Von CNSC-Mitgliedern geführte Zentren', cenSub:'Forschungs- und Kompetenzzentren, die von CNSC-Mitgliedern koordiniert oder betrieben werden: wer sie führt, wer im Konsortium ist und was sie anbieten. Partner, die Clustermitglieder sind, verlinken auf ihre Karte (gefüllter Punkt); andere Partner haben einen hohlen Punkt.', cenLead:'Geführt von', cenPartners:'Partner und Konsortialmitglieder', cenLatest:'Letzter Log-Eintrag', cenNone:'noch kein Eintrag im Meldungs-Log', cenSrc:'Quellen', cenNl:'Newsletter', cenMembers:'CNSC-Mitglieder',
+       abH:'Über den Radar', cluster:'CNSC', approx:'≈', source:'Quelle',
+       about:[
+        ['Was der Radar erfasst','Öffentliche Aktivitäten der Mitglieder des Czech National Semiconductor Cluster: neue Produkte und Technologien, Investitionen und Expansion, gewonnene Projekte und Förderungen, Veranstaltungen und Vorträge, Partnerschaften und MoUs, Auszeichnungen und Führungswechsel. Jeder Eintrag trägt Datum, Mitglieder, Typ, Quelle und einen Satz.'],
+        ['Woher die Daten stammen','Die LinkedIn-Unternehmensseiten der Mitglieder (nie persönliche Profile), die Websites und Pressemitteilungen der Mitglieder, CNSC-Kanäle sowie Einträge, die Mitglieder an info@semicz.cz mit dem Betreff „Radar“ senden. Die Stammdaten stammen aus dem Clusterkatalog und der Mitgliederliste auf semicz.cz. Bei multinationalen Mitgliedern werden nur Nachrichten über ihre tschechischen Standorte erfasst.'],
+        ['Wie der Radar zu lesen ist','Vier Aktualitätsstufen: diese Woche (bis 7 Tage), diesen Monat (8–31 Tage), dieses Quartal (32–92 Tage), keine erfasste Aktivität. Die Stufe sagt nur, wann zuletzt eine öffentliche Aktivität erfasst wurde; sie ist keine Bewertung des Mitglieds. Im Radar werden nur die Stufen 1 und 2 (der letzte Monat) gezeichnet; die übrigen Mitglieder bleiben im Reiter Mitglieder. Mit ≈ markierte Daten sind aus dem relativen Alter eines Beitrags abgeleitet.'],
+        ['Wie oft und von wem','Eine neue Ausgabe jeden Sonntagvormittag; Einträge kommen hinzu, ältere bleiben im Log. Erstellt vom Czech National Semiconductor Cluster, z.s.; Korrekturen, Ergänzungen und Abonnement: info@semicz.cz.'],
+        ['Was hier nicht steht','Interne Clusterinformationen, geschäftlich sensible Daten der Mitglieder, Projektvorhaben und Mitgliederdaten außerhalb des öffentlichen Katalogs. Der Radar arbeitet nur mit dem, was die Mitglieder selbst veröffentlicht haben.']
+       ]},
+  zh: {radar:'成员动态雷达', edition:'期号', updated:'更新于', prepared:'编制', alpha:'第零期',
+       tabs:['总览','动态','成员','CNSC成员牵头的中心','活动','关于雷达'],
+       s_members:'集群成员', s_members_s:'分布于价值链的8个环节',
+       s_week:'本周有动态的成员', s_week_s:'过去7天内的公开帖子或消息',
+       s_month:'本月有动态的成员', s_month_s:'过去31天',
+       s_items:'本期条目', s_items_s:'本周收录的动态',
+       radarH:'成员动态雷达', radarSub:'扇区代表价值链环节，每个圆点是一位在过去一个月有公开动态的成员：内环为本周，外环为本月。过去一个月无动态的成员不在雷达上显示，仍列于“成员”标签。悬停查看最新条目，点击打开成员卡片。', legendH:'图例', legend:[['扇区','价值链环节；扇区颜色＝圆点颜色'],['圆点','一位成员；标注为其简称'],['距圆心距离','最近公开动态的时间：第1环为7天内，第2环为8–31天'],['来源','成员LinkedIn官方主页、成员网站、semicz.cz；级别并非对成员的评价']], legendQuiet:'雷达之外：', legendQuiet2:'位成员过去一个月无动态（见“成员”标签）',
+       level:'级别', none:'暂无成员', topH:'本期要闻', topSub:'本周各环节最重要的动态；完整日志见“动态”标签。尚未翻译的条目以英文显示。',
+       newsH:'动态日志', newsSub:'全部收录条目，最新在前。类型与环节筛选可组合；按钮上的数字表示筛选后剩余的条目数。尚未翻译的条目以英文显示。', all:'全部', noitems:'当前筛选暂无内容。',
+       fType:'类型', fSeg:'环节', items1:'条', items2:'条', items:'条', filter:'筛选', clear:'清除筛选',
+       memH:'按环节分列的成员', memSub:'主数据来自集群目录和semicz.cz。最近动态根据动态日志计算。展开“产品、服务与专长”可查看成员公开提供的产品、服务、专长与培训。', web:'网站', li:'LinkedIn', last:'最近动态', nolast:'暂无记录的动态', acad:'学术芯片设计',
+       offer:'产品、服务与专长', oTech:'技术领域', oSrv:'提供的服务', oWhat:'产品与服务', oTrain:'培训与课程', trainChip:'培训', srcTsm:'来源：CNSC技术与服务测绘（2026年8月），描述保留原文', srcWeb:'来源：成员公开网站、新闻稿及公开资料', oNone:'详细信息尚未整理。',
+       evH:'近期活动与截止日期', evSub:'值得记入日历的成员及生态活动。', noev:'暂无近期活动。',
+       cenH:'CNSC成员牵头的中心', cenSub:'由CNSC成员协调或运营的研究与能力中心：牵头单位、联合体成员及其服务内容。属于集群成员的伙伴链接到其成员卡片（实心圆点）；其他伙伴为空心圆点。', cenLead:'牵头单位', cenPartners:'合作伙伴与联合体成员', cenLatest:'日志中的最新条目', cenNone:'动态日志中暂无条目', cenSrc:'来源', cenNl:'通讯', cenMembers:'名CNSC成员',
+       abH:'关于雷达', cluster:'CNSC', approx:'≈', source:'来源',
+       about:[
+        ['雷达跟踪什么','捷克国家半导体集群成员的公开动态：新产品与新技术、投资与扩张、中标项目与资助、活动与报告、合作与备忘录、奖项及管理层变动。每条记录包含日期、相关成员、类型、来源和一句话描述。'],
+        ['数据来源','成员的LinkedIn官方主页（绝不使用个人主页）、成员网站与新闻稿、CNSC渠道，以及成员以“Radar”为主题发送至info@semicz.cz的信息。成员主数据来自集群目录和semicz.cz的成员名单。对跨国成员仅跟踪其捷克业务点的消息。'],
+        ['如何阅读雷达','四个新鲜度级别：本周（7天内）、本月（8–31天）、本季度（32–92天）、无记录动态。级别仅表示最近一次记录到公开动态的时间，并非对成员的评价。雷达仅绘制第1、2级（最近一个月）；其余成员列于“成员”标签。标有≈的日期由帖子的相对时间推算。'],
+        ['更新频率与编制方','每周日上午发布新一期；条目只增不删，旧条目保留在日志中。由Czech National Semiconductor Cluster, z.s.编制；更正、补充及订阅：info@semicz.cz。'],
+        ['这里没有什么','集群内部信息、成员的商业敏感数据、项目计划以及公开目录之外的成员数据。雷达仅使用成员自己公开的信息。']
+       ]},
+  nl: {radar:'Radar van ledenactiviteiten', edition:'Editie', updated:'bijgewerkt', prepared:'samengesteld door', alpha:'nulde editie',
+       tabs:['Overzicht','Nieuws','Leden','Centra geleid door CNSC-leden','Agenda','Over de radar'],
+       s_members:'clusterleden', s_members_s:'in 8 segmenten van de waardeketen',
+       s_week:'leden met activiteit deze week', s_week_s:'een openbaar bericht of nieuwsitem in de laatste 7 dagen',
+       s_month:'leden met activiteit deze maand', s_month_s:'laatste 31 dagen',
+       s_items:'items in deze editie', s_items_s:'nieuws toegevoegd deze week',
+       radarH:'Radar van ledenactiviteiten', radarSub:'Sectoren zijn segmenten van de waardeketen, elke stip is één lid met openbare activiteit in de afgelopen maand: binnenste ring deze week, buitenste ring deze maand. Leden zonder activiteit in de afgelopen maand staan niet op de radar; ze blijven vermeld onder Leden. Beweeg de muis voor het laatste item, klik voor de ledenkaart.', legendH:'Legenda', legend:[['Sector','segment van de waardeketen; sectorkleur = stipkleur'],['Stip','één lid; het label is de korte naam'],['Afstand tot het midden','ouderdom van de laatste openbare activiteit: ring 1 tot 7 dagen, ring 2 8–31 dagen'],['Bron','LinkedIn-bedrijfspagina’s en websites van de leden, semicz.cz; het niveau is geen beoordeling van het lid']], legendQuiet:'Buiten de radar:', legendQuiet2:'leden zonder activiteit in de afgelopen maand (tabblad Leden)',
+       level:'Niveau', none:'nog geen lid', topH:'Hoofditems van deze editie', topSub:'Het belangrijkste nieuws van de week over alle segmenten; het volledige log staat onder Nieuws. Nog niet vertaalde items verschijnen in het Engels.',
+       newsH:'Nieuwslog', newsSub:'Alle opgenomen items, nieuwste eerst. Type- en segmentfilters combineren; het getal op een knop zegt hoeveel items er overblijven. Nog niet vertaalde items verschijnen in het Engels.', all:'Alles', noitems:'Nog niets in deze selectie.',
+       fType:'Type', fSeg:'Segment', items1:'item', items2:'items', items:'items', filter:'filter', clear:'filter wissen',
+       memH:'Leden per segment', memSub:'Stamgegevens uit de clustercatalogus en semicz.cz. De laatste activiteit wordt berekend uit het nieuwslog. Klap ‘Aanbod’ uit voor de producten, diensten, expertise en trainingen die een lid openbaar aanbiedt.', web:'website', li:'LinkedIn', last:'laatste activiteit', nolast:'nog geen geregistreerde activiteit', acad:'academisch chipontwerp',
+       offer:'Aanbod: producten, diensten, expertise', oTech:'Technologiedomeinen', oSrv:'Aangeboden diensten', oWhat:'Producten en diensten', oTrain:'Trainingen en cursussen', trainChip:'training', srcTsm:'Bron: CNSC Technology & Service Mapping (8/2026), beschrijvingen in de oorspronkelijke bewoording', srcWeb:'Bron: openbare website van het lid, persberichten en openbare profielen', oNone:'Een gedetailleerd aanbod is nog niet uitgewerkt.',
+       evH:'Komende evenementen en deadlines', evSub:'Evenementen van leden en het ecosysteem die een agenda-item waard zijn.', noev:'Geen komende evenementen.',
+       cenH:'Centra geleid door CNSC-leden', cenSub:'Onderzoeks- en competentiecentra die door CNSC-leden worden gecoördineerd of gerund: wie ze leidt, wie in het consortium zit en wat ze aanbieden. Partners die clusterlid zijn linken naar hun kaart (gevulde stip); andere partners hebben een open stip.', cenLead:'Geleid door', cenPartners:'Partners en consortiumleden', cenLatest:'Laatste item in het log', cenNone:'nog geen item in het nieuwslog', cenSrc:'Bronnen', cenNl:'nieuwsbrief', cenMembers:'CNSC-leden',
+       abH:'Over de radar', cluster:'CNSC', approx:'≈', source:'bron',
+       about:[
+        ['Wat de radar volgt','Openbare activiteiten van de leden van het Czech National Semiconductor Cluster: nieuwe producten en technologieën, investeringen en uitbreiding, binnengehaalde projecten en subsidies, evenementen en lezingen, partnerschappen en MoU’s, prijzen en leiderschapswissels. Elk item draagt een datum, de leden, een type, een bron en één zin.'],
+        ['Waar de gegevens vandaan komen','De LinkedIn-bedrijfspagina’s van de leden (nooit persoonlijke profielen), de websites en persberichten van de leden, CNSC-kanalen en items die leden naar info@semicz.cz sturen met het onderwerp ‘Radar’. Stamgegevens komen uit de clustercatalogus en de ledenlijst op semicz.cz. Bij multinationale leden wordt alleen nieuws over hun Tsjechische vestigingen gevolgd.'],
+        ['Hoe de radar te lezen','Vier versheidsniveaus: deze week (tot 7 dagen), deze maand (8–31 dagen), dit kwartaal (32–92 dagen), geen geregistreerde activiteit. Het niveau zegt alleen wanneer we voor het laatst een openbare activiteit registreerden; het is geen beoordeling van het lid. Alleen niveaus 1 en 2 (de afgelopen maand) worden op de radar getekend; de overige leden blijven onder Leden. Data gemarkeerd met ≈ zijn afgeleid van de relatieve ouderdom van een bericht.'],
+        ['Hoe vaak en door wie','Elke zondagochtend een nieuwe editie; items worden toegevoegd, oudere blijven in het log. Samengesteld door Czech National Semiconductor Cluster, z.s.; correcties, aanvullingen en abonneren: info@semicz.cz.'],
+        ['Wat hier niet staat','Interne clusterinformatie, commercieel gevoelige ledengegevens, projectplannen en ledengegevens buiten de openbare catalogus. De radar werkt alleen met wat de leden zelf hebben gepubliceerd.']
        ]}
 };
 const T = () => UI[LANG];
-const L = o => (o && typeof o === 'object') ? (o[LANG] || o.cs || o.en || '') : (o || '');
-const MON = {cs:['led','úno','bře','dub','kvě','čvn','čvc','srp','zář','říj','lis','pro'], en:['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec']};
-const fmt = (iso, approx) => { const [y,m,d] = iso.split('-').map(Number); return (approx ? '≈ ' : '') + (LANG === 'cs' ? `${d}. ${m}. ${y}` : `${d} ${MON.en[m-1]} ${y}`); };
+const L = o => (o && typeof o === 'object') ? (o[LANG] || (LANG === 'cs' ? o.cs : o.en) || o.en || o.cs || '') : (o || '');
+const MON = {cs:['led','úno','bře','dub','kvě','čvn','čvc','srp','zář','říj','lis','pro'], en:['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'], de:['Jan','Feb','Mär','Apr','Mai','Jun','Jul','Aug','Sep','Okt','Nov','Dez'], nl:['jan','feb','mrt','apr','mei','jun','jul','aug','sep','okt','nov','dec']};
+const fmt = (iso, approx) => { const [y,m,d] = iso.split('-').map(Number); return (approx ? '≈ ' : '') + (LANG === 'cs' ? `${d}. ${m}. ${y}` : LANG === 'zh' ? `${y}年${m}月${d}日` : `${d} ${(MON[LANG] || MON.en)[m-1]} ${y}`); };
 const today = D.meta.updated;
 const dayDiff = iso => Math.round((new Date(today) - new Date(iso)) / 86400000);
 const segById = Object.fromEntries(D.segments.map(s => [s.id, s]));
@@ -330,15 +397,15 @@ function renderStatic() {
   document.documentElement.lang = LANG;
   const t = T();
   $('strip').innerHTML = `<span><b>${esc(D.meta.org)}</b></span><span>${esc(t.radar)}</span><span>${esc(t.edition)} ${esc(D.meta.edition)} · ${esc(fmt(today))}</span><span class="sp"></span>
-    <span class="lang" role="group" aria-label="Language"><button id="b-cs" class="${LANG==='cs'?'on':''}">CZ</button><button id="b-en" class="${LANG==='en'?'on':''}">EN</button></span>`;
-  $('b-cs').onclick = () => setLang('cs'); $('b-en').onclick = () => setLang('en');
-  $('eyebrow').textContent = LANG === 'cs' ? 'Czech National Semiconductor Cluster · týdenní radar' : 'Czech National Semiconductor Cluster · weekly radar';
+    <span class="lang" role="group" aria-label="Language">${[['cs','CZ'],['en','EN'],['de','DE'],['nl','NL'],['zh','中文']].map(([l,lb]) => `<button id="b-${l}" class="${LANG===l?'on':''}">${lb}</button>`).join('')}</span>`;
+  ['cs','en','de','nl','zh'].forEach(l => { $('b-' + l).onclick = () => setLang(l); });
+  $('eyebrow').textContent = 'Czech National Semiconductor Cluster · ' + ({cs:'týdenní radar',en:'weekly radar',de:'wöchentlicher Radar',nl:'wekelijkse radar',zh:'每周雷达'})[LANG];
   $('h1t').textContent = L(D.meta.title);
   $('alphaTag').textContent = 'alpha';
-  $('fbBtn').textContent = LANG === 'cs' ? 'Zpětná vazba' : 'Feedback';
+  $('fbBtn').textContent = ({cs:'Zpětná vazba',en:'Feedback',de:'Feedback',nl:'Feedback',zh:'反馈'})[LANG];
   $('lede').textContent = L(D.meta.lede);
   $('tabs').innerHTML = ['overview','news','members','centres','events','about'].map((id, i) => `<button role="tab" data-tab="${id}" aria-selected="${i===0}">${esc(t.tabs[i])}</button>`).join('') +
-    `<a class="ext" href="https://theodorkrejci.github.io/CNSC---Funding-calls/" target="_blank" rel="noopener">${LANG === 'cs' ? 'Aktuální výzvy' : 'Open funding calls'} ↗</a>`;
+    `<a class="ext" href="https://theodorkrejci.github.io/CNSC---Funding-calls/" target="_blank" rel="noopener">${({cs:'Aktuální výzvy',en:'Open funding calls',de:'Offene Förderaufrufe',nl:'Open calls',zh:'开放的资助征集'})[LANG]} ↗</a>`;
   $('tabs').querySelectorAll('button').forEach(btn => btn.onclick = () => showTab(btn.dataset.tab));
   $('radarH').textContent = t.radarH; $('radarSub').textContent = t.radarSub;
   $('topH').textContent = t.topH; $('topSub').textContent = t.topSub;
@@ -482,7 +549,7 @@ function renderAbout() {
   const t = T();
   const srcs = (D.sources || []).map(([n,u]) => `<li>${u ? `<a href="${esc(u)}" target="_blank" rel="noopener">${esc(n)}</a>` : esc(n)}</li>`).join('');
   $('about').innerHTML = `<div>${t.about.slice(0,3).map(([h,p]) => `<div class="box"><h3>${esc(h)}</h3><p>${esc(p)}</p></div>`).join('')}</div>` +
-    `<div>${t.about.slice(3).map(([h,p]) => `<div class="box"><h3>${esc(h)}</h3><p>${esc(p)}</p></div>`).join('')}<div class="box"><h3>${LANG==='cs'?'Zdroje':'Sources'}</h3><ul>${srcs}</ul></div></div>`;
+    `<div>${t.about.slice(3).map(([h,p]) => `<div class="box"><h3>${esc(h)}</h3><p>${esc(p)}</p></div>`).join('')}<div class="box"><h3>${({cs:'Zdroje',en:'Sources',de:'Quellen',nl:'Bronnen',zh:'来源'})[LANG]}</h3><ul>${srcs}</ul></div></div>`;
 }
 
 function renderRadar() {
@@ -565,7 +632,7 @@ function renderRadar() {
   const levels = D.rings.filter(r => r.n <= 2).map(r => {
     const who = D.members.filter(m => ringOf(m.id) === r.n).map(m => m.short);
     const w = who.length ? who.join(', ') : `<span style="color:var(--faint)">${esc(t.none)}</span>`;
-    return `<div class="rk" style="--c:${ringColor(r.n)}"><div class="n">${esc(t.level)} ${r.n} · ${esc(L({cs:r.desc_cs,en:r.desc_en}))}</div><div class="t">${esc(L(r))}</div><div class="w">${w}</div></div>`;
+    return `<div class="rk" style="--c:${ringColor(r.n)}"><div class="n">${esc(t.level)} ${r.n} · ${esc(L({cs:r.desc_cs,en:r.desc_en,de:r.desc_de,nl:r.desc_nl,zh:r.desc_zh}))}</div><div class="t">${esc(L(r))}</div><div class="w">${w}</div></div>`;
   }).join('');
   const seglist = segs.map(s => `<span style="--c:${segColor(s.id)}"><i></i>${esc(s.code)} ${esc(L(s))} (${counts[s.id]})</span>`).join('');
   $('key').innerHTML = levels + `<div class="rk legend" style="--c:var(--line)"><div class="n">${esc(t.legendH)}</div>` +
@@ -618,7 +685,7 @@ if (hash.startsWith('member-')) { showTab('members'); const el = document.getEle
   const qwrap = document.createElement('span'); qwrap.className = 'qwrap'; qwrap.setAttribute('role','search');
   qwrap.innerHTML = '<span class="cnt" id="qcnt" hidden></span><input type="search" id="q" aria-label="Search across all tabs"><button type="button" class="clr" id="qclr" hidden aria-label="Clear search" title="Clear">✕</button>';
   const input = qwrap.querySelector('#q'), qcnt = qwrap.querySelector('#qcnt'), qclr = qwrap.querySelector('#qclr');
-  function mount(){ const tabs = $('tabs'); if (tabs && !tabs.contains(qwrap)) tabs.appendChild(qwrap); input.placeholder = LANG === 'cs' ? 'Hledat v radaru…' : 'Search the radar…'; }
+  function mount(){ const tabs = $('tabs'); if (tabs && !tabs.contains(qwrap)) tabs.appendChild(qwrap); input.placeholder = ({cs:'Hledat v radaru…',en:'Search the radar…',de:'Radar durchsuchen…',nl:'Zoek in de radar…',zh:'搜索雷达…'})[LANG]; }
   function targets(){
     const t = [];
     const add = (tab, sel, root) => { if (root) root.querySelectorAll(sel).forEach(el => t.push([tab, el])); };
@@ -639,7 +706,7 @@ if (hash.startsWith('member-')) { showTab('members'); const el = document.getEle
     document.querySelectorAll('nav.tabs button[data-tab]').forEach(b => badge(b.dataset.tab, words.length ? (per[b.dataset.tab] || 0) : 0));
     const total = Object.values(per).reduce((a, b) => a + b, 0);
     qcnt.hidden = qclr.hidden = !words.length;
-    qcnt.textContent = words.length ? total + (LANG === 'cs' ? ' výsledků' : ' matches') : '';
+    qcnt.textContent = words.length ? total + ({cs:' výsledků',en:' matches',de:' Treffer',nl:' resultaten',zh:' 个结果'})[LANG] : '';
     try { const u = new URL(location.href); if (words.length) u.searchParams.set('q', input.value.trim()); else u.searchParams.delete('q'); history.replaceState(null, '', u); } catch(e){}
   }
   let deb = 0;
